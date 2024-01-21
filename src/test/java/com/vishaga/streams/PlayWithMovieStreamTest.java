@@ -24,17 +24,17 @@ public class PlayWithMovieStreamTest {
 
     @Test
     @DisplayName("Count number of entries in collection")
-    public void filer(){
+    public void countTest(){
         assertThat((long) MOVIES.size()).isEqualTo(5546);
     }
 
     @Test
-    @DisplayName("Count number of entries in collection")
-    public void maxThrillerInAYear(){
-        MOVIES.stream()
-                .collect(Collectors.groupingBy(
-                        Movie::releaseYear
-                ));
+    @DisplayName("Release Year count")
+    public void releaseYearCount(){
+        Map<Integer, List<Movie>> moviesByReleaseYear = MOVIES.stream()
+                .collect(Collectors.groupingBy(Movie::releaseYear));
+
+        assertThat(moviesByReleaseYear.entrySet().size()).isEqualTo(91);
     }
 
     @Test
@@ -77,10 +77,9 @@ public class PlayWithMovieStreamTest {
                         Collectors.groupingBy(
                                 Movie::releaseYear,
                                 Collectors.mapping(
-                                        movie -> movie.actors(),
+                                        Movie::actors,
                                         Collectors.toSet()
                                 )));
-        //System.out.println("collect = " + collect1);
     }
 
     @Test
