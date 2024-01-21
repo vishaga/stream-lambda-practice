@@ -2,7 +2,6 @@ package org.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
-import com.github.javafaker.Nation;
 import com.vishaga.model.Employee;
 import com.vishaga.model.Employee1;
 
@@ -13,25 +12,13 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.HashSet;
 import java.util.Random;
-import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) throws Exception{
-
-
-        Nation nation = new Faker().nation();
-        Set<String> nations = new HashSet<>();
-        for(int i=0;i<100;i++){
-            String str = nation.nationality() + nation.capitalCity();
-            nations.add(str);
-        }
-        //author(10);
-        nations.stream().forEach(System.out::println);
-
+        pullEmployee();
     }
 
     private static void pullEmployee() throws Exception{
@@ -48,7 +35,7 @@ public class Main {
         ObjectMapper mapper = new ObjectMapper();
         Employee1[] employee = mapper.readValue(str.body(), Employee1[].class);
         Employee emp = Employee.from(employee[0].toString());
-        System.out.println("emp = " + emp);
+        //System.out.println("emp = " + emp);
         write(employee);
     }
 

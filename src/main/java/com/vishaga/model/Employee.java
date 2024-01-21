@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 public record Employee(
         Long id, String firstName, String lastName, List<String> emails, String contactNumber,
         int age, LocalDate dob, Integer salary, Address address, Company company, Sex sex,
-        MaritalStatus maritalStatus, String race) {
+        MaritalStatus maritalStatus, String race, Position position) {
 
     public static Employee from(String line){
         String details[] = line.split("\t");
@@ -25,27 +25,8 @@ public record Employee(
         Sex sex = Sex.valueOf(details[10].trim().toUpperCase());
         MaritalStatus maritalStatus = MaritalStatus.valueOf(details[11].replace(" ","_").trim().toUpperCase());
         String race = details[12].trim();
-        return new Employee(id, firstName, lastName, emails, contactNumber, age, dob, salary, address, company, sex, maritalStatus, race);
+        Position position = Position.valueOf(details[13].trim().toUpperCase());
+        return new Employee(id, firstName, lastName, emails, contactNumber, age, dob, salary, address, company, sex, maritalStatus, race,position);
     }
-
-
- enum Sex{
-     MALE, FEMALE;
- }
-
- enum MaritalStatus{
-     MARRIED("Married"),
-     UNMARRIED("Married"),
-     SEPARATED("Separated"),
-     DIVORCED("Divorced"),
-     WIDOWED("Widowed"),
-     NEVER_MARRIED("Never married");
-
-     final String status;
-
-     MaritalStatus(String status){
-         this.status = status;
-     }
- }
 }
 
