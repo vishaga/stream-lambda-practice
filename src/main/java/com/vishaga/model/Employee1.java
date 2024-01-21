@@ -74,7 +74,7 @@ public class Employee1 {
     }
 
     public void setSalary(int salary) {
-        this.salary = 10500 * rand.nextInt(3,17);
+        this.salary = 10500 * rand.nextInt(3,87);
     }
 
     public void setAddress(String address) {

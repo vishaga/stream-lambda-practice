@@ -8,9 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
 import java.util.NoSuchElementException;
-import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -34,8 +32,17 @@ public class PlayWithEmployeeStreamTest {
     public void employeesWithMaxEmails(){
         Employee employee = EMPLOYEES.stream()
                 .max(Comparator.comparing(emp -> emp.emails().size())).orElseThrow(NoSuchElementException::new);
-        assertThat(employee.firstName()).isEqualTo("Kellie");
+        assertThat(employee.firstName()).isEqualTo("Rudy");
         assertThat(employee.emails().size()).isEqualTo(5);
+    }
+
+    @Test
+    @DisplayName("Employees with maximum Salary")
+    public void employeesWithMaxSalary(){
+        Employee employee = EMPLOYEES.stream()
+                .max(Comparator.comparing(Employee::salary)).orElseThrow(NoSuchElementException::new);
+        assertThat(employee.firstName()).isEqualTo("Cierra");
+        assertThat(employee.salary()).isEqualTo(903000);
     }
 
 }
