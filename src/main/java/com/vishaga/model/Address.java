@@ -12,4 +12,8 @@ public record Address(String buildingNumber, String streetName, String city, Str
         return new Address(number, streetName, city, country, zip);
     }
 
+    public static Address fake(){
+        return new Address("00#", "Unknown", "BLR", "India", "123456");
+    }
+
 }

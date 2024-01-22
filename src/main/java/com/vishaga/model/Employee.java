@@ -28,5 +28,16 @@ public record Employee(
         Position position = Position.valueOf(details[13].trim().toUpperCase());
         return new Employee(id, firstName, lastName, emails, contactNumber, age, dob, salary, address, company, sex, maritalStatus, race,position);
     }
+
+    public String name(){
+        return this.firstName + " " + this.lastName;
+    }
+
+    public static Employee fake(){
+        return new Employee(-1L, "Fake", "NA",
+                List.of(),"NA", 0, LocalDate.now(),
+                0,Address.fake(), Company.fake(), Sex.MALE,
+                MaritalStatus.NEVER_MARRIED, "American", Position.DIRECTOR);
+    }
 }
 
