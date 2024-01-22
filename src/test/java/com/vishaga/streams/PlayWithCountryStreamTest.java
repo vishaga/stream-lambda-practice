@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.LongStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.entry;
@@ -88,5 +87,6 @@ public class PlayWithCountryStreamTest {
                 assertThat(value).isGreaterThan(4);
             }
         });
+
     }
 }

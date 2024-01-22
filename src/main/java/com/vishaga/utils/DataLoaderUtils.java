@@ -83,4 +83,16 @@ public class DataLoaderUtils {
             return List.of();
         }
     }
+
+    public static List<Book> loadBooks(){
+        String path = Reader.class.getResource("/books.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(Book::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
 }
