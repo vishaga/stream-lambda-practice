@@ -102,8 +102,6 @@ public class PlayWithMovieStreamTest {
                                         Collectors.counting(),
                                         Long::intValue
                                 )));
-        //System.out.println("collect = " + collect);
-
     }
 
     @Test
