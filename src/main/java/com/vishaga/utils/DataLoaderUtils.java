@@ -95,4 +95,14 @@ public class DataLoaderUtils {
             return List.of();
         }
     }
+
+    public static List<String> loadLines(){
+        String path = Reader.class.getResource("/sentence.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
 }
