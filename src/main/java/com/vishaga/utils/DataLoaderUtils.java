@@ -36,7 +36,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Employee> loadEmployee(int limit){
-        String path = Reader.class.getResource("/employee.txt").getPath();
+        String path = Reader.class.getResource("/_employee.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .limit(limit)
@@ -61,7 +61,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Population> loadPopulation(){
-        String path = Reader.class.getResource("/city_population.txt").getPath();
+        String path = Reader.class.getResource("/_city_population.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(Population::from)
@@ -85,7 +85,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Book> loadBooks(){
-        String path = Reader.class.getResource("/books.txt").getPath();
+        String path = Reader.class.getResource("/_books.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(Book::from)
