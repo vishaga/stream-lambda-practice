@@ -16,7 +16,7 @@ public class ConsumerTest {
         };
         Consumer<String> consumer2 = consumer1.andThen(s -> System.out.println("ERROR: "+s));
 
-        consumer1.accept("Gaurav Vishal");
+        consumer1.accept("GAURAV VISHAL");
         System.out.println("========================== ");
         consumer2.accept("Vivek Vishal");
     }
