@@ -28,7 +28,7 @@ public class PlayWithPopulationStreamTest {
     @Test
     @DisplayName("Count data count.")
     public void numberData(){
-        assertThat((long) POPULATION.size()).isEqualTo(1692);
+        assertThat((long) POPULATION.size()).isEqualTo(1693);
     }
 
     @Test
@@ -40,10 +40,8 @@ public class PlayWithPopulationStreamTest {
                         Collectors.teeing(
                                 Collectors.minBy(Comparator.comparing(Population::in_2010)),
                                 Collectors.maxBy(Comparator.comparing(Population::in_2010)),
-                                (min, max) -> List.of(min.orElse(FAKE).city(), max.orElse(FAKE).city())
-                        )
-                )
-        );
+                                (min, max) -> List.of(min.orElse(FAKE).city(), max.orElse(FAKE).city()))));
+
         assertThat(minMaxCityByPopulation).containsAllEntriesOf(
                 Map.ofEntries(
                     entry("India", List.of("Hosur", "Delhi")),
@@ -61,17 +59,17 @@ public class PlayWithPopulationStreamTest {
     @Test
     @DisplayName("Total population by each country")
     public void totalPopulationByCountry(){
-        Map<String, Integer> totalPopulationByCountry = POPULATION.stream().collect(
-                Collectors.groupingBy(
-                        Population::country,
-                        Collectors.mapping(
-                                Population::in_2010,
-                                Collectors.reducing(0, Integer::sum)
-                        )
-                )
-        );
+        Map<String, Integer> totalPopulationByCountry = POPULATION.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Population::country,
+                                Collectors.mapping(
+                                        Population::in_2010,
+                                        Collectors.reducing(0, Integer::sum))));
+
         assertThat(totalPopulationByCountry).containsAllEntriesOf(
                 Map.ofEntries(
+                        entry("China", 424785000),
                         entry("India", 215030000),
                         entry("Afghanistan", 4399000),
                         entry("Albania", 411000),
@@ -79,8 +77,56 @@ public class PlayWithPopulationStreamTest {
                         entry("Iraq", 14934000),
                         entry("Iran (Islamic Republic of)", 27492000),
                         entry("United States of America", 180761000),
-                        entry("France", 22871000)
-                )
-        );
+                        entry("France", 22871000),
+                        entry("China Hong Kong SAR", 7050000),
+                        entry("China Macao SAR", 535000),
+                        entry("Colombia", 23582000),
+                        entry("Congo", 2389000),
+                        entry("Australia", 14829000),
+                        entry("Vatican City", 596)
+                ));
+    }
+
+    @Test
+    @DisplayName("Most populous Country")
+    public void mostPopulousCountry(){
+        Map.Entry<String, Integer> maxPopulousCountry = POPULATION.stream()
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.groupingBy(Population::country,
+                                        Collectors.summingInt(Population::in_2010)),
+                                map -> map.<String, Integer>entrySet()
+                                        .stream()
+                                        .max(Map.Entry.comparingByValue())
+                                        .orElse(null)));
+
+        assertThat(maxPopulousCountry.getKey()).isEqualTo("China");
+        assertThat(maxPopulousCountry.getValue()).isEqualTo(424785000);
+    }
+
+    @Test
+    @DisplayName("Most and Least Populous Country")
+    public void mostPopulousCountry1(){
+        Map<String, Integer> mostAndLeastPopulousCountry = POPULATION.stream()
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.groupingBy(Population::country,
+                                        Collectors.summingInt(Population::in_2010)),
+                                map ->
+                                        map.entrySet()
+                                                .stream()
+                                                .collect(
+                                                        Collectors.teeing(
+                                                                Collectors.minBy(Map.Entry.comparingByValue()),
+                                                                Collectors.maxBy(Map.Entry.<String, Integer>comparingByValue()),
+                                                                (x, y) -> Map.ofEntries(x.orElseThrow(), y.orElseThrow())
+                                                        ))));
+
+        System.out.println("collect = " + mostAndLeastPopulousCountry);
+        assertThat(mostAndLeastPopulousCountry).containsAllEntriesOf(
+                Map.ofEntries(
+                    entry("China", 424785000),
+                    entry("Vatican City", 596)
+                ));
     }
 }

@@ -1691,3 +1691,4 @@ CountryCode	Country_or_Area	CityCode	UrbanAgglomeration	1950	1960	1970	1980	1990
 826	United Kingdom	22878	Southend-On-Sea	265	277	275	265	267	275	294	318	353
 630	Puerto Rico	23513	Aguadilla-Isabela-San Sebastian	156	183	215	251	274	312	306	302	314
 616	Poland	22142	Katowice	171	264	302	350	358	334	312	300	314
+949	Vatican City	22142	Vatican City	910	918	752	733	700	651	596	520	420
