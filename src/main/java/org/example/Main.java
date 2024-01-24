@@ -40,7 +40,7 @@ public class Main {
     }
 
     private static void write(Employee1[] employees) throws Exception{
-        String path = Reader.class.getResource("/employee.txt").getPath();
+        String path = Reader.class.getResource("/_employee.txt").getPath();
         File fileName = new File(path);
         FileWriter fileWriter = new FileWriter(fileName);
         PrintWriter printWriter = new PrintWriter(fileWriter);
@@ -54,7 +54,7 @@ public class Main {
         Faker faker = new Faker();
         Random rand = new Random();
 
-        String path = Reader.class.getResource("/books.txt").getPath();
+        String path = Reader.class.getResource("/_books.txt").getPath();
         File fileName = new File(path);
         FileWriter fileWriter = new FileWriter(fileName);
         PrintWriter printWriter = new PrintWriter(fileWriter);
