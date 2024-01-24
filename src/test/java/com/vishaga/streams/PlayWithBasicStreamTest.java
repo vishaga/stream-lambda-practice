@@ -1,0 +1,92 @@
+package com.vishaga.streams;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.entry;
+
+public class PlayWithBasicStreamTest {
+
+    private static final List<String> alphabet =
+            List.of(
+                    "alfa", "bravo", "charlie", "delta", "echo",
+                    "foxtrot", "golf", "hotel", "india", "juliet",
+                    "kilo", "lima", "mike", "november", "oscar",
+                    "papa", "quebec", "romeo", "sierra", "tango",
+                    "uniform", "victor", "whiskey", "x-ray", "yankee",
+                    "zulu");
+
+    @Test
+    @DisplayName("List of word of length 6")
+    public void wordsOfLength6() {
+        List<String> stringsEqualThan6 = alphabet.stream()
+                .filter(word -> word.length() == 6)
+                .map(String::toUpperCase)
+                .toList();
+
+        assertThat(stringsEqualThan6).isEqualTo(
+                List.of("JULIET", "QUEBEC", "SIERRA", "VICTOR", "YANKEE")
+        );
+    }
+
+    @Test
+    @DisplayName("List of word of length between 6 and 9")
+    public void filterPredicate() {
+        Predicate<String> predicate = word -> word.length() > 6;
+        predicate = predicate.and(word -> word.length() < 9);
+        List<String> stringsEqualThan6 = alphabet.stream()
+                .filter(predicate)
+                .map(String::toUpperCase)
+                .toList();
+
+        assertThat(stringsEqualThan6).isEqualTo(
+                List.of("CHARLIE", "FOXTROT", "NOVEMBER", "UNIFORM", "WHISKEY")
+        );
+    }
+
+    @Test
+    @DisplayName("Group all words by its length using toMap")
+    public void groupingBy_1() {
+        Map<Integer, List<String>> wordsGroupedByLength = alphabet.stream()
+                .collect(
+                        Collectors.toMap(
+                                String::length,
+                                a -> new ArrayList<>(List.of(a)),
+                                (a, b) -> {
+                                    a.addAll(b);
+                                    return a;
+                                }
+                        )
+                );
+
+        assertThat(wordsGroupedByLength).containsExactly(
+                entry(4, List.of("alfa", "echo", "golf", "kilo", "lima", "mike", "papa", "zulu")),
+                entry(5, List.of("bravo", "delta", "hotel", "india", "oscar", "romeo", "tango", "x-ray")),
+                entry(6, List.of("juliet", "quebec", "sierra", "victor", "yankee")),
+                entry(7, List.of("charlie", "foxtrot", "uniform", "whiskey")),
+                entry(8, List.of("november"))
+        );
+    }
+
+    @Test
+    @DisplayName("Group all words by its length using groupingBy")
+    public void groupingBy_2() {
+        Map<Integer, List<String>> wordsGroupedByLength = alphabet.stream()
+                .collect(Collectors.groupingBy(String::length));
+
+        assertThat(wordsGroupedByLength).containsExactly(
+                entry(4, List.of("alfa", "echo", "golf", "kilo", "lima", "mike", "papa", "zulu")),
+                entry(5, List.of("bravo", "delta", "hotel", "india", "oscar", "romeo", "tango", "x-ray")),
+                entry(6, List.of("juliet", "quebec", "sierra", "victor", "yankee")),
+                entry(7, List.of("charlie", "foxtrot", "uniform", "whiskey")),
+                entry(8, List.of("november"))
+        );
+    }
+}

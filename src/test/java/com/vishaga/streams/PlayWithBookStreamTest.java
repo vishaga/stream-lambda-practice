@@ -47,7 +47,8 @@ public class PlayWithBookStreamTest {
         Map<String, Long> collect1 = BOOKS.stream()
                 //.flatMap(book -> book.authors().stream())
                 .collect(
-                        Collectors.flatMapping(book -> book.authors().stream(),
+                        Collectors.flatMapping(
+                                book -> book.authors().stream(),
                                 Collectors.groupingBy(
                                         Function.identity(),
                                         Collectors.counting()
@@ -58,7 +59,8 @@ public class PlayWithBookStreamTest {
         System.out.println("collect = " + collect1);
 
         Map<Object, Long> collect2 = BOOKS.stream()
-                .mapMulti((book, downstream) -> book.authors().forEach(downstream))
+                //.mapMulti((book, downstream) -> book.authors().forEach(downstream))
+                .flatMap(book -> book.authors().stream())
                 .collect(
                         Collectors.groupingBy(
                                 Function.identity(),

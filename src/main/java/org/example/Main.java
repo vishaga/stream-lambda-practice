@@ -25,7 +25,7 @@ public class Main {
         HttpClient build = HttpClient.newBuilder().build();
 
         HttpRequest r = HttpRequest.newBuilder()
-                .uri(URI.create("https://hub.dummyapis.com/employee?noofRecords=1000&idStarts=29001"))
+                //.uri(URI.create("https://hub.dummyapis.com/employee?noofRecords=1000&idStarts=29001"))
                 .GET()
                 .build();
 
@@ -36,7 +36,7 @@ public class Main {
         Employee1[] employee = mapper.readValue(str.body(), Employee1[].class);
         Employee emp = Employee.from(employee[0].toString());
         //System.out.println("emp = " + emp);
-        write(employee);
+        // write(employee);
     }
 
     private static void write(Employee1[] employees) throws Exception{
