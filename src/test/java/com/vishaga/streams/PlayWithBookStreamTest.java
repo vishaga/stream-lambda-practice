@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -98,17 +99,27 @@ public class PlayWithBookStreamTest {
     @DisplayName("Author with max books")
     public void authorsWithMaxBooks213() {
         Map<Object, Long> collect = BOOKS.stream()
-                .mapMulti(((book, consumer) -> book.authors().forEach(consumer)))
+                //.mapMulti(((book, consumer) -> book.authors().forEach(consumer)))
                 .collect(
                         Collectors.groupingBy(
                                 Function.identity(),
                                 Collectors.mapping(a -> {
-                                            System.out.println(a + " : " + a.getClass());
+                                            //System.out.println(a + " : " + a.getClass());
                                             return Function.identity();
                                         },
                                         Collectors.counting())
                         ));
 
         System.out.println("collect = " + collect);
+
+        BOOKS.stream()
+                .flatMap(book -> book.authors().stream().map( author -> Map.entry(author, book)))
+                .collect(
+                        Collectors.groupingBy(
+                                Map.Entry::getKey,
+                                Collectors.mapping(Map.Entry::getValue, Collectors.toList())
+                        )
+                );
+
     }
 }
