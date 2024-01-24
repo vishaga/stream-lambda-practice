@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -87,6 +88,44 @@ public class PlayWithBasicStreamTest {
                 entry(6, List.of("juliet", "quebec", "sierra", "victor", "yankee")),
                 entry(7, List.of("charlie", "foxtrot", "uniform", "whiskey")),
                 entry(8, List.of("november"))
+        );
+    }
+
+    @Test
+    @DisplayName("Group all words by its length using groupingBy with counting")
+    public void groupingBy_3() {
+        Map<Integer, Long> wordsGroupedByLength = alphabet.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                String::length,
+                                Collectors.counting()));
+
+        assertThat(wordsGroupedByLength).containsExactly(
+                entry(4, 8L),
+                entry(5, 8L),
+                entry(6, 5L),
+                entry(7, 4L),
+                entry(8, 1L)
+        );
+    }
+
+    @Test
+    @DisplayName("Group all words by its length using groupingBy with counting (Int)")
+    public void groupingBy_4() {
+        Map<Integer, Integer> wordsGroupedByLength = alphabet.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                String::length,
+                                Collectors.collectingAndThen(
+                                        Collectors.counting(),
+                                        Long::intValue)));
+
+        assertThat(wordsGroupedByLength).containsExactly(
+                entry(4, 8),
+                entry(5, 8),
+                entry(6, 5),
+                entry(7, 4),
+                entry(8, 1)
         );
     }
 }
