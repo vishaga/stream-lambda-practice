@@ -1,11 +1,11 @@
 package com.vishaga.streams;
 
-import com.vishaga.utils.DataLoaderUtils;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -172,4 +172,55 @@ public class StreamPracticeTest {
 
         assertThat(empty).isEqualTo(Optional.empty());
     }
+
+    @Test
+    @DisplayName("Given a list of students with their scores, sort the students " +
+            "based on their scores in descending order and limit the result to the top 3 students.")
+    public void practiceTest_11(){
+
+        record Student(String name, int score){};
+
+        List<Student> students = Arrays.asList(
+                new Student("Alice", 85),
+                new Student("Bob", 92),
+                new Student("Charlie", 78),
+                new Student("Diana", 96),
+                new Student("Eva", 88)
+        );
+        List<String> top3Students = students.stream()
+                .sorted(Comparator.comparing(Student::score).reversed())
+                .map(Student::name)
+                .limit(3).toList();
+
+        assertThat(top3Students).contains("Diana", "Bob", "Eva");
+    }
+
+    @Test
+    @DisplayName("Given two lists of strings, combine them into a single list and remove duplicate strings.")
+    public void practiceTest_12(){
+        List<String> list1 = Arrays.asList("apple", "banana", "orange");
+        List<String> list2 = Arrays.asList("banana", "kiwi", "grape");
+
+        List<String> words = Stream.concat(list1.stream(), list2.stream())
+                .toList();
+
+        List<String> uniqueWords = words.stream().distinct().toList();
+
+        assertThat(uniqueWords).contains("apple", "banana", "orange", "kiwi", "grape");
+    }
+
+    @Test
+    @DisplayName("Given two lists of strings, combine them into a single list and remove duplicate strings.")
+    public void practiceTest_13(){
+        List<String> list1 = Arrays.asList("apple", "banana", "orange");
+        List<String> list2 = Arrays.asList("banana", "kiwi", "grape");
+
+        List<String> words = Stream.concat(list1.stream(), list2.stream())
+                .toList();
+
+        List<String> uniqueWords = words.stream().distinct().toList();
+
+        assertThat(uniqueWords).contains("apple", "banana", "orange", "kiwi", "grape");
+    }
+
 }
