@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -410,6 +411,53 @@ public class StreamPracticeTest {
         assertThat(highestValueTransaction).isNotEqualTo(Optional.empty());
         assertThat(highestValueTransaction.get().category).isEqualTo("Electronics");
         assertThat(highestValueTransaction.get().value).isEqualTo(1500);
+    }
+
+    @Test
+    @DisplayName("Given a list of orders, extract the items from each order, flatten the list of items, and count the occurrences of each item.")
+    public void practiceTest_21(){
+        record  Order(String... items){};
+
+        List<Order> orders = Arrays.asList(
+                new Order("Apple", "Banana", "Orange"),
+                new Order("Banana", "Kiwi", "Grape"),
+                new Order("Apple", "Kiwi", "Orange", "Grape")
+        );
+
+        Map<String, Integer> ordersByItems = orders.stream()
+                .flatMap(order -> Stream.of(order.items))
+                .collect(
+                        Collectors.groupingBy(
+                                Function.identity(),
+                                Collectors.collectingAndThen(
+                                        Collectors.counting(),
+                                        Long::intValue)));
+
+        assertThat(ordersByItems).containsAllEntriesOf(
+                Map.ofEntries(
+                        entry("Apple",2),
+                        entry("Banana",2),
+                        entry("Orange",2),
+                        entry("Kiwi",2),
+                        entry("Grape",2)
+
+                )
+        );
+    }
+
+    @Test
+    @DisplayName("Given a list of numbers, find the product of the square of each even number.")
+    public void practiceTest_22(){
+
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        OptionalInt productOfSquareOfEvenNumbers = numbers.stream()
+                .filter(number -> number % 2 == 0)
+                .mapToInt(number -> number * number)
+                .reduce(Math::multiplyExact);
+
+        assertThat(productOfSquareOfEvenNumbers).isNotEqualTo(OptionalInt.empty());
+        assertThat(productOfSquareOfEvenNumbers.getAsInt()).isEqualTo(14_745_600);
     }
 
 }
