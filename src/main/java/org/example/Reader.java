@@ -42,19 +42,21 @@ public class Reader {
 //        System.out.println(
 //                DataLoaderUtils.loadUniversity().stream().collect(Collectors.toSet()).size()
 //        );
-        System.out.println(DataLoaderUtils.loadMovie2(100000).size());
+        //System.out.println(DataLoaderUtils.loadMovie2(100000).size());
         //System.out.println(DataLoaderUtils.loadMovie2(100000).stream().collect(Collectors.toSet()).size());
 
-        System.out.println(DataLoaderUtils.loadPopulation().size());
+        //System.out.println(DataLoaderUtils.loadPopulation().size());
+        System.out.println(DataLoaderUtils.loadArticles().size());
+        //write(DataLoaderUtils.loadArticles());
     }
 
-    private static void write(Set<University> universities) throws Exception{
-        String path = Reader.class.getResource("/new_universities.txt").getPath();
+    private static void write(List<Article> universities) throws Exception{
+        String path = Reader.class.getResource("/_articles.txt").getPath();
         File fileName = new File(path);
         fileName.createNewFile();
         FileWriter fileWriter = new FileWriter(fileName);
         PrintWriter printWriter = new PrintWriter(fileWriter);
-        for(University e: universities){
+        for(Article e: universities){
             printWriter.write(e.toString() +"\n");
         }
         printWriter.close();
