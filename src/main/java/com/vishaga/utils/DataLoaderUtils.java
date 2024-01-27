@@ -105,4 +105,16 @@ public class DataLoaderUtils {
             return List.of();
         }
     }
+
+    public static List<Article> loadArticles(){
+        String path = Reader.class.getResource("/_articles.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(Article::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
 }
