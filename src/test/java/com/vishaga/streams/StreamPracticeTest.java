@@ -389,7 +389,27 @@ public class StreamPracticeTest {
                 .toList();
 
         assertThat(top3Books).contains("Lord of the Rings","Harry Potter","Sherlock Holmes");
+    }
 
+    @Test
+    @DisplayName("Given a list of transactions, find the transaction with the highest value using a custom reduction operation.")
+    public void practiceTest_20(){
+        record  Transaction(String category, int value){};
+
+        List<Transaction> transactions = List.of(
+                new Transaction("Electronics", 1200),
+                new Transaction("Grocery", 300),
+                new Transaction("Electronics", 800),
+                new Transaction("Clothing", 200),
+                new Transaction("Electronics", 1500)
+        );
+
+        Optional<Transaction> highestValueTransaction = transactions.stream()
+                .reduce((t1, t2) -> t1.value() > t2.value() ? t1 : t2);
+
+        assertThat(highestValueTransaction).isNotEqualTo(Optional.empty());
+        assertThat(highestValueTransaction.get().category).isEqualTo("Electronics");
+        assertThat(highestValueTransaction.get().value).isEqualTo(1500);
     }
 
 }
