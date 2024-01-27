@@ -5,7 +5,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -15,13 +14,12 @@ public class StreamPracticeTest {
 
     @BeforeAll
     public static void setUp(){
-        //COUNTRIES = DataLoaderUtils.loadCountries();
     }
 
     @Test
     @DisplayName("Given a list of integers, find the sum of all even numbers.")
     public void practiceTest_1(){
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         int sum = numbers.stream()
                 .filter(number -> number % 2 == 0)
@@ -34,7 +32,7 @@ public class StreamPracticeTest {
     @Test
     @DisplayName("Given a list of strings, convert each string to uppercase and collect the result into a new list.")
     public void practiceTest_2(){
-        List<String> words = Arrays.asList("apple", "banana", "orange", "grape");
+        List<String> words = List.of("apple", "banana", "orange", "grape");
 
         List<String> upperCaseWords = words.stream()
                 .map(String::toUpperCase)
@@ -46,7 +44,7 @@ public class StreamPracticeTest {
     @Test
     @DisplayName("Given a list of words, count the number of words that start with the letter 'a'.")
     public void practiceTest_3(){
-        List<String> words = Arrays.asList("apple", "banana", "avocado", "grape", "apricot");
+        List<String> words = List.of("apple", "banana", "avocado", "grape", "apricot");
 
         long wordsStartingWithA = words.stream()
                 .filter(word -> word.startsWith("a"))
@@ -60,7 +58,7 @@ public class StreamPracticeTest {
     public void practiceTest_4(){
         record Employee(String name, int salary){};
 
-        List<Employee> employees = Arrays.asList(
+        List<Employee> employees = List.of(
                 new Employee("John", 50000),
                 new Employee("Alice", 60000),
                 new Employee("Bob", 75000),
@@ -77,7 +75,7 @@ public class StreamPracticeTest {
     @Test
     @DisplayName("Given a list of numbers, filter out the even numbers, square each remaining number, and then find the sum.")
     public void practiceTest_5(){
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         double squareOfOddNumbers = numbers.stream()
                 .filter(number -> number % 2 != 0)
@@ -92,7 +90,7 @@ public class StreamPracticeTest {
     public void practiceTest_6(){
         record Book(String genre, String name){};
 
-        List<Book> books = Arrays.asList(
+        List<Book> books = List.of(
                 new Book("Sci-Fi", "Dune"),
                 new Book("Fantasy", "Harry Potter"),
                 new Book("Sci-Fi", "Foundation"),
@@ -118,7 +116,7 @@ public class StreamPracticeTest {
     @DisplayName("Given a list of strings, filter out the strings with length less than 4 " +
             "and join the remaining strings into a single string, separated by commas.")
     public void practiceTest_7(){
-        List<String> words = Arrays.asList("apple", "banana", "kiwi", "grape", "peach");
+        List<String> words = List.of("apple", "banana", "kiwi", "grape", "peach");
 
 
         String newString = words.stream()
@@ -131,7 +129,7 @@ public class StreamPracticeTest {
     @Test
     @DisplayName("Given a list of words, create a list of all unique characters present in those words.")
     public void practiceTest_8(){
-        List<String> words = Arrays.asList("hello", "world", "java", "stream");
+        List<String> words = List.of("hello", "world", "java", "stream");
 
         Set<String> uniqueCharacters = words.stream()
                 .flatMap(word -> Arrays.stream(word.split("")))
@@ -143,7 +141,7 @@ public class StreamPracticeTest {
     @Test
     @DisplayName("Given a list of numbers, partition them into two groups - even and odd.")
     public void practiceTest_9(){
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         Map<Boolean, List<Integer>> evenOddNumbers = numbers.stream()
                 .collect(Collectors.partitioningBy(num -> num % 2 == 0));
@@ -160,7 +158,7 @@ public class StreamPracticeTest {
     @DisplayName("Given a list of integers, find the maximum value using the reduce operation. " +
             "Return an Optional to handle the case where the list is empty.")
     public void practiceTest_10(){
-        List<Integer> numbers = Arrays.asList(15, 8, 20, 12, 7, 18);
+        List<Integer> numbers = List.of(15, 8, 20, 12, 7, 18);
 
         Optional<Integer> maxNumber = numbers.stream()
                 .reduce(Math::max);
@@ -180,7 +178,7 @@ public class StreamPracticeTest {
 
         record Student(String name, int score){};
 
-        List<Student> students = Arrays.asList(
+        List<Student> students = List.of(
                 new Student("Alice", 85),
                 new Student("Bob", 92),
                 new Student("Charlie", 78),
@@ -198,8 +196,8 @@ public class StreamPracticeTest {
     @Test
     @DisplayName("Given two lists of strings, combine them into a single list and remove duplicate strings.")
     public void practiceTest_12(){
-        List<String> list1 = Arrays.asList("apple", "banana", "orange");
-        List<String> list2 = Arrays.asList("banana", "kiwi", "grape");
+        List<String> list1 = List.of("apple", "banana", "orange");
+        List<String> list2 = List.of("banana", "kiwi", "grape");
 
         List<String> words = Stream.concat(list1.stream(), list2.stream())
                 .toList();
@@ -212,8 +210,8 @@ public class StreamPracticeTest {
     @Test
     @DisplayName("Given two lists of strings, combine them into a single list and remove duplicate strings.")
     public void practiceTest_13(){
-        List<String> list1 = Arrays.asList("apple", "banana", "orange");
-        List<String> list2 = Arrays.asList("banana", "kiwi", "grape");
+        List<String> list1 = List.of("apple", "banana", "orange");
+        List<String> list2 = List.of("banana", "kiwi", "grape");
 
         List<String> words = Stream.concat(list1.stream(), list2.stream())
                 .toList();
@@ -221,6 +219,120 @@ public class StreamPracticeTest {
         List<String> uniqueWords = words.stream().distinct().toList();
 
         assertThat(uniqueWords).contains("apple", "banana", "orange", "kiwi", "grape");
+    }
+
+    @Test
+    @DisplayName("Given a list of transactions, find the total value of transactions for a specific category ('Electronics').")
+    public void practiceTest_14(){
+        record  Transaction(String category, int value){};
+
+        List<Transaction> transactions = List.of(
+                new Transaction("Electronics", 1200),
+                new Transaction("Grocery", 300),
+                new Transaction("Electronics", 800),
+                new Transaction("Clothing", 200),
+                new Transaction("Electronics", 1500)
+        );
+
+        Map<String, Integer> totalByCategory = transactions.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Transaction::category,
+                                Collectors.summingInt(Transaction::value)));
+
+        assertThat(totalByCategory).containsAllEntriesOf(
+                Map.ofEntries(
+                        Map.entry("Electronics", 3500),
+                        Map.entry("Grocery", 300),
+                        Map.entry("Clothing", 200)
+                )
+        );
+    }
+
+    @Test
+    @DisplayName("Given a list of employees, group them by department and find the average salary for each department.")
+    public void practiceTest_15(){
+        record  Employee(String name, int salary, String department){};
+
+        List<Employee> employees = List.of(
+                new Employee("John", 50000, "IT"),
+                new Employee("Alice", 60000, "Finance"),
+                new Employee("Bob", 75000, "IT"),
+                new Employee("Charlie", 80000, "Finance"),
+                new Employee("Eva", 70000, "HR"),
+                new Employee("David", 90000, "HR")
+        );
+
+        Map<String, Double> avgSalaryByDepartment = employees.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Employee::department,
+                                Collectors.collectingAndThen(
+                                        Collectors.summarizingInt(Employee::salary),
+                                        IntSummaryStatistics::getAverage)));
+
+        assertThat(avgSalaryByDepartment).containsAllEntriesOf(
+                Map.ofEntries(
+                        Map.entry("IT", 62_500d),
+                        Map.entry("Finance", 70_000d),
+                        Map.entry("HR", 80_000d)
+                )
+        );
+    }
+
+    @Test
+    @DisplayName("Given a list of orders, find the total quantity of items sold for each product.")
+    public void practiceTest_16(){
+        record  Order(String product, int itemSold){};
+
+        List<Order> orders = List.of(
+                new Order("Apple", 3),
+                new Order("Banana", 2),
+                new Order("Apple", 5),
+                new Order("Orange", 4),
+                new Order("Banana", 1)
+        );
+
+        Map<String, Integer> totalSoldByProduct = orders.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Order::product,
+                                Collectors.summingInt(Order::itemSold)));
+
+        assertThat(totalSoldByProduct).containsAllEntriesOf(
+                Map.ofEntries(
+                        Map.entry("Apple", 8),
+                        Map.entry("Banana", 3),
+                        Map.entry("Orange", 4)
+                )
+        );
+    }
+
+    @Test
+    @DisplayName("Given a list of people, partition them into two groups - adults (age 18 and above) and minors (below 18). Count the number of people in each group.")
+    public void practiceTest_17(){
+        record  Person(String name, int age){};
+
+        List<Person> people = List.of(
+                new Person("Alice", 25),
+                new Person("Bob", 16),
+                new Person("Charlie", 30),
+                new Person("Diana", 14),
+                new Person("Eva", 22)
+        );
+
+        Map<Boolean, Long> allPersonByMinorAndAdult = people.stream()
+                .collect(
+                        Collectors.partitioningBy(
+                                person -> person.age < 18,
+                                Collectors.counting()));
+
+        assertThat(allPersonByMinorAndAdult).containsAllEntriesOf(
+                Map.ofEntries(
+                        Map.entry(true, 2L),
+                        Map.entry(false, 3L)
+                )
+        );
     }
 
 }
