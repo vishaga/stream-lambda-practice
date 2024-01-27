@@ -47,7 +47,7 @@ public class PartialApplicationTest {
                 .from("EUR")
                 .to("INR")
                 .convert(100);
-        
+
         assertThat(convert).isEqualTo(8255.699d);
     }
 }
