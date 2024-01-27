@@ -557,4 +557,39 @@ public class StreamPracticeTest {
         assertThat(commonNames).contains("Bob", "Alice");
     }
 
+    @Test
+    @DisplayName("Given a large list of numbers, find the sum of squares using parallel streams.")
+    public void practiceTest_26(){
+
+        List<Integer> numbers = new ArrayList<>();
+        for (int i = 1; i <= 1_000_000; i++) {
+            numbers.add(i);
+        }
+
+        long sum1 = numbers.stream().mapToLong(n -> (long) n * n).sum();
+        long sum2 = numbers.parallelStream().mapToLong(n -> (long) n * n).sum();
+        assertThat(sum1).isEqualTo(333333833333500000L);
+        assertThat(sum1).isEqualTo(sum2);
+    }
+
+    @Test
+    @DisplayName("Given a list of sentences, find the average length of words for sentences that contain the word 'Java'.")
+    public void practiceTest_27(){
+
+        List<String> sentences = Arrays.asList(
+                "Java is a powerful programming language.",
+                "Python is widely used for data science.",
+                "Java applications can run on any device.",
+                "Functional programming is gaining popularity."
+        );
+
+        int averageLengthOfWordsInSentenceContainingJavaKeyword = (int) sentences.stream()
+                .filter(line -> line.contains("Java"))
+                .flatMap(line -> Arrays.stream(line.split(" ")))
+                .mapToInt(String::length)
+                .summaryStatistics().getAverage();
+
+        assertThat(averageLengthOfWordsInSentenceContainingJavaKeyword).isEqualTo(5);
+    }
+
 }
