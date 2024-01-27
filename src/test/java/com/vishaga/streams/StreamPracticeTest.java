@@ -1,5 +1,6 @@
 package com.vishaga.streams;
 
+import com.vishaga.java.util.Function;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -333,6 +334,36 @@ public class StreamPracticeTest {
                         Map.entry(false, 3L)
                 )
         );
+    }
+
+    @Test
+    @DisplayName("Given a list of lists of integers, flatten the list and find the product of all distinct numbers.")
+    public void practiceTest_18(){
+
+        List<List<Integer>> nestedLists = Arrays.asList(
+                Arrays.asList(2, 3, 4),
+                Arrays.asList(3, 4, 5),
+                Arrays.asList(5, 6, 7)
+        );
+
+        // Using flatMap
+        Integer productOfDistinctElements_1 = nestedLists.stream()
+                .flatMap(Collection::stream)
+                .distinct()
+                .reduce(1, Math::multiplyExact);
+
+        assertThat(productOfDistinctElements_1).isEqualTo(5040);
+
+        // Using mapMulti
+        Integer productOfDistinctElements_2 = nestedLists.stream()
+                //.mapMulti(Iterable<Integer>::forEach)
+                .<Integer>mapMulti((subList, downStream) -> subList.forEach(downStream::accept))
+                .distinct()
+                .reduce(1, Math::multiplyExact);
+
+        assertThat(productOfDistinctElements_2).isEqualTo(5040);
+
+        // TODO: Also try collectors.mapping()
     }
 
 }
