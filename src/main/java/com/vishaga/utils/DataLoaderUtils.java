@@ -5,7 +5,11 @@ import org.example.Reader;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class DataLoaderUtils {
@@ -116,5 +120,25 @@ public class DataLoaderUtils {
             System.out.println("ex = " + ex);
             return List.of();
         }
+    }
+
+    public static Map<LocalDate, Map<String, Double>> loadCurrencyConversion(){
+        String path = Reader.class.getResource("/_currency.txt").getPath();
+        Map<LocalDate, Map<String, Double>> currencyMap = new HashMap<>();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            currencyMap.put(
+                    LocalDate.now(),
+                    s.skip(1)
+                            .map(l -> l.split("="))
+                            .collect(
+                                    Collectors.toMap(
+                                            arr -> arr[0],
+                                            arr -> Double.parseDouble(arr[1]))));
+
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            currencyMap.put(LocalDate.now(), new HashMap<>());
+        }
+        return currencyMap;
     }
 }
