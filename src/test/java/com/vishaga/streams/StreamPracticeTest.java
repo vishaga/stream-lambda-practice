@@ -460,4 +460,101 @@ public class StreamPracticeTest {
         assertThat(productOfSquareOfEvenNumbers.getAsInt()).isEqualTo(14_745_600);
     }
 
+    @Test
+    @DisplayName("Given a list of movies, sort them by release year in descending order and limit the result to the top 5 movies.")
+    public void practiceTest_23(){
+        record Movie(String name, int releaseYear){};
+
+        List<Movie> movies = Arrays.asList(
+                new Movie("Inception", 2010),
+                new Movie("The Dark Knight", 2008),
+                new Movie("Interstellar", 2014),
+                new Movie("Fight Club", 1999),
+                new Movie("The Shawshank Redemption", 1994),
+                new Movie("The Matrix", 1999)
+        );
+
+        List<String> top5Movies = movies.stream()
+                .sorted(Comparator.comparing(Movie::releaseYear, Comparator.reverseOrder()))
+                .limit(5)
+                .map(Movie::name)
+                .toList();
+
+        assertThat(top5Movies.isEmpty()).isFalse();
+        assertThat(top5Movies).contains("Interstellar", "Inception", "The Dark Knight", "Fight Club", "The Matrix");
+    }
+
+    @Test
+    @DisplayName("Given a list of books, group them by author and find the average number of pages for each author's books.")
+    public void practiceTest_24(){
+        record Book(String author, String name, int pages){};
+
+        List<Book> books = Arrays.asList(
+                new Book("Isaac Asimov", "Foundation", 500),
+                new Book("J.K. Rowling", "Harry Potter", 700),
+                new Book("Isaac Asimov", "Robot Series", 600),
+                new Book("Agatha Christie", "Murder on the Orient Express", 350),
+                new Book("J.R.R. Tolkien", "Lord of the Rings", 900)
+        );
+
+        Map<String, Double> authorsByAveragePagesWritten = books.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Book::author,
+                                Collectors.collectingAndThen(
+                                        Collectors.summarizingInt(Book::pages),
+                                        IntSummaryStatistics::getAverage)));
+
+        assertThat(authorsByAveragePagesWritten.isEmpty()).isFalse();
+        assertThat(authorsByAveragePagesWritten).containsAllEntriesOf(
+                Map.ofEntries(
+                        entry("Isaac Asimov", 550d),
+                        entry("J.K. Rowling", 700d),
+                        entry("Agatha Christie", 350d),
+                        entry("J.R.R. Tolkien", 900d)
+                )
+        );
+    }
+
+    @Test
+    @DisplayName("Given two lists of employees, find the common employees based on their names and collect them into a new list.")
+    public void practiceTest_25(){
+        record Employee(String name, int salary){
+            @Override
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                Employee employee = (Employee) o;
+                return Objects.equals(name, employee.name);
+            }
+
+            @Override
+            public int hashCode() {
+                return Objects.hash(name);
+            }
+        };
+
+        List<Employee> list1 = Arrays.asList(
+                new Employee("John", 50000),
+                new Employee("Alice", 60000),
+                new Employee("Bob", 75000),
+                new Employee("Charlie", 80000)
+        );
+
+        List<Employee> list2 = Arrays.asList(
+                new Employee("Bob", 72000),
+                new Employee("Alice", 60000),
+                new Employee("David", 85000),
+                new Employee("Eva", 70000)
+        );
+
+        List<Employee> commonEmployees = new ArrayList<>(list1);
+        // overriding of equals and hashcode is important so that check can happen only on names.
+        commonEmployees.retainAll(list2);
+        List<String> commonNames = commonEmployees.stream().map(Employee::name).toList();
+
+        assertThat(commonNames.isEmpty()).isFalse();
+        assertThat(commonNames).contains("Bob", "Alice");
+    }
+
 }
