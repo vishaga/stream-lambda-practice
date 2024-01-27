@@ -1,6 +1,5 @@
 package com.vishaga.streams;
 
-import com.vishaga.java.util.Function;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -364,6 +363,33 @@ public class StreamPracticeTest {
         assertThat(productOfDistinctElements_2).isEqualTo(5040);
 
         // TODO: Also try collectors.mapping()
+    }
+
+    @Test
+    @DisplayName("Given a list of books, sort them first by genre in ascending order, and then by the number of pages in descending order. Return the top 3 books.")
+    public void practiceTest_19(){
+        record Book(String genre, String name, int page){};
+
+        List<Book> books = List.of(
+                new Book("Sci-Fi", "Dune", 500),
+                new Book("Fantasy", "Harry Potter", 700),
+                new Book("Sci-Fi", "Foundation", 600),
+                new Book("Mystery", "Sherlock Holmes", 400),
+                new Book("Fantasy", "Lord of the Rings", 900),
+                new Book("Mystery", "Murder on the Orient Express", 350)
+        );
+
+        List<String> top3Books = books.stream()
+                .sorted(
+                        Comparator.comparing(Book::genre)
+                                .thenComparing(Book::page,
+                                        Comparator.reverseOrder()))
+                .limit(3)
+                .map(Book::name)
+                .toList();
+
+        assertThat(top3Books).contains("Lord of the Rings","Harry Potter","Sherlock Holmes");
+
     }
 
 }
