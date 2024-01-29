@@ -153,4 +153,16 @@ public class DataLoaderUtils {
             return List.of();
         }
     }
+
+    public static List<NobelInfo> loadNobelWinner(){
+        String path = Reader.class.getResource("/_nobel_winner.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(NobelInfo::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
 }

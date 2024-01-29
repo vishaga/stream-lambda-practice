@@ -1,0 +1,824 @@
+WinnerName	Year_and_Domain	Gender	Country_of_Birth	Year_of_Birth	Age_of_Nobel_Winner	Country	Universities
+Jacobus Henricus van 't Hoff	1901 - Chemestry	Male	Netherlands	1852	49	Netherlands
+Sully Prudhomme	1901 - Literature	Male	France	1839	62	France
+Emil Adolf von Behring	1901 - Medicine / Physiology	Male	Germany	1854	47	Germany
+Frédéric Passy	1901 - Peace	Male	France	1822	79	France
+Henry Dunant	1901 - Peace	Male	Switzerland	1828	73	France, Switzerland
+Wilhelm Röntgen	1901 - Physics	Male	Germany	1845	56	Germany	ETH Zurich, University of Zurich
+Hermann Emil Fischer	1902 - Chemestry	Male	Germany	1852	50	Germany	University of Bonn, University of Strasbourg
+Theodor Mommsen	1902 - Literature	Male	Germany	1817	85	Germany	University of Kiel
+Ronald Ross	1902 - Medicine / Physiology	Male	India	1857	45	India, United Kingdom	Worshipful Society of Apothecaries, Queen Mary University
+Hendrik Lorentz	1902 - Physics	Male	Netherlands	1853	49	Netherlands	Leiden University
+Pieter Zeeman	1902 - Physics	Male	Netherlands	1865	37	Netherlands	Leiden University
+Svante Arrhenius	1903 - Chemestry	Male	Sweden	1859	44	Sweden	Uppsala University, Stockholm University
+Bjørnstjerne Bjørnson	1903 - Literature	Male	Norway	1832	71	Norway
+Niels Ryberg Finsen	1903 - Medicine / Physiology	Male	Faroe Islands	1860	43	Denmark, Faroe Islands
+Randal Cremer	1903 - Peace	Male	United Kingdom	1828	75	United Kingdom
+Pierre Curie	1903 - Physics	Male	France	1859	44	France	Sorbonne
+Henri Becquerel	1903 - Physics	Male	France	1852	51	France	Institut des sciences et technologies de Paris, École Polytechnique
+Marie Curie	1903 - Physics, 1911 - Chemestry	Female	Poland	1867	36	France, France	University of Paris, Institut des sciences et technologies de Paris
+William Ramsay	1904 - Chemestry	Male	United Kingdom	1852	52	United Kingdom	University of Strathclyde, University of Tübingen
+Frédéric Mistral	1904 - Literature	Male	France	1830	74	France
+José Echegaray	1904 - Literature	Male	Spain	1832	72	Spain
+Ivan Pavlov	1904 - Medicine / Physiology	Male	Russia	1849	55	Russia	Saint Petersburg State University
+Lord Rayleigh	1904 - Physics	Male	United Kingdom	1842	62	United Kingdom	University of Cambridge
+Adolf von Baeyer	1905 - Chemestry	Male	Germany	1835	70	Germany	Humboldt University of Berlin
+Henryk Sienkiewicz	1905 - Literature	Male	Poland	1846	59	Poland
+Robert Koch	1905 - Medicine / Physiology	Male	Germany	1843	62	Germany	University of Göttingen
+Bertha von Suttner	1905 - Peace	Female	Czech Republic	1843	62	Austria, Czech Republic
+Philipp Lenard	1905 - Physics	Male	Czech Republic	1862	43	Austria, Germany	Heidelberg University
+Henri Moissan	1906 - Chemestry	Male	France	1852	54	France	École Pratique des Hautes études, Collège de Meaux
+Giosuè Carducci	1906 - Literature	Male	Italy	1835	71	Italy
+Camillo Golgi	1906 - Medicine / Physiology	Male	Italy	1843	63	Italy
+Santiago Ramón y Cajal	1906 - Medicine / Physiology	Male	Spain	1852	54	Spain
+Theodore Roosevelt	1906 - Peace	Male	United States of America	1858	48	United States of America	Harvard University, Columbia University
+J. J. Thomson	1906 - Physics	Male	United Kingdom	1856	50	United Kingdom	University of Manchester, University of Cambridge
+Eduard Buchner	1907 - Chemestry	Male	Germany	1860	47	Germany	Ludwig Maximilian University of Munich
+Rudyard Kipling	1907 - Literature	Male	India	1865	42	India, United Kingdom
+Charles Louis Alphonse Laveran	1907 - Medicine / Physiology	Male	France	1845	62	France	University of Strasbourg
+Albert Abraham Michelson	1907 - Physics	Male	Poland	1852	55	Poland	United States Naval Academy, Humboldt University of Berlin
+Ernest Rutherford	1908 - Chemestry	Male	New Zealand	1871	37	Canada, New Zealand, United Kingdom	University of Canterbury, University of Cambridge
+Rudolf Christoph Eucken	1908 - Literature	Male	Germany	1846	62	Germany
+Paul Ehrlich	1908 - Medicine / Physiology	Male	Germany	1854	54	Germany
+Élie Metchnikoff	1908 - Medicine / Physiology	Male	Ukraine	1845	63	Russia, Ukraine
+Gabriel Lippmann	1908 - Physics	Male	Luxembourg	1845	63	France, Luxembourg	École Normale Supérieure
+Wilhelm Ostwald	1909 - Chemestry	Male	Latvia	1853	56	Germany, Latvia, Russia	University of Tartu
+Selma Lagerlöf	1909 - Literature	Female	Sweden	1858	51	Sweden
+Emil Theodor Kocher	1909 - Medicine / Physiology	Male	Switzerland	1841	68	Switzerland
+Auguste Marie François Beernaert	1909 - Peace	Male	Netherlands	1829	80	Belgium	Heidelberg University
+Guglielmo Marconi	1909 - Physics	Male	Italy	1874	35	Italy	University of Bologna
+Karl Ferdinand Braun	1909 - Physics	Male	Germany	1850	59	Germany	Humboldt University of Berlin, University of Marburg
+Otto Wallach	1910 - Chemestry	Male	Germany	1847	63	Germany	University of Göttingen
+Paul Heyse	1910 - Literature	Male	Germany	1830	80	Germany
+Albrecht Kossel	1910 - Medicine / Physiology	Male	Germany	1853	57	Germany	University of Rostock, University of Strasbourg
+Johannes Diderik van der Waals	1910 - Physics	Male	Netherlands	1837	73	Netherlands	Leiden University
+Maurice Maeterlinck	1911 - Literature	Male	Belgium	1862	49	Belgium	Ghent University
+Allvar Gullstrand	1911 - Medicine / Physiology	Male	Sweden	1862	49	Sweden
+Tobias Asser	1911 - Peace	Male	Netherlands	1838	73	Netherlands	Leiden University, University of Amsterdam
+Wilhelm Wien	1911 - Physics	Male	Russia	1864	47	Germany	University of Göttingen, Humboldt University of Berlin
+Paul Sabatier	1912 - Chemestry	Male	France	1854	58	France	Collège de France
+Victor Grignard	1912 - Chemestry	Male	France	1871	41	France	University of Lyon
+Gerhart Hauptmann	1912 - Literature	Male	Poland	1862	50	Germany
+Alexis Carrel	1912 - Medicine / Physiology	Male	France	1873	39	France
+Elihu Root	1912 - Peace	Male	United States of America	1845	67	United States of America	Hamilton College, New York University
+Gustaf Dalén	1912 - Physics	Male	Sweden	1869	43	Sweden	University of Zurich, Chalmers University of Technology
+Alfred Werner	1913 - Chemestry	Male	Switzerland	1866	47	France, Switzerland	ETH Zurich, University of Zurich
+Rabindranath Tagore	1913 - Literature	Male	India	1861	52	India
+Charles Richet	1913 - Medicine / Physiology	Male	France	1850	63	France
+Henri La Fontaine	1913 - Peace	Male	Belgium	1854	59	Belgium
+Heike Kamerlingh Onnes	1913 - Physics	Male	Netherlands	1853	60	Netherlands	Heidelberg University, University of Groningen
+Theodore William Richards	1914 - Chemestry	Male	United States of America	1868	46	United States of America	Haverford College, Harvard University
+Robert Bárány	1914 - Medicine / Physiology	Male	Austria	1876	38	Austria, Hungary	University of Vienna
+Max von Laue	1914 - Physics	Male	Germany	1879	35	Germany	University of Göttingen, Humboldt University of Berlin, Ludwig Maximilian University of Munich, University of Strasbourg
+Richard Willstätter	1915 - Chemestry	Male	Germany	1872	43	Germany	Ludwig Maximilian University of Munich
+Romain Rolland	1915 - Literature	Male	France	1866	49	France
+William Henry Bragg	1915 - Physics	Male	United Kingdom	1862	53	United Kingdom	University of Cambridge
+William Lawrence Bragg	1915 - Physics	Male	Australia	1890	25	Australia, United Kingdom	University of Adelaide
+Verner von Heidenstam	1916 - Literature	Male	Sweden	1859	57	Sweden
+Karl Adolph Gjellerup	1917 - Literature	Male	Denmark	1857	60	Denmark
+Henrik Pontoppidan	1917 - Literature	Male	Denmark	1857	60	Denmark
+Charles Glover Barkla	1917 - Physics	Male	United Kingdom	1877	40	United Kingdom	University of Liverpool, University of Cambridge
+Fritz Haber	1918 - Chemestry	Male	Germany	1868	50	Germany	Heidelberg University, Humboldt University of Berlin, Technical University of Berlin
+Max Planck	1918 - Physics	Male	Germany	1858	60	Germany	Ludwig Maximilian University of Munich
+Carl Spitteler	1919 - Literature	Male	Switzerland	1845	74	Switzerland
+Jules Bordet	1919 - Medicine / Physiology	Male	Belgium	1870	49	Belgium
+Woodrow Wilson	1919 - Peace	Male	United States of America	1856	63	United States of America	Johns Hopkins University, Princeton University, Davidson College, University of Virginia
+Johannes Stark	1919 - Physics	Male	Germany	1874	45	Germany	Ludwig Maximilian University of Munich
+Walther Nernst	1920 - Chemestry	Male	Germany	1864	56	Germany	Humboldt University of Berlin, University of Würzburg, University of Zurich, University of Graz
+Knut Hamsun	1920 - Literature	Male	Norway	1859	61	Norway
+Léon Bourgeois	1920 - Peace	Male	France	1851	69	France
+Charles Édouard Guillaume	1920 - Physics	Male	Switzerland	1861	59	Switzerland	ETH Zurich
+Frederick Soddy	1921 - Chemestry	Male	United Kingdom	1877	44	United Kingdom	University of Oxford, Aberystwyth University
+Anatole France	1921 - Literature	Male	France	1844	77	France
+Hjalmar Branting	1921 - Peace	Male	Sweden	1860	61	Sweden
+Albert Einstein	1921 - Physics	Male	Germany	1879	42	Germany, Switzerland	ETH Zurich, University of Zurich
+Francis William Aston	1922 - Chemestry	Male	United Kingdom	1877	45	United Kingdom	University of Cambridge, University of Birmingham
+Jacinto Benavente	1922 - Literature	Male	Spain	1866	56	Spain
+Otto Fritz Meyerhof	1922 - Medicine / Physiology	Male	Germany	1884	38	Germany	Heidelberg University, University of Strasbourg
+Archibald Hill	1922 - Medicine / Physiology	Male	United Kingdom	1886	36	United Kingdom	University of Cambridge
+Fridtjof Nansen	1922 - Peace	Male	Norway	1861	61	Norway
+Niels Bohr	1922 - Physics	Male	Denmark	1885	37	Denmark	University of Copenhagen
+Fritz Pregl	1923 - Chemestry	Male	Slovenia	1869	54	Austria, Slovenia	University of Graz
+W. B. Yeats	1923 - Literature	Male	Ireland	1865	58	Ireland
+Frederick Banting	1923 - Medicine / Physiology	Male	Canada	1891	32	Canada	University of Toronto
+John James Rickard Macleod	1923 - Medicine / Physiology	Male	United Kingdom	1876	47	United Kingdom	University of Aberdeen
+Robert Andrews Millikan	1923 - Physics	Male	United States of America	1868	55	United States of America	Columbia University, Oberlin College
+Władysław Reymont	1924 - Literature	Male	Poland	1867	57	Poland
+Willem Einthoven	1924 - Medicine / Physiology	Male	Indonesia	1860	64	Netherlands	Utrecht University
+Manne Siegbahn	1924 - Physics	Male	Sweden	1886	38	Sweden	Lund University
+Richard Adolf Zsigmondy	1925 - Chemestry	Male	Austria	1865	60	Austria, Hungary	Ludwig Maximilian University of Munich, Vienna University of Technology
+George Bernard Shaw	1925 - Literature	Male	Ireland	1856	69	Ireland
+Austen Chamberlain	1925 - Peace	Male	United Kingdom	1863	62	United Kingdom
+Charles G. Dawes	1925 - Peace	Male	United States of America	1865	60	United States of America	University of Cincinnati, Marietta College
+Gustav Ludwig Hertz	1925 - Physics	Male	Germany	1887	38	Germany	Humboldt University of Berlin
+James Franck	1925 - Physics	Male	Germany	1882	43	Germany	Heidelberg University, Humboldt University of Berlin
+Theodor Svedberg	1926 - Chemestry	Male	Sweden	1884	42	Sweden	Uppsala University
+Grazia Deledda	1926 - Literature	Female	Italy	1871	55	Italy
+Johannes Fibiger	1926 - Medicine / Physiology	Male	Denmark	1867	59	Denmark
+Gustav Stresemann	1926 - Peace	Male	Germany	1878	48	Germany
+Aristide Briand	1926 - Peace	Male	France	1862	64	France
+Jean Baptiste Perrin	1926 - Physics	Male	France	1870	56	France	École Normale Supérieure
+Heinrich Otto Wieland	1927 - Chemestry	Male	Germany	1877	50	Germany	Ludwig Maximilian University of Munich
+Henri Bergson	1927 - Literature	Male	France	1859	68	France
+Julius Wagner-Jauregg	1927 - Medicine / Physiology	Male	Austria	1857	70	Austria	University of Vienna
+Ludwig Quidde	1927 - Peace	Male	Germany	1858	69	Germany
+Ferdinand Buisson	1927 - Peace	Male	France	1841	86	France
+Charles Thomson Rees Wilson	1927 - Physics	Male	United Kingdom	1869	58	United Kingdom	University of Manchester, University of Cambridge
+Arthur Compton	1927 - Physics	Male	United States of America	1892	35	United States of America	Princeton University, College of Wooster
+Adolf Otto Reinhold Windaus	1928 - Chemestry	Male	Germany	1876	52	Germany
+Sigrid Undset	1928 - Literature	Female	Denmark	1882	46	Norway
+Charles Nicolle	1928 - Medicine / Physiology	Male	France	1866	62	France
+Owen Willans Richardson	1928 - Physics	Male	United Kingdom	1879	49	United Kingdom	University College London, University of Cambridge
+Arthur Harden	1929 - Chemestry	Male	United Kingdom	1865	64	United Kingdom	University of Manchester, University of Erlangen-Nuremberg
+Hans von Euler-Chelpin	1929 - Chemestry	Male	Germany	1873	56	Germany, Sweden	Humboldt University of Berlin
+Thomas Mann	1929 - Literature	Male	Germany	1875	54	Germany
+Christiaan Eijkman	1929 - Medicine / Physiology	Male	Netherlands	1858	71	Netherlands
+Frederick Gowland Hopkins	1929 - Medicine / Physiology	Male	United Kingdom	1861	68	United Kingdom	King's College
+Frank B. Kellogg	1929 - Peace	Male	United States of America	1856	73	United States of America
+Louis de Broglie	1929 - Physics	Male	France	1892	37	France	University of Paris
+Hans Fischer	1930 - Chemestry	Male	Germany	1881	49	Germany	University of Lausanne, University of Marburg
+Sinclair Lewis	1930 - Literature	Male	United States of America	1885	45	United States of America
+Karl Landsteiner	1930 - Medicine / Physiology	Male	Austria	1868	62	Austria	University of Vienna
+Nathan Söderblom	1930 - Peace	Male	Sweden	1866	64	Sweden	Uppsala University
+C. V. Raman	1930 - Physics	Male	India	1888	42	India	University of Madras
+Friedrich Bergius	1931 - Chemestry	Male	Germany	1884	47	Germany	University of Wrocław, Leipzig University
+Carl Bosch	1931 - Chemestry	Male	Germany	1874	57	Germany	Technical University of Berlin
+Erik Axel Karlfeldt	1931 - Literature	Male	Sweden	1864	67	Sweden
+Otto Heinrich Warburg	1931 - Medicine / Physiology	Male	Germany	1883	48	Germany	Heidelberg University, Humboldt University of Berlin
+Jane Addams	1931 - Peace	Female	United States of America	1860	71	United States of America
+Nicholas Murray Butler	1931 - Peace	Male	United States of America	1862	69	United States of America
+Irving Langmuir	1932 - Chemestry	Male	United States of America	1881	51	United States of America	Columbia University, University of Göttingen
+John Galsworthy	1932 - Literature	Male	United Kingdom	1867	65	United Kingdom
+Edgar Adrian	1932 - Medicine / Physiology	Male	United Kingdom	1889	43	United Kingdom	University of Cambridge
+Charles Scott Sherrington	1932 - Medicine / Physiology	Male	United Kingdom	1857	75	United Kingdom	University of Cambridge, Royal College of Surgeons of England
+Werner Heisenberg	1932 - Physics	Male	Germany	1901	31	Germany	Ludwig Maximilian University of Munich
+Ivan Bunin	1933 - Literature	Male	Russia	1870	63	France, Russia
+Thomas Hunt Morgan	1933 - Medicine / Physiology	Male	United States of America	1866	67	United States of America	Johns Hopkins University, University of Kentucky
+Norman Angell	1933 - Peace	Male	United Kingdom	1872	61	United Kingdom
+Erwin Schrödinger	1933 - Physics	Male	Austria	1887	46	Austria	University of Vienna
+Paul Dirac	1933 - Physics	Male	United Kingdom	1902	31	United Kingdom	University of Bristol, University of Cambridge
+Harold Urey	1934 - Chemestry	Male	United States of America	1893	41	United States of America	University of California - Berkeley, University of Montana, Earlham College
+Luigi Pirandello	1934 - Literature	Male	Italy	1867	67	Italy
+George Whipple	1934 - Medicine / Physiology	Male	United States of America	1878	56	United States of America	Johns Hopkins University
+George Minot	1934 - Medicine / Physiology	Male	United States of America	1885	49	United States of America	Harvard University
+Arthur Henderson	1934 - Peace	Male	United Kingdom	1863	71	United Kingdom
+Frédéric Joliot-Curie	1935 - Chemestry	Male	France	1900	35	France	Institut des sciences et technologies de Paris
+Irène Joliot-Curie	1935 - Chemestry	Female	France	1897	38	France	University of Paris
+Hans Spemann	1935 - Medicine / Physiology	Male	Germany	1869	66	Germany
+Carl von Ossietzky	1935 - Peace	Male	Germany	1889	46	Germany
+James Chadwick	1935 - Physics	Male	United Kingdom	1891	44	United Kingdom	University of Manchester, University of Cambridge
+Peter Debye	1936 - Chemestry	Male	Netherlands	1884	52	Netherlands	Ludwig Maximilian University of Munich, RWTH Aachen University
+Eugene O'Neill	1936 - Literature	Male	United States of America	1888	48	United States of America
+Henry Hallett Dale	1936 - Medicine / Physiology	Male	United Kingdom	1875	61	United Kingdom
+Otto Loewi	1936 - Medicine / Physiology	Male	Germany	1873	63	Austria	University of Strasbourg
+Carlos Saavedra Lamas	1936 - Peace	Male	Argentina	1878	58	Argentina
+Carl David Anderson	1936 - Physics	Male	United States of America	1905	31	United States of America	California Institute of Technology
+Victor Francis Hess	1936 - Physics	Male	Austria	1883	53	Austria	University of Graz
+Norman Haworth	1937 - Chemestry	Male	United Kingdom	1883	54	United Kingdom	University of Manchester, University of Göttingen
+Paul Karrer	1937 - Chemestry	Male	Russia	1889	48	Switzerland	University of Zurich
+Roger Martin du Gard	1937 - Literature	Male	France	1881	56	France
+Albert Szent-Györgyi	1937 - Medicine / Physiology	Male	Hungary	1893	44	Hungary	University of Cambridge, Semmelweis University
+Clinton Davisson	1937 - Physics	Male	United States of America	1881	56	United States of America	University of Chicago, Princeton University
+George Paget Thomson	1937 - Physics	Male	United Kingdom	1892	45	United Kingdom	University of Cambridge
+Richard Kuhn	1938 - Chemestry	Male	Austria	1900	38	Austria, Germany
+Pearl S. Buck	1938 - Literature	Female	United States of America	1892	46	United States of America
+Corneille Heymans	1938 - Medicine / Physiology	Male	Belgium	1892	46	Belgium	Ghent University
+Enrico Fermi	1938 - Physics	Male	Italy	1901	37	Italy	Scuola Normale Superiore di Pisa
+Adolf Butenandt	1939 - Chemestry	Male	Germany	1903	36	Germany
+Leopold Ružička	1939 - Chemestry	Male	Croatia	1887	52	Croatia, Switzerland	Karlsruhe Institute of Technology
+Frans Eemil Sillanpää	1939 - Literature	Male	Finland	1888	51	Finland
+Gerhard Domagk	1939 - Medicine / Physiology	Male	Germany	1895	44	Germany	University of Kiel
+Ernest Lawrence	1939 - Physics	Male	United States of America	1901	38	United States of America	Yale University, University of Minnesota, University of South Dakota
+George de Hevesy	1943 - Chemestry	Male	Hungary	1885	58	Hungary	University of Freiburg
+Edward Adelbert Doisy	1943 - Medicine / Physiology	Male	United States of America	1893	50	United States of America
+Otto Stern	1943 - Physics	Male	Poland	1888	55	Germany, United States of America	University of Wrocław, Goethe University Frankfurt
+Otto Hahn	1944 - Chemestry	Male	Germany	1879	65	Germany	University of Marburg
+Johannes Vilhelm Jensen	1944 - Literature	Male	Denmark	1873	71	Denmark
+Joseph Erlanger	1944 - Medicine / Physiology	Male	United States of America	1874	70	United States of America	Johns Hopkins University
+Herbert Spencer Gasser	1944 - Medicine / Physiology	Male	United States of America	1888	56	United States of America	Johns Hopkins University, University of Wisconsin
+Isidor Isaac Rabi	1944 - Physics	Male	Poland	1898	46	United States of America	Columbia University, Cornell University
+Artturi Ilmari Virtanen	1945 - Chemestry	Male	Finland	1895	50	Finland	University of Helsinki
+Gabriela Mistral	1945 - Literature	Female	Chile	1889	56	Chile
+Howard Florey	1945 - Medicine / Physiology	Male	Australia	1898	47	Australia	University of Adelaide
+Ernst Boris Chain	1945 - Medicine / Physiology	Male	Germany	1906	39	Germany, United Kingdom	Humboldt University of Berlin
+Alexander Fleming	1945 - Medicine / Physiology	Male	United Kingdom	1881	64	United Kingdom	Imperial College London, University of Westminster
+Cordell Hull	1945 - Peace	Male	United States of America	1871	74	United States of America	Samford University
+Wolfgang Pauli	1945 - Physics	Male	Austria	1900	45	Austria	Ludwig Maximilian University of Munich
+John Howard Northrop	1946 - Chemestry	Male	United States of America	1891	55	United States of America	Columbia University
+James B. Sumner	1946 - Chemestry	Male	United States of America	1887	59	United States of America	Harvard University
+Wendell Meredith Stanley	1946 - Chemestry	Male	United States of America	1904	42	United States of America	Earlham College
+Hermann Hesse	1946 - Literature	Male	Germany	1877	69	Switzerland
+Hermann Joseph Muller	1946 - Medicine / Physiology	Male	United States of America	1890	56	United States of America
+Emily Greene Balch	1946 - Peace	Female	United States of America	1867	79	United States of America
+Percy Williams Bridgman	1946 - Physics	Male	United States of America	1882	64	United States of America	Harvard University
+Robert Robinson	1947 - Chemestry	Male	United Kingdom	1886	61	United Kingdom	University of Manchester
+André Gide	1947 - Literature	Male	France	1869	78	France
+Carl Ferdinand Cori	1947 - Medicine / Physiology	Male	Czech Republic	1896	51	Czech Republic	Charles University in Prague
+Bernardo Houssay	1947 - Medicine / Physiology	Male	Argentina	1887	60	Argentina
+Gerty Cori	1947 - Medicine / Physiology	Female	Czech Republic	1896	51	Czech Republic, United States of America	Charles University in Prague
+Edward Victor Appleton	1947 - Physics	Male	United Kingdom	1892	55	United Kingdom	University of Cambridge
+Arne Tiselius	1948 - Chemestry	Male	Sweden	1902	46	Sweden	Uppsala University
+T. S. Eliot	1948 - Literature	Male	United States of America	1888	60	United States of America	University of Oxford, Harvard University
+Paul Hermann Müller	1948 - Medicine / Physiology	Male	Switzerland	1899	49	Switzerland	University of Basel
+Patrick Blackett	1948 - Physics	Male	United Kingdom	1897	51	United Kingdom	University of Cambridge
+William Giauque	1949 - Chemestry	Male	Canada	1895	54	Canada, United States of America	University of California - Berkeley
+William Faulkner	1949 - Literature	Male	United States of America	1897	52	United States of America
+António Egas Moniz	1949 - Medicine / Physiology	Male	Portugal	1874	75	Portugal	University of Coimbra
+Walter Rudolf Hess	1949 - Medicine / Physiology	Male	Switzerland	1881	68	Switzerland	University of Zurich
+John Boyd Orr	1949 - Peace	Male	United Kingdom	1880	69	United Kingdom	University of Glasgow
+Hideki Yukawa	1949 - Physics	Male	Japan	1907	42	Japan	Kyoto University
+Kurt Alder	1950 - Chemestry	Male	Germany	1902	48	Germany	Humboldt University of Berlin, University of Kiel
+Otto Diels	1950 - Chemestry	Male	Germany	1876	74	Germany	Humboldt University of Berlin
+Bertrand Russell	1950 - Literature	Male	United Kingdom	1872	78	United Kingdom
+Edward Calvin Kendall	1950 - Medicine / Physiology	Male	United States of America	1886	64	United States of America	Columbia University
+Philip Showalter Hench	1950 - Medicine / Physiology	Male	United States of America	1896	54	United States of America	Lafayette College, University of Pittsburgh
+Tadeus Reichstein	1950 - Medicine / Physiology	Male	Poland	1897	53	Poland, Switzerland
+Ralph Bunche	1950 - Peace	Male	United States of America	1903	47	United States of America
+C. F. Powell	1950 - Physics	Male	United Kingdom	1903	47	United Kingdom	University of Cambridge
+Glenn T. Seaborg	1951 - Chemestry	Male	United States of America	1912	39	United States of America	University of California - Los Angeles
+Edwin McMillan	1951 - Chemestry	Male	United States of America	1907	44	United States of America	California Institute of Technology, Princeton University
+Pär Lagerkvist	1951 - Literature	Male	Sweden	1891	60	Sweden
+Max Theiler	1951 - Medicine / Physiology	Male	South Africa	1899	52	South Africa
+John Cockcroft	1951 - Physics	Male	United Kingdom	1897	54	United Kingdom	University of Cambridge, University of Manchester, Victoria University - Manchester
+Ernest Walton	1951 - Physics	Male	Ireland	1903	48	Ireland
+Richard Laurence Millington Synge	1952 - Chemestry	Male	United Kingdom	1914	38	United Kingdom	University of Cambridge
+Archer John Porter Martin	1952 - Chemestry	Male	United Kingdom	1910	42	United Kingdom	University of Cambridge
+François Mauriac	1952 - Literature	Male	France	1885	67	France
+Selman Waksman	1952 - Medicine / Physiology	Male	Ukraine	1888	64	Ukraine, United States of America	University of California - Berkeley, Rutgers University
+Albert Schweitzer	1952 - Peace	Male	Germany	1875	77	France, Germany
+Edward Mills Purcell	1952 - Physics	Male	United States of America	1912	40	United States of America	Purdue University, Harvard University
+Felix Bloch	1952 - Physics	Male	Switzerland	1905	47	Switzerland, United States of America	ETH Zurich, Leipzig University
+Hermann Staudinger	1953 - Chemestry	Male	Germany	1881	72	Germany	Martin Luther University of Halle-Wittenberg
+Winston Churchill	1953 - Literature	Male	United Kingdom	1874	79	United Kingdom	Harrow School, Royal Military Academy Sandhurst
+Fritz Albert Lipmann	1953 - Medicine / Physiology	Male	Germany	1899	54	Germany	University of Königsberg, Humboldt University of Berlin, Kaiser Wilhelm Society, Ludwig Maximilian University of Munich
+Hans Adolf Krebs	1953 - Medicine / Physiology	Male	Germany	1900	53	Germany, United Kingdom	University of Göttingen, Humboldt University of Berlin, University of Freiburg, University of Hamburg
+George Marshall	1953 - Peace	Male	United States of America	1880	73	United States of America	Virginia Military Institute
+Frits Zernike	1953 - Physics	Male	Netherlands	1888	65	Netherlands	University of Amsterdam
+Linus Pauling	1954 - Chemestry, 1962 - Peace	Male	United States of America	1901	53	United States of America, United States of America	California Institute of Technology, Oregon State University
+Ernest Hemingway	1954 - Literature	Male	United States of America	1899	55	United States of America
+Thomas Huckle Weller	1954 - Medicine / Physiology	Male	United States of America	1915	39	United States of America	University of Michigan, Harvard University
+Frederick Chapman Robbins	1954 - Medicine / Physiology	Male	United States of America	1916	38	United States of America	Harvard University, University of Missouri
+John Franklin Enders	1954 - Medicine / Physiology	Male	United States of America	1897	57	United States of America	Yale University
+Walther Bothe	1954 - Physics	Male	Germany	1891	63	Germany	Humboldt University of Berlin
+Max Born	1954 - Physics	Male	Germany	1882	72	Germany, United Kingdom	University of Göttingen
+Vincent du Vigneaud	1955 - Chemestry	Male	United States of America	1901	54	United States of America	University of Rochester
+Halldór Laxness	1955 - Literature	Male	Iceland	1902	53	Iceland
+Hugo Theorell	1955 - Medicine / Physiology	Male	Sweden	1903	52	Sweden
+Polykarp Kusch	1955 - Physics	Male	Germany	1911	44	United States of America	Case Western Reserve University, University of Illinois
+Willis Lamb	1955 - Physics	Male	United States of America	1913	42	United States of America	University of California - Berkeley
+Cyril Norman Hinshelwood	1956 - Chemestry	Male	United Kingdom	1897	59	United Kingdom	University of Oxford
+Nikolay Semyonov	1956 - Chemestry	Male	Russia	1896	60	Russia
+Juan Ramón Jiménez	1956 - Literature	Male	Spain	1881	75	Spain
+Dickinson W. Richards	1956 - Medicine / Physiology	Male	United States of America	1895	61	United States of America	Yale University, Columbia University
+André Frédéric Cournand	1956 - Medicine / Physiology	Male	France	1895	61	France
+Werner Forssmann	1956 - Medicine / Physiology	Male	Germany	1904	52	Germany	Humboldt University of Berlin
+Walter Houser Brattain	1956 - Physics	Male	China	1902	54	United States of America	University of Minnesota, Whitman College, University of Oregon
+William Shockley	1956 - Physics	Male	United Kingdom	1910	46	United States of America	California Institute of Technology, Massachusetts Institute of Technology
+John Bardeen	1956 - Physics,	Male	United States of America	1908	48	United States of America, United States of America	Princeton University, University of Wisconsin
+Albert Camus	1957 - Literature	Male	Algeria	1913	44	France
+Daniel Bovet	1957 - Medicine / Physiology	Male	Switzerland	1907	50	Italy, Switzerland
+Lester B. Pearson	1957 - Peace	Male	Canada	1897	60	Canada	University of Oxford, University of Toronto
+Tsung-Dao Lee	1957 - Physics	Male	China	1926	31	China, United States of America	University of Chicago, Zhejiang University, National Southwestern Associated University
+Chen Ning Yang	1957 - Physics	Male	China	1922	35	China, United States of America	University of Chicago, Tsinghua University, National Southwestern Associated University
+Frederick Sanger	1958 - Chemestry, 1980 - Chemestry	Male	United Kingdom	1918	40	United Kingdom, United Kingdom	University of Cambridge
+Boris Pasternak	1958 - Literature	Male	Russia	1890	68	Russia
+Joshua Lederberg	1958 - Medicine / Physiology	Male	United States of America	1925	33	United States of America	Yale University, Columbia University
+Edward Lawrie Tatum	1958 - Medicine / Physiology	Male	United States of America	1909	49	United States of America	University of Chicago, University of Wisconsin
+George Wells Beadle	1958 - Medicine / Physiology	Male	United States of America	1903	55	United States of America	University of Nebraska–Lincoln, Cornell University
+Dominique Pire	1958 - Peace	Male	Belgium	1910	48	Belgium	Catholic University of Leuven, Pontifical University of Saint Thomas Aquinas
+Igor Tamm	1958 - Physics	Male	Russia	1895	63	Russia	University of Edinburgh, Moscow State University
+Ilya Frank	1958 - Physics	Male	Russia	1908	50	Russia	Moscow State University
+Pavel Cherenkov	1958 - Physics	Male	Russia	1904	54	Russia	Voronezh State University
+Jaroslav Heyrovský	1959 - Chemestry	Male	Germany	1890	69	Czech Republic	Charles University in Prague, University College London
+Salvatore Quasimodo	1959 - Literature	Male	Italy	1901	58	Italy
+Arthur Kornberg	1959 - Medicine / Physiology	Male	United States of America	1918	41	United States of America	University of Rochester
+Severo Ochoa	1959 - Medicine / Physiology	Male	Spain	1905	54	Spain, United Kingdom, United States of America
+Philip Noel-Baker	1959 - Peace	Male	United States of America	1889	70	United Kingdom	Haverford College
+Owen Chamberlain	1959 - Physics	Male	United States of America	1920	39	United States of America	University of California - Berkeley, University of Chicago, Dartmouth College
+Emilio G. Segrè	1959 - Physics	Male	Italy	1905	54	Italy	Sapienza University of Rome
+Willard Libby	1960 - Chemestry	Male	United States of America	1908	52	United States of America	University of California - Berkeley, University of California - Berkeley
+Saint-John Perse	1960 - Literature	Male	Guadeloupe	1887	73	France
+Frank Macfarlane Burnet	1960 - Medicine / Physiology	Male	Australia	1899	61	Australia
+Peter Medawar	1960 - Medicine / Physiology	Male	Brazil	1915	45	Brazil, United Kingdom	University of Oxford
+Albert Lutuli	1960 - Peace	Male	South Africa	1898	62	South Africa
+Donald A. Glaser	1960 - Physics	Male	United States of America	1926	34	United States of America	California Institute of Technology, Case School of Engineering
+Melvin Calvin	1961 - Chemestry	Male	United States of America	1911	50	United States of America	Michigan Technological University, University of Minnesota
+Ivo Andrić	1961 - Literature	Male	Bosnia and Herzegovina	1892	69	Yugoslavia
+Georg von Békésy	1961 - Medicine / Physiology	Male	Hungary	1899	62	United States of America
+Dag Hammarskjöld	1961 - Peace	Male	Sweden	1905	56	Sweden
+Robert Hofstadter	1961 - Physics	Male	United States of America	1915	46	United States of America	Princeton University, City University of New York
+Rudolf Mössbauer	1961 - Physics	Male	Germany	1929	32	Germany	Technische Universität München
+John Kendrew	1962 - Chemestry	Male	United Kingdom	1917	45	United Kingdom	University of Cambridge
+Max Perutz	1962 - Chemestry	Male	Austria	1914	48	United Kingdom	University of Cambridge, University of Vienna
+John Steinbeck	1962 - Literature	Male	United States of America	1902	60	United States of America
+Francis Crick	1962 - Medicine / Physiology	Male	United Kingdom	1916	46	United Kingdom	University College London, University of Cambridge
+Maurice Wilkins	1962 - Medicine / Physiology	Male	New Zealand	1916	46	New Zealand, United Kingdom	University of Cambridge
+James D. Watson	1962 - Medicine / Physiology	Male	United States of America	1928	34	United States of America	University of Chicago, Indiana University
+Lev Landau	1962 - Physics	Male	Azerbaijan	1908	54	Azerbaijan	Baku State University, Saint Petersburg State University, Russian Academy of Sciences
+Karl Ziegler	1963 - Chemestry	Male	Germany	1898	65	Germany	University of Marburg
+Giulio Natta	1963 - Chemestry	Male	Italy	1903	60	Italy	Polytechnic University of Milan
+Giorgos Seferis	1963 - Literature	Male	Turkey	1900	63	Greece
+John Eccles	1963 - Medicine / Physiology	Male	Australia	1903	60	Australia	University of Oxford, University of Melbourne
+Alan Lloyd Hodgkin	1963 - Medicine / Physiology	Male	United Kingdom	1914	49	United Kingdom	University of Cambridge
+Andrew Huxley	1963 - Medicine / Physiology	Male	United Kingdom	1917	46	United Kingdom	University of Cambridge
+Maria Goeppert-Mayer	1963 - Physics	Female	Germany	1906	57	Germany, United States of America	University of Göttingen
+J. Hans D. Jensen	1963 - Physics	Male	Germany	1907	56	Germany	University of Hamburg
+Eugene Wigner	1963 - Physics	Male	Hungary	1902	61	Hungary, United States of America	Technical University of Berlin
+Dorothy Hodgkin	1964 - Chemestry	Female	Egypt	1910	54	United Kingdom	University of Oxford, University of Cambridge
+Jean-Paul Sartre	1964 - Literature	Male	France	1905	59	France
+Feodor Felix Konrad Lynen	1964 - Medicine / Physiology	Male	Germany	1911	53	Germany
+Martin Luther King Jr.	1964 - Peace	Male	United States of America	1929	35	United States of America	Boston University, Morehouse College, Crozer Theological Seminary
+Charles Hard Townes	1964 - Physics	Male	United States of America	1915	49	United States of America	Duke University, California Institute of Technology, Furman University
+Alexander Prokhorov	1964 - Physics	Male	Australia	1916	48	Australia, Russia
+Nikolay Basov	1964 - Physics	Male	Russia	1922	42	Russia	National Research Nuclear University
+Robert Burns Woodward	1965 - Chemestry	Male	United States of America	1917	48	United States of America	Massachusetts Institute of Technology
+Mikhail Sholokhov	1965 - Literature	Male	Russia	1905	60	Russia
+Jacques Monod	1965 - Medicine / Physiology	Male	France	1910	55	France
+André Michel Lwoff	1965 - Medicine / Physiology	Male	France	1902	63	France	Pasteur Institute
+François Jacob	1965 - Medicine / Physiology	Male	France	1920	45	France	University of Paris
+Richard Feynman	1965 - Physics	Male	United States of America	1918	47	United States of America	Massachusetts Institute of Technology, Princeton University
+Julian Schwinger	1965 - Physics	Male	United States of America	1918	47	United States of America	Columbia University, City University of New York
+Sin-Itiro Tomonaga	1965 - Physics	Male	Japan	1906	59	Japan	Kyoto University
+Robert S. Mulliken	1966 - Chemestry	Male	United States of America	1896	70	United States of America	University of Chicago, Massachusetts Institute of Technology
+Nelly Sachs	1966 - Literature	Female	Germany	1891	75	Germany, Sweden
+Shmuel Yosef Agnon	1966 - Literature	Male	Ukraine	1888	78	Israel, Ukraine
+Charles Brenton Huggins	1966 - Medicine / Physiology	Male	Canada	1901	65	Canada, United States of America	Acadia University, Harvard University
+Francis Peyton Rous	1966 - Medicine / Physiology	Male	United States of America	1879	87	United States of America	Johns Hopkins University, Johns Hopkins University
+Alfred Kastler	1966 - Physics	Male	France	1902	64	France
+George Porter	1967 - Chemestry	Male	United Kingdom	1920	47	United Kingdom	University of Leeds
+Manfred Eigen	1967 - Chemestry	Male	Germany	1927	40	Germany	University of Göttingen
+Ronald George Wreyford Norrish	1967 - Chemestry	Male	United Kingdom	1897	70	United Kingdom	University of Cambridge
+Miguel Ángel Asturias	1967 - Literature	Male	Guatemala	1899	68	Guatemala
+Haldan Keffer Hartline	1967 - Medicine / Physiology	Male	United States of America	1903	64	United States of America	Johns Hopkins University, Lafayette College
+George Wald	1967 - Medicine / Physiology	Male	United States of America	1906	61	United States of America
+Ragnar Granit	1967 - Medicine / Physiology	Male	Finland	1900	67	Finland, Sweden
+Hans Bethe	1967 - Physics	Male	Germany	1906	61	United States of America	Ludwig Maximilian University of Munich, Goethe University Frankfurt
+Lars Onsager	1968 - Chemestry	Male	Norway	1903	65	Norway, United States of America	Norwegian Institute of Technology
+Yasunari Kawabata	1968 - Literature	Male	Japan	1899	69	Japan
+Marshall Warren Nirenberg	1968 - Medicine / Physiology	Male	United States of America	1927	41	United States of America
+Har Gobind Khorana	1968 - Medicine / Physiology	Male	Pakistan	1922	46	India, United States of America	University of the Punjab, University of Liverpool
+Luis Walter Alvarez	1968 - Physics	Male	United States of America	1911	57	United States of America	University of Chicago
+Derek Barton	1969 - Chemestry	Male	United Kingdom	1918	51	United Kingdom	Imperial College London
+Odd Hassel	1969 - Chemestry	Male	Norway	1897	72	Norway	University of Oslo
+Ragnar Frisch	1969 - Economics	Male	Norway	1895	74	Norway	University of Oslo
+Jan Tinbergen	1969 - Economics	Male	The Netherlands	1903	66	Netherlands	Leiden University
+Samuel Beckett	1969 - Literature	Male	Ireland	1906	63	Ireland
+Alfred Hershey	1969 - Medicine / Physiology	Male	United States of America	1908	61	United States of America	Michigan State University
+Max Delbrück	1969 - Medicine / Physiology	Male	Germany	1906	63	Germany, United States of America
+Salvador Luria	1969 - Medicine / Physiology	Male	Italy	1912	57	Italy, United States of America	University of Turin
+Murray Gell-Mann	1969 - Physics	Male	United States of America	1929	40	United States of America	Yale University, Massachusetts Institute of Technology
+Luis Federico Leloir	1970 - Chemestry	Male	France	1906	64	Argentina, France	University of Buenos Aires
+Paul Samuelson	1970 - Economics	Male	United States of America	1915	55	United States of America	University of Chicago, Harvard University
+Aleksandr Solzhenitsyn	1970 - Literature	Male	Russia	1918	52	Russia	Southern Federal University
+Julius Axelrod	1970 - Medicine / Physiology	Male	United States of America	1912	58	United States of America	City University of New York, George Washington University
+Ulf von Euler	1970 - Medicine / Physiology	Male	Sweden	1905	65	Sweden	Karolinska Institutet
+Bernard Katz	1970 - Medicine / Physiology	Male	Germany	1911	59	Germany, United Kingdom	Leipzig University
+Norman Borlaug	1970 - Peace	Male	United States of America	1914	56	United States of America	University of Minnesota
+Louis Néel	1970 - Physics	Male	France	1904	66	France	École Normale Supérieure, University of Strasbourg
+Hannes Alfvén	1970 - Physics	Male	Sweden	1908	62	Sweden	Uppsala University
+Gerhard Herzberg	1971 - Chemestry	Male	Germany	1904	67	Canada, Germany
+Simon Kuznets	1971 - Economics	Male	Belarus	1901	70	Belarus, United States of America	Columbia University, Kharkiv National University of Economics
+Pablo Neruda	1971 - Literature	Male	Chile	1904	67	Chile
+Earl Wilbur Sutherland Jr.	1971 - Medicine / Physiology	Male	United States of America	1915	56	United States of America	Washington University - St. Louis, Washburn University
+Willy Brandt	1971 - Peace	Male	Germany	1913	58	Germany
+Dennis Gabor	1971 - Physics	Male	Hungary	1900	71	United Kingdom	Budapest University of Technology and Economics, Technical University of Berlin
+Christian B. Anfinsen	1972 - Chemestry	Male	United States of America	1916	56	United States of America	University of Pennsylvania, Swarthmore College, Harvard University
+John Hicks	1972 - Economics	Male	United Kingdom	1904	68	United Kingdom	University of Oxford
+Kenneth Arrow	1972 - Economics	Male	United States of America	1921	51	United States of America	Columbia University, City University of New York
+Heinrich Böll	1972 - Literature	Male	Germany	1917	55	Germany
+Gerald Edelman	1972 - Medicine / Physiology	Male	United States of America	1929	43	United States of America	Ursinus College, Rockefeller University, University of Pennsylvania
+Rodney Robert Porter	1972 - Medicine / Physiology	Male	United Kingdom	1917	55	United Kingdom	University of Liverpool, University of Cambridge
+John Robert Schrieffer	1972 - Physics	Male	United States of America	1931	41	United States of America	Massachusetts Institute of Technology, University of Illinois
+Leon Cooper	1972 - Physics	Male	United States of America	1930	42	United States of America	Columbia University
+Ernst Otto Fischer	1973 - Chemestry	Male	Germany	1918	55	Germany	Technische Universität München
+Geoffrey Wilkinson	1973 - Chemestry	Male	United Kingdom	1921	52	United Kingdom	Imperial College London
+Wassily Leontief	1973 - Economics	Male	Germany	1906	67	Russia, United States of America	Saint Petersburg State University, Humboldt University of Berlin
+Patrick White	1973 - Literature	Male	United Kingdom	1912	61	Australia, United Kingdom	University of Cambridge
+Konrad Lorenz	1973 - Medicine / Physiology	Male	Austria	1903	70	Austria
+Nikolaas Tinbergen	1973 - Medicine / Physiology	Male	The Netherlands	1907	66	Netherlands	Leiden University
+Karl von Frisch	1973 - Medicine / Physiology	Male	Austria	1886	87	Austria
+Henry Kissinger	1973 - Peace	Male	Germany	1923	50	Germany, United States of America	Harvard University
+Le Duc Tho	1973 - Peace	Female	Vietnam	1911	62	Vietnam
+Leo Esaki	1973 - Physics	Male	Japan	1925	48	Japan
+Ivar Giaever	1973 - Physics	Male	Norway	1929	44	Norway, United States of America
+Brian David Josephson	1973 - Physics	Male	United Kingdom	1940	33	United Kingdom	University of Cambridge
+Paul Flory	1974 - Chemestry	Male	United States of America	1910	64	United States of America	Ohio State University, Manchester University - Indiana
+Friedrich Hayek	1974 - Economics	Male	Austria	1899	75	Austria, United Kingdom	University of Vienna
+Gunnar Myrdal	1974 - Economics	Male	Sweden	1898	76	Sweden	Stockholm University
+Harry Martinson	1974 - Literature	Male	Sweden	1904	70	Sweden
+Eyvind Johnson	1974 - Literature	Male	Sweden	1900	74	Sweden
+Christian de Duve	1974 - Medicine / Physiology	Male	United Kingdom	1917	57	Belgium, United Kingdom	Catholic University of Leuven
+Albert Claude	1974 - Medicine / Physiology	Male	Belgium	1899	75	Belgium	University of Liège
+George Emil Palade	1974 - Medicine / Physiology	Male	Romania	1912	62	Romania, United States of America	Carol Davila University
+Seán MacBride	1974 - Peace	Male	France	1904	70	France, Ireland	University College Dublin
+Eisaku Satō	1974 - Peace	Male	Japan	1901	73	Japan	University of Tokyo
+Martin Ryle	1974 - Physics	Male	United Kingdom	1918	56	United Kingdom
+Antony Hewish	1974 - Physics	Male	United Kingdom	1924	50	United Kingdom	University of Cambridge
+Vladimir Prelog	1975 - Chemestry	Male	Bosnia and Herzegovina	1906	69	Bosnia and Herzegovina, Switzerland	Czech Technical University in Prague
+John Cornforth	1975 - Chemestry	Male	Australia	1917	58	United Kingdom	University of Sydney, University of Oxford
+Tjalling Koopmans	1975 - Economics	Male	Netherlands	1910	65	Netherlands	Utrecht University, Leiden University
+Leonid Kantorovich	1975 - Economics	Male	Russia	1912	63	Russia	Saint Petersburg State University
+Eugenio Montale	1975 - Literature	Male	Italy	1896	79	Italy
+Howard Martin Temin	1975 - Medicine / Physiology	Male	United States of America	1934	41	United States of America	California Institute of Technology, Swarthmore College
+David Baltimore	1975 - Medicine / Physiology	Male	United States of America	1938	37	United States of America	Swarthmore College, Rockefeller University
+Renato Dulbecco	1975 - Medicine / Physiology	Male	Italy	1914	61	Italy, United States of America	University of Turin
+Andrei Sakharov	1975 - Peace	Male	Russia	1921	54	Russia	Moscow State University
+James Rainwater	1975 - Physics	Male	United States of America	1917	58	United States of America	California Institute of Technology, Columbia University
+Ben Roy Mottelson	1975 - Physics	Male	United States of America	1926	49	Denmark	Purdue University, Harvard University
+Aage Bohr	1975 - Physics	Male	Denmark	1922	53	Denmark	University of Copenhagen
+William Lipscomb	1976 - Chemestry	Male	United States of America	1919	57	United States of America	California Institute of Technology, University of Kentucky
+Milton Friedman	1976 - Economics	Male	United States of America	1912	64	United States of America	Columbia University
+Saul Bellow	1976 - Literature	Male	Canada	1915	61	Canada, United States of America	University of Chicago, Northwestern University, University of Wisconsin
+Baruch Samuel Blumberg	1976 - Medicine / Physiology	Male	United States of America	1925	51	United States of America	University of Oxford, Union College, Columbia University
+Daniel Carleton Gajdusek	1976 - Medicine / Physiology	Male	United States of America	1923	53	United States of America
+Mairead Maguire	1976 - Peace	Female	United Kingdom	1944	32	Ireland	Irish School of Ecumenics
+Betty Williams	1976 - Peace	Female	United Kingdom	1943	33	Ireland, United Kingdom
+Burton Richter	1976 - Physics	Male	United States of America	1931	45	United States of America	Massachusetts Institute of Technology
+Samuel C. C. Ting	1976 - Physics	Male	United States of America	1936	40	United States of America	University of Michigan
+Ilya Prigogine	1977 - Chemestry	Male	Russia	1917	60	Belgium, Russia	Université libre de Bruxelles
+James Meade	1977 - Economics	Male	United Kingdom	1907	70	United Kingdom	University of Cambridge, University of Oxford
+Bertil Ohlin	1977 - Economics	Male	Sweden	1899	78	Sweden	Lund University, Stockholm University, Harvard University
+Vicente Aleixandre	1977 - Literature	Male	Spain	1898	79	Spain
+Rosalyn Sussman Yalow	1977 - Medicine / Physiology	Female	United States of America	1921	56	United States of America	City University of New York, University of Illinois
+Roger Guillemin	1977 - Medicine / Physiology	Male	France	1924	53	France, United States of America	University of Burgundy, University of Montreal
+Andrew Schally	1977 - Medicine / Physiology	Male	Lithuania	1926	51	Lithuania, Poland
+Philip Warren Anderson	1977 - Physics	Male	United States of America	1923	54	United States of America	Harvard University, United States Naval Research Laboratory
+John Hasbrouck Van Vleck	1977 - Physics	Male	United States of America	1899	78	United States of America	Harvard University, University of Wisconsin
+Nevill Francis Mott	1977 - Physics	Male	United Kingdom	1905	72	United Kingdom	University of Cambridge
+Peter D. Mitchell	1978 - Chemestry	Male	United Kingdom	1920	58	United Kingdom	University of Cambridge, University of Edinburgh
+Herbert A. Simon	1978 - Economics	Male	United States of America	1916	62	United States of America	University of Chicago
+Isaac Bashevis Singer	1978 - Literature	Male	Poland	1902	76	Poland, United States of America
+Daniel Nathans	1978 - Medicine / Physiology	Male	United States of America	1928	50	United States of America	Washington University - St. Louis, University of Delaware
+Werner Arber	1978 - Medicine / Physiology	Male	Switzerland	1929	49	Switzerland
+Anwar Sadat	1978 - Peace	Male	Egypt	1918	60	Egypt
+Menachem Begin	1978 - Peace	Male	Belarus	1913	65	Belarus, Israel, Russia	University of Warsaw
+Robert Woodrow Wilson	1978 - Physics	Male	United States of America	1936	42	United States of America	California Institute of Technology, Rice University
+Arno Allan Penzias	1978 - Physics	Male	Germany	1933	45	Germany, United States of America	Columbia University, City University of New York
+Pyotr Kapitsa	1978 - Physics	Male	Russia	1894	84	Russia
+Georg Wittig	1979 - Chemestry	Male	Germany	1897	82	Germany	University of Marburg
+Herbert C. Brown	1979 - Chemestry	Male	United Kingdom	1912	67	United States of America	University of Chicago
+Theodore Schultz	1979 - Economics	Male	United States of America	1902	77	United States of America	University of Wisconsin
+Arthur Lewis	1979 - Economics	Male	Saint Lucia	1915	64	United Kingdom, Saint Lucia	London School of Economics
+Odysseas Elytis	1979 - Literature	Male	Greece	1911	68	Greece
+Allan McLeod Cormack	1979 - Medicine / Physiology	Male	South Africa	1924	55	South Africa, United States of America
+Godfrey Hounsfield	1979 - Medicine / Physiology	Male	United Kingdom	1919	60	United Kingdom
+Mother Teresa	1979 - Peace	Female	Macedonia	1910	69	India, Macedonia
+Sheldon Lee Glashow	1979 - Physics	Male	United States of America	1932	47	United States of America	Harvard University, Cornell University
+Steven Weinberg	1979 - Physics	Male	United States of America	1933	46	United States of America	Princeton University, Cornell University
+Abdus Salam	1979 - Physics	Male	Pakistan	1926	53	Pakistan
+Paul Berg	1980 - Chemestry	Male	United States of America	1926	54	United States of America	Case Western Reserve University, Pennsylvania State University
+Walter Gilbert	1980 - Chemestry	Male	United States of America	1932	48	United States of America	University of Cambridge, Harvard University
+Lawrence Klein	1980 - Economics	Male	United States of America	1920	60	United States of America	University of California - Berkeley, Massachusetts Institute of Technology
+Czesław Miłosz	1980 - Literature	Male	Poland	1911	69	Lithuania, Poland, United States of America
+George Davis Snell	1980 - Medicine / Physiology	Male	United States of America	1903	77	United States of America
+Jean Dausset	1980 - Medicine / Physiology	Male	France	1916	64	France
+Baruj Benacerraf	1980 - Medicine / Physiology	Male	Venezuela	1920	60	United States of America, Venezuela	Columbia University, Virginia Commonwealth University
+Adolfo Pérez Esquivel	1980 - Peace	Male	Argentina	1931	49	Argentina	National University of La Plata
+James Cronin	1980 - Physics	Male	United States of America	1931	49	United States of America	University of Chicago, Southern Methodist University
+Val Logsdon Fitch	1980 - Physics	Male	United States of America	1923	57	United States of America	Columbia University, McGill University
+Roald Hoffmann	1981 - Chemestry	Male	Ukraine	1937	44	Poland, Ukraine, United States of America	Columbia University, Harvard University
+Kenichi Fukui	1981 - Chemestry	Male	Japan	1918	63	Japan
+James Tobin	1981 - Economics	Male	United States of America	1918	63	United States of America	Harvard University
+Elias Canetti	1981 - Literature	Male	Bulgaria	1905	76	Bulgaria, United Kingdom
+Roger Wolcott Sperry	1981 - Medicine / Physiology	Male	United States of America	1913	68	United States of America	University of Chicago, Oberlin College
+David H. Hubel	1981 - Medicine / Physiology	Male	Canada	1926	55	Canada, United States of America	McGill University
+Torsten Wiesel	1981 - Medicine / Physiology	Male	Sweden	1924	57	Sweden
+Arthur Leonard Schawlow	1981 - Physics	Male	United States of America	1921	60	United States of America	University of Toronto
+Nicolaas Bloembergen	1981 - Physics	Male	Netherlands	1920	61	Netherlands, United States of America	Utrecht University, Leiden University
+Kai Siegbahn	1981 - Physics	Male	Sweden	1918	63	Sweden	Stockholm University
+Aaron Klug	1982 - Chemestry	Male	Lithuania	1926	56	Lithuania, South Africa, United Kingdom	University of Cambridge
+George Stigler	1982 - Economics	Male	United States of America	1911	71	United States of America	University of Chicago, University of Washington, Northwestern University
+Gabriel García Márquez	1982 - Literature	Male	Colombia	1927	55	Colombia	University of Cartagena
+John Vane	1982 - Medicine / Physiology	Male	United Kingdom	1927	55	United Kingdom	University of Oxford, University of Birmingham
+Sune Bergström	1982 - Medicine / Physiology	Male	Sweden	1916	66	Sweden
+Alfonso García Robles	1982 - Peace	Male	Mexico	1911	71	Mexico	National Autonomous University of Mexico
+Alva Myrdal	1982 - Peace	Female	Sweden	1902	80	Sweden
+Kenneth G. Wilson	1982 - Physics	Male	United States of America	1936	46	United States of America	California Institute of Technology, Harvard University
+Henry Taube	1983 - Chemestry	Male	Canada	1915	68	Canada, United States of America	University of California - Berkeley, University of Saskatchewan
+Gérard Debreu	1983 - Economics	Male	France	1921	62	France, United States of America	University of California - Berkeley
+William Golding	1983 - Literature	Male	United Kingdom	1911	72	United Kingdom
+Barbara McClintock	1983 - Medicine / Physiology	Female	United States of America	1902	81	United States of America	Cornell University
+Lech Wałęsa	1983 - Peace	Male	Poland	1943	40	Poland
+William Alfred Fowler	1983 - Physics	Male	United States of America	1911	72	United States of America
+Subrahmanyan Chandrasekhar	1983 - Physics	Male	Pakistan	1910	73	India, United States of America	University of Cambridge, Presidency College - Chennai
+Robert Bruce Merrifield	1984 - Chemestry	Male	United States of America	1921	63	United States of America
+Richard Stone	1984 - Economics	Male	United Kingdom	1913	71	United Kingdom	University of Cambridge
+Jaroslav Seifert	1984 - Literature	Male	Czech Republic	1901	83	Czech Republic
+César Milstein	1984 - Medicine / Physiology	Male	Argentina	1927	57	Argentina, United Kingdom	University of Buenos Aires, University of Cambridge
+Georges J. F. Köhler	1984 - Medicine / Physiology	Male	Germany	1946	38	Switzerland
+Desmond Tutu	1984 - Peace	Male	South Africa	1931	53	South Africa	King's College
+Simon van der Meer	1984 - Physics	Male	The Netherlands	1925	59	Netherlands	Delft University of Technology
+Carlo Rubbia	1984 - Physics	Male	Italy	1934	50	Italy	Columbia University, Scuola Normale Superiore di Pisa
+Jerome Karle	1985 - Chemestry	Male	United States of America	1918	67	United States of America	University of Michigan, Harvard University, City University of New York
+Herbert A. Hauptman	1985 - Chemestry	Male	United States of America	1917	68	United States of America	University of Maryland
+Franco Modigliani	1985 - Economics	Male	Italy	1918	67	Italy, United States of America	The New School
+Claude Simon	1985 - Literature	Male	Madagascar	1913	72	France
+Joseph L. Goldstein	1985 - Medicine / Physiology	Male	United States of America	1940	45	United States of America	Washington and Lee University, University of Texas
+Michael Stuart Brown	1985 - Medicine / Physiology	Male	United States of America	1941	44	United States of America	University of Pennsylvania, University of Pennsylvania
+Klaus von Klitzing	1985 - Physics	Male	Germany	1943	42	Germany
+Dudley R. Herschbach	1986 - Chemestry	Male	United States of America	1932	54	United States of America	Stanford University, Harvard University
+John Polanyi	1986 - Chemestry	Male	Germany	1929	57	Canada	University of Manchester
+Yuan T. Lee	1986 - Chemestry	Male	Taiwan	1936	50	United States of America	University of California - Berkeley, National Taiwan University, National Tsing Hua University
+James M. Buchanan	1986 - Economics	Male	United States of America	1919	67	United States of America	University of Chicago, Middle Tennessee State University, University of Tennessee
+Wole Soyinka	1986 - Literature	Male	Nigeria	1934	52	Nigeria
+Stanley Cohen	1986 - Medicine / Physiology	Male	United States of America	1922	64	United States of America	University of Michigan, Oberlin College, Brooklyn College
+Rita Levi-Montalcini	1986 - Medicine / Physiology	Female	Italy	1909	77	Italy, United States of America	University of Turin
+Elie Wiesel	1986 - Peace	Male	Romania	1928	58	Romania, United States of America
+Gerd Binnig	1986 - Physics	Male	Germany	1947	39	Germany	Goethe University Frankfurt
+Ernst Ruska	1986 - Physics	Male	Germany	1906	80	Germany	Technische Universität München
+Heinrich Rohrer	1986 - Physics	Male	Switzerland	1933	53	Switzerland
+Jean-Marie Lehn	1987 - Chemestry	Male	France	1939	48	France
+Charles J. Pedersen	1987 - Chemestry	Male	South Korea	1904	83	United States of America
+Donald J. Cram	1987 - Chemestry	Male	United States of America	1919	68	United States of America	Harvard University, University of Nebraska–Lincoln, Rollins College
+Robert Solow	1987 - Economics	Male	United States of America	1924	63	United States of America	Harvard University
+Joseph Brodsky	1987 - Literature	Male	Russia	1940	47	United States of America
+Susumu Tonegawa	1987 - Medicine / Physiology	Male	Japan	1939	48	Japan	University of California - San Diego, Salk Institute for Biological Studies, Kyoto University
+Óscar Arias	1987 - Peace	Male	Costa Rica	1940	47	Costa Rica	Boston University, London School of Economics, University of Costa Rica, University of Essex
+Johannes Georg Bednorz	1987 - Physics	Male	Germany	1950	37	Germany
+Karl Alexander Müller	1987 - Physics	Male	Switzerland	1927	60	Switzerland	ETH Zurich
+Robert Huber	1988 - Chemestry	Male	Germany	1937	51	Germany
+Hartmut Michel	1988 - Chemestry	Male	Germany	1948	40	Germany	University of Tübingen
+Maurice Allais	1988 - Economics	Male	France	1911	77	France	Institut des sciences et technologies de Paris, École Polytechnique
+Naguib Mahfouz	1988 - Literature	Male	Egypt	1911	77	Egypt
+Gertrude B. Elion	1988 - Medicine / Physiology	Female	United States of America	1918	70	United States of America	City University of New York
+George H. Hitchings	1988 - Medicine / Physiology	Male	United States of America	1905	83	United States of America
+James W. Black	1988 - Medicine / Physiology	Male	United Kingdom	1924	64	United Kingdom	University of St Andrews
+Melvin Schwartz	1988 - Physics	Male	United States of America	1932	56	United States of America	Columbia University
+Leon M. Lederman	1988 - Physics	Male	United States of America	1922	66	United States of America	Columbia University, City University of New York
+Jack Steinberger	1988 - Physics	Male	Germany	1921	67	Germany, United States of America
+Sidney Altman	1989 - Chemestry	Male	Canada	1939	50	Canada, United States of America	Massachusetts Institute of Technology, University of Colorado - Boulder
+Thomas Cech	1989 - Chemestry	Male	United States of America	1947	42	United States of America	University of California - Berkeley, Grinnell College
+Trygve Haavelmo	1989 - Economics	Male	Norway	1911	78	Norway	University of Oslo
+Camilo José Cela	1989 - Literature	Male	Spain	1916	73	Spain
+Harold E. Varmus	1989 - Medicine / Physiology	Male	United States of America	1939	50	United States of America	Amherst College, Harvard University, Columbia University
+Tenzin Gyatso (The Dalai Lama)	1989 - Peace	Male	China	1935	54	China
+Norman Foster Ramsey Jr.	1989 - Physics	Male	United States of America	1915	74	United States of America	Columbia University, University of Cambridge
+Hans Georg Dehmelt	1989 - Physics	Male	Germany	1922	67	Germany, United States of America	University of Göttingen
+Wolfgang Paul	1989 - Physics	Male	Germany	1913	76	Germany	University of Göttingen, Technische Universität München, Technical University of Berlin
+Elias James Corey	1990 - Chemestry	Male	United States of America	1928	62	United States of America	Massachusetts Institute of Technology
+William Forsyth Sharpe	1990 - Economics	Male	United States of America	1934	56	United States of America	University of California - Los Angeles
+Harry Markowitz	1990 - Economics	Male	United States of America	1927	63	United States of America	University of Chicago
+Octavio Paz	1990 - Literature	Male	Mexico	1914	76	Mexico
+E. Donnall Thomas	1990 - Medicine / Physiology	Male	United States of America	1920	70	United States of America	University of Texas, Harvard University
+Joseph Murray	1990 - Medicine / Physiology	Male	United States of America	1919	71	United States of America	College of the Holy Cross, Harvard University
+Mikhail Gorbachev	1990 - Peace	Male	Russia	1931	59	Russia	Moscow State University
+Henry Way Kendall	1990 - Physics	Male	United States of America	1926	64	United States of America	Amherst College, Massachusetts Institute of Technology
+Jerome Isaac Friedman	1990 - Physics	Male	United States of America	1930	60	United States of America	University of Chicago
+Richard E. Taylor	1990 - Physics	Male	Canada	1929	61	Canada	Stanford University, University of Alberta
+Richard R. Ernst	1991 - Chemestry	Male	Switzerland	1933	58	Switzerland
+Ronald Coase	1991 - Economics	Male	United Kingdom	1910	81	United Kingdom, United States of America	London School of Economics
+Nadine Gordimer	1991 - Literature	Female	South Africa	1923	68	South Africa
+Erwin Neher	1991 - Medicine / Physiology	Male	Germany	1944	47	Germany	Technische Universität München, University of Wisconsin
+Aung San Suu Kyi	1991 - Peace	Female	Myanmar	1945	46	Myanmar (Burma)	University of London, University of Oxford, University of Delhi
+Pierre-Gilles de Gennes	1991 - Physics	Male	France	1932	59	France	École Normale Supérieure
+Rudolph A. Marcus	1992 - Chemestry	Male	Canada	1923	69	Canada, United States of America	McGill University
+Gary Becker	1992 - Economics	Male	United States of America	1930	62	United States of America	University of Chicago, Princeton University
+Derek Walcott	1992 - Literature	Male	Saint Lucia	1930	62	Saint Lucia
+Edmond H. Fischer	1992 - Medicine / Physiology	Male	China	1920	72	Switzerland, United States of America
+Edwin G. Krebs	1992 - Medicine / Physiology	Male	United States of America	1918	74	United States of America	Washington University - St. Louis, University of Illinois
+Rigoberta Menchú	1992 - Peace	Female	Guatemala	1959	33	Guatemala
+Georges Charpak	1992 - Physics	Male	Poland	1924	68	France, Poland, Ukraine
+Kary Mullis	1993 - Chemestry	Male	United States of America	1944	49	United States of America	Georgia Institute of Technology
+Michael Smith	1993 - Chemestry	Male	United Kingdom	1932	61	Canada, United Kingdom	University of Manchester
+Douglass North	1993 - Economics	Male	United States of America	1920	73	United States of America	University of California - Berkeley
+Robert Fogel	1993 - Economics	Male	United States of America	1926	67	United States of America	Johns Hopkins University, Columbia University, Cornell University
+Toni Morrison	1993 - Literature	Female	United States of America	1931	62	United States of America
+Phillip Allen Sharp	1993 - Medicine / Physiology	Male	United States of America	1944	49	United States of America	Union College - Kentucky, University of Illinois
+Richard J. Roberts	1993 - Medicine / Physiology	Male	United Kingdom	1943	50	United Kingdom	University of Sheffield
+Nelson Mandela	1993 - Peace	Male	South Africa	1918	75	South Africa
+F. W. de Klerk	1993 - Peace	Male	South Africa	1936	57	South Africa	Potchefstroom University for Christian Higher Education
+Joseph Hooton Taylor Jr.	1993 - Physics	Male	United States of America	1941	52	United States of America	Haverford College, Harvard University
+Russell Alan Hulse	1993 - Physics	Male	United States of America	1950	43	United States of America	University of Massachusetts
+George Andrew Olah	1994 - Chemestry	Male	Hungary	1927	67	United States of America	Budapest University of Technology and Economics
+John Forbes Nash Jr.	1994 - Economics	Male	United States of America	1928	66	United States of America	Carnegie Mellon University, Princeton University, Carnegie Institute of Technology
+Reinhard Selten	1994 - Economics	Male	Germany	1930	64	Germany	Goethe University Frankfurt
+John Harsanyi	1994 - Economics	Male	Hungary	1920	74	Australia, Hungary	University of Sydney, Stanford University, Eötvös Loránd University, University of Lyon
+Kenzaburō Ōe	1994 - Literature	Male	Japan	1935	59	Japan
+Martin Rodbell	1994 - Medicine / Physiology	Male	United States of America	1925	69	United States of America	Johns Hopkins University, University of Washington
+Alfred G. Gilman	1994 - Medicine / Physiology	Male	United States of America	1941	53	United States of America	Case Western Reserve University
+Yitzhak Rabin	1994 - Peace	Male	Israel	1922	72	Israel
+Shimon Peres	1994 - Peace	Male	Poland	1923	71	Belarus, Israel, Poland
+Yasser Arafat	1994 - Peace	Male	Egypt	1929	65	Egypt, Palestine
+Clifford Shull	1994 - Physics	Male	United States of America	1915	79	United States of America
+Bertram Brockhouse	1994 - Physics	Male	Canada	1918	76	Canada
+Frank Sherwood Rowland	1995 - Chemestry	Male	United States of America	1927	68	United States of America	University of Chicago, Ohio Wesleyan University
+Paul J. Crutzen	1995 - Chemestry	Male	Netherlands	1933	62	Netherlands
+Mario J. Molina	1995 - Chemestry	Male	Mexico	1943	52	United States of America	University of California - Berkeley, National Autonomous University of Mexico, University of Freiburg
+Robert Lucas Jr.	1995 - Economics	Male	United States of America	1937	58	United States of America	University of Chicago
+Seamus Heaney	1995 - Literature	Male	United Kingdom	1939	56	Ireland
+Edward B. Lewis	1995 - Medicine / Physiology	Male	United States of America	1918	77	United States of America	California Institute of Technology
+Eric F. Wieschaus	1995 - Medicine / Physiology	Male	United States of America	1947	48	United States of America	Yale University, University of Notre Dame
+Christiane Nüsslein-Volhard	1995 - Medicine / Physiology	Female	Germany	1942	53	Germany	University of Tübingen
+Joseph Rotblat	1995 - Peace	Male	Poland	1908	87	Poland, United Kingdom	Free Polish University, University of Liverpool, University of Warsaw
+Frederick Reines	1995 - Physics	Male	United States of America	1918	77	United States of America
+Martin Lewis Perl	1995 - Physics	Male	United States of America	1927	68	United States of America	Columbia University, New York University
+Richard Smalley	1996 - Chemestry	Male	United States of America	1943	53	United States of America	University of Michigan, Princeton University
+Harry Kroto	1996 - Chemestry	Male	United Kingdom	1939	57	United Kingdom	University of Sheffield
+Robert F. Curl Jr.	1996 - Chemestry	Male	United States of America	1933	63	United States of America	University of California - Berkeley, Rice University
+James Mirrlees	1996 - Economics	Male	United Kingdom	1936	60	United Kingdom	University of Cambridge, University of Edinburgh
+William Vickrey	1996 - Economics	Male	Canada	1914	82	Canada, United States of America	Yale University, Columbia University
+Wisława Szymborska	1996 - Literature	Female	Poland	1923	73	Poland
+Rolf M. Zinkernagel	1996 - Medicine / Physiology	Male	Switzerland	1944	52	Switzerland
+Peter C. Doherty	1996 - Medicine / Physiology	Male	Australia	1940	56	Australia	University of Edinburgh, University of Queensland
+José Ramos-Horta	1996 - Peace	Male	East Timor	1949	47	East Timor, Portugal	International Institute of Human Rights, Columbia University, Antioch College, Hague Academy of International Law
+Carlos Filipe Ximenes Belo	1996 - Peace	Male	East Timor	1948	48	East Timor, Portugal
+Douglas Osheroff	1996 - Physics	Male	United States of America	1945	51	United States of America	California Institute of Technology, Cornell University
+David Lee	1996 - Physics	Male	United States of America	1931	65	United States of America	Yale University, Harvard University, University of Connecticut
+Robert Coleman Richardson	1996 - Physics	Male	United States of America	1937	59	United States of America	Duke University, Virginia Tech
+Paul D. Boyer	1997 - Chemestry	Male	United States of America	1918	79	United States of America	Brigham Young University, University of Wisconsin
+Jens Christian Skou	1997 - Chemestry	Male	Denmark	1918	79	Denmark
+John E. Walker	1997 - Chemestry	Male	United Kingdom	1941	56	United Kingdom	University of Oxford
+Robert C. Merton	1997 - Economics	Male	United States of America	1944	53	United States of America	California Institute of Technology, Columbia University, Massachusetts Institute of Technology
+Myron Scholes	1997 - Economics	Male	Canada	1941	56	Canada, United States of America	University of Chicago, McMaster University
+Dario Fo	1997 - Literature	Male	Italy	1926	71	Italy
+Stanley B. Prusiner	1997 - Medicine / Physiology	Male	United States of America	1942	55	United States of America	University of Pennsylvania, University of Pennsylvania
+Jody Williams	1997 - Peace	Female	United States of America	1950	47	United States of America
+Steven Chu	1997 - Physics	Male	United States of America	1948	49	United States of America	University of California - Berkeley, University of Rochester
+Claude Cohen-Tannoudji	1997 - Physics	Male	Algeria	1933	64	France
+William Daniel Phillips	1997 - Physics	Male	United States of America	1948	49	United States of America	Massachusetts Institute of Technology, Juniata College
+Walter Kohn	1998 - Chemestry	Male	Austria	1923	75	Austria, United States of America	Harvard University, University of Toronto
+John Pople	1998 - Chemestry	Male	United Kingdom	1925	73	United Kingdom	University of Cambridge
+Amartya Sen	1998 - Economics	Male	India	1933	65	India	University of Cambridge, Presidency University - Kolkata
+José Saramago	1998 - Literature	Male	Portugal	1922	76	Portugal
+Robert F. Furchgott	1998 - Medicine / Physiology	Male	United States of America	1916	82	United States of America	University of North Carolina
+Ferid Murad	1998 - Medicine / Physiology	Male	United States of America	1936	62	United States of America	DePauw University, Case Western Reserve University
+Louis Ignarro	1998 - Medicine / Physiology	Male	United States of America	1941	57	United States of America	Columbia University, University of Minnesota
+John Hume	1998 - Peace	Male	Ireland	1937	61	Ireland	St Patrick's College
+David Trimble	1998 - Peace	Male	United Kingdom	1944	54	United Kingdom	Queen's University Belfast
+Daniel C. Tsui	1998 - Physics	Male	China	1939	59	China, United States of America	University of Chicago, Augustana College
+Robert B. Laughlin	1998 - Physics	Male	United States of America	1950	48	United States of America	University of California - Berkeley, Massachusetts Institute of Technology
+Horst Ludwig Störmer	1998 - Physics	Male	Germany	1949	49	Germany	University of Stuttgart, Goethe University Frankfurt
+Ahmed Zewail	1999 - Chemestry	Male	Egypt	1946	53	Egypt	University of Pennsylvania, Alexandria University
+Robert Mundell	1999 - Economics	Male	Canada	1932	67	Canada	University of Washington, Massachusetts Institute of Technology, London School of Economics, University of British Columbia
+Günter Grass	1999 - Literature	Male	Germany	1927	72	Germany
+Günter Blobel	1999 - Medicine / Physiology	Male	Germany	1936	63	Germany, United States of America	University of Wisconsin, University of Tübingen
+Gerard 't Hooft	1999 - Physics	Male	Netherlands	1946	53	Netherlands
+Martinus J. G. Veltman	1999 - Physics	Male	Netherlands	1931	68	Netherlands	Utrecht University
+Alan J. Heeger	2000 - Chemestry	Male	United States of America	1936	64	United States of America	University of California - Berkeley, University of Nebraska–Lincoln
+Alan MacDiarmid	2000 - Chemestry	Male	New Zealand	1927	73	New Zealand, United States of America	Victoria University - Wellington, University of Cambridge, University of Wisconsin
+Hideki Shirakawa	2000 - Chemestry	Male	Japan	1936	64	Japan	Tokyo Institute of Technology
+James Heckman	2000 - Economics	Male	United States of America	1944	56	United States of America	Princeton University, Colorado College
+Daniel McFadden	2000 - Economics	Male	United States of America	1937	63	United States of America	University of Minnesota
+Gao Xingjian	2000 - Literature	Male	China	1940	60	China, France	Beijing Foreign Studies University
+Eric Kandel	2000 - Medicine / Physiology	Male	Austria	1929	71	Austria, United States of America	Harvard University, New York University
+Paul Greengard	2000 - Medicine / Physiology	Male	United States of America	1925	75	United States of America
+Arvid Carlsson	2000 - Medicine / Physiology	Male	Sweden	1923	77	Sweden	Lund University
+Kim Dae-jung	2000 - Peace	Male	South Korea	1925	75	Korea, South
+Jack Kilby	2000 - Physics	Male	United States of America	1923	77	United States of America	University of Illinois, University of Wisconsin
+Zhores Alferov	2000 - Physics	Male	Belarus	1930	70	Belarus, Russia	V. I. Ulyanov Electrotechnical Institute
+Herbert Kroemer	2000 - Physics	Male	Germany	1928	72	Germany	University of Göttingen, University of Jena
+William Standish Knowles	2001 - Chemestry	Male	United States of America	1917	84	United States of America	Columbia University, Harvard University
+Karl Barry Sharpless	2001 - Chemestry	Male	United States of America	1941	60	United States of America	Dartmouth College, Stanford University, Harvard University
+Ryōji Noyori	2001 - Chemestry	Male	Japan	1938	63	Japan	Harvard University, Kyoto University, Nagoya University
+Joseph Stiglitz	2001 - Economics	Male	United States of America	1943	58	United States of America	Amherst College, University of Chicago, Massachusetts Institute of Technology
+Michael Spence	2001 - Economics	Male	United States of America	1943	58	United States of America	University of Oxford, Princeton University, Harvard University
+George Akerlof	2001 - Economics	Male	United States of America	1940	61	United States of America	Yale University, Massachusetts Institute of Technology
+V. S. Naipaul	2001 - Literature	Male	Trinidad and Tobago	1932	69	Trinidad and Tobago
+Tim Hunt	2001 - Medicine / Physiology	Male	United Kingdom	1943	58	United Kingdom	University of Cambridge
+Paul Nurse	2001 - Medicine / Physiology	Male	United Kingdom	1949	52	United Kingdom	University of Birmingham, University of East Anglia
+Leland H. Hartwell	2001 - Medicine / Physiology	Male	United States of America	1939	62	United States of America	California Institute of Technology, Massachusetts Institute of Technology
+Kofi Annan	2001 - Peace	Male	Ghana	1938	63	Ghana	Macalester College, Graduate Institute of International and Development Studies, Massachusetts Institute of Technology, University of Geneva, Kwame Nkrumah University
+Eric Allin Cornell	2001 - Physics	Male	United States of America	1961	40	United States of America	Massachusetts Institute of Technology, Stanford University
+Wolfgang Ketterle	2001 - Physics	Male	Germany	1957	44	Germany	Heidelberg University, Technische Universität München, Ludwig Maximilian University of Munich, Max Planck Institute
+Carl Wieman	2001 - Physics	Male	United States of America	1951	50	United States of America	Massachusetts Institute of Technology, Stanford University
+John Fenn	2002 - Chemestry	Male	United States of America	1917	85	United States of America	Berea College, Yale University
+Koichi Tanaka	2002 - Chemestry	Male	Japan	1959	43	Japan	Tohoku University
+Kurt Wüthrich	2002 - Chemestry	Male	Switzerland	1938	64	Switzerland	University of Basel, University of Bern
+Vernon L. Smith	2002 - Economics	Male	United States of America	1927	75	United States of America
+Daniel Kahneman	2002 - Economics	Male	Israel	1934	68	Israel, United States of America	University of California - Berkeley, Hebrew University of Jerusalem
+Imre Kertész	2002 - Literature	Male	Hungary	1929	73	Hungary
+H. Robert Horvitz	2002 - Medicine / Physiology	Male	United States of America	1947	55	United States of America	Massachusetts Institute of Technology
+John Sulston	2002 - Medicine / Physiology	Male	United Kingdom	1942	60	United Kingdom	University of Cambridge
+Sydney Brenner	2002 - Medicine / Physiology	Male	South Africa	1927	75	South Africa, United Kingdom, United States of America	University of California - Berkeley, University of Oxford, University of the Witwatersrand
+Jimmy Carter	2002 - Peace	Male	United States of America	1924	78	United States of America
+Raymond Davis Jr.	2002 - Physics	Male	United States of America	1914	88	United States of America	Yale University, University of Maryland
+Riccardo Giacconi	2002 - Physics	Male	Italy	1931	71	Italy, United States of America	University of Milan
+Masatoshi Koshiba	2002 - Physics	Male	Japan	1926	76	Japan	University of Rochester, University of Tokyo
+Roderick MacKinnon	2003 - Chemestry	Male	United States of America	1956	47	United States of America	Brandeis University
+Peter Agre	2003 - Chemestry	Male	United States of America	1949	54	United States of America	Johns Hopkins University, Augsburg College, Case Western Reserve University
+Robert F. Engle	2003 - Economics	Male	United States of America	1942	61	United States of America	Williams College, Cornell University
+Clive Granger	2003 - Economics	Male	United Kingdom	1934	69	United Kingdom	University of Nottingham
+J. M. Coetzee	2003 - Literature	Male	South Africa	1940	63	South Africa	University of Texas, University of Cape Town
+Paul Lauterbur	2003 - Medicine / Physiology	Male	United States of America	1929	74	United States of America	Case Western Reserve University, University of Pittsburgh
+Peter Mansfield	2003 - Medicine / Physiology	Male	United Kingdom	1933	70	United Kingdom	University of London, Queen Mary University
+Shirin Ebadi	2003 - Peace	Female	Iran	1947	56	Iran	University of Tehran
+Alexei Alexeyevich Abrikosov	2003 - Physics	Male	Russia	1928	75	Russia, United States of America	Russian Academy of Sciences, Moscow State University
+Vitaly Ginzburg	2003 - Physics	Male	Russia	1916	87	Russia	Moscow State University
+Anthony James Leggett	2003 - Physics	Male	United Kingdom	1938	65	United Kingdom, United States of America	University of Oxford
+Irwin Rose	2004 - Chemestry	Male	United States of America	1926	78	United States of America	University of Chicago
+Aaron Ciechanover	2004 - Chemestry	Male	Palestine	1947	57	Israel
+Avram Hershko	2004 - Chemestry	Male	Hungary	1937	67	Hungary, Israel
+Edward C. Prescott	2004 - Economics	Male	United States of America	1940	64	United States of America	Carnegie Mellon University, Swarthmore College, Case Western Reserve University
+Finn E. Kydland	2004 - Economics	Male	Norway	1943	61	Norway	Carnegie Mellon University, Norwegian School of Economics
+Elfriede Jelinek	2004 - Literature	Female	Austria	1946	58	Austria
+Linda B. Buck	2004 - Medicine / Physiology	Female	United States of America	1947	57	United States of America	University of Washington
+Wangari Maathai	2004 - Peace	Female	Kenya	1940	64	Kenya	Benedictine College
+David Gross	2004 - Physics	Male	United States of America	1941	63	United States of America	University of California - Berkeley, Hebrew University of Jerusalem
+Frank Wilczek	2004 - Physics	Male	United States of America	1951	53	United States of America	University of Chicago, Princeton University
+Hugh David Politzer	2004 - Physics	Male	United States of America	1949	55	United States of America	University of Michigan, Harvard University
+Robert H. Grubbs	2005 - Chemestry	Male	United States of America	1942	63	United States of America	University of Florida, Columbia University
+Richard R. Schrock	2005 - Chemestry	Male	United States of America	1945	60	United States of America	Harvard University, University of California - Riverside, University of Cambridge
+Thomas Schelling	2005 - Economics	Male	United States of America	1921	84	United States of America	University of California - Berkeley, Yale University, Harvard University
+Robert Aumann	2005 - Economics	Male	Germany	1930	75	Israel, United States of America	Massachusetts Institute of Technology, City University of New York
+Harold Pinter	2005 - Literature	Male	United Kingdom	1930	75	United Kingdom
+Barry Marshall	2005 - Medicine / Physiology	Male	Australia	1951	54	Australia
+Robin Warren	2005 - Medicine / Physiology	Male	Australia	1937	68	Australia	University of Adelaide
+Mohamed ElBaradei	2005 - Peace	Male	Egypt	1942	63	Egypt	Graduate Institute of International and Development Studies, New York University, Cairo University
+Theodor W. Hänsch	2005 - Physics	Male	Germany	1941	64	Germany	Heidelberg University
+John L. Hall	2005 - Physics	Male	United States of America	1934	71	United States of America	Carnegie Institute of Technology
+Roger D. Kornberg	2006 - Chemestry	Male	United States of America	1947	59	United States of America
+Edmund Phelps	2006 - Economics	Male	United States of America	1933	73	United States of America	Amherst College, Yale University
+Orhan Pamuk	2006 - Literature	Male	Turkey	1952	54	Turkey
+Andrew Fire	2006 - Medicine / Physiology	Male	United States of America	1959	47	United States of America	University of California - Berkeley, Massachusetts Institute of Technology
+Craig Mello	2006 - Medicine / Physiology	Male	United States of America	1960	46	United States of America	Brown University, Harvard University
+Muhammad Yunus	2006 - Peace	Male	India	1940	66	Bangladesh	University of Dhaka
+John C. Mather	2006 - Physics	Male	United States of America	1946	60	United States of America	University of California - Berkeley, Swarthmore College
+George Smoot	2006 - Physics	Male	United States of America	1945	61	United States of America	Massachusetts Institute of Technology
+Gerhard Ertl	2007 - Chemestry	Male	Germany	1936	71	Germany	Technische Universität München, University of Stuttgart
+Roger Myerson	2007 - Economics	Male	United States of America	1951	56	United States of America	Harvard University
+Eric Maskin	2007 - Economics	Male	United States of America	1950	57	United States of America	Harvard University
+Leonid Hurwicz	2007 - Economics	Male	Russia	1917	90	Poland, Russia, United States of America	London School of Economics, University of Warsaw, Graduate Institute of International and Development Studies
+Doris Lessing	2007 - Literature	Female	Iran	1919	88	United Kingdom
+Oliver Smithies	2007 - Medicine / Physiology	Male	United Kingdom	1925	82	United Kingdom, United States of America	University of Oxford
+Martin Evans	2007 - Medicine / Physiology	Male	United Kingdom	1941	66	United Kingdom	University of Cambridge, University College London
+Mario Capecchi	2007 - Medicine / Physiology	Male	Italy	1937	70	Italy	Antioch College, George School, Harvard University
+Al Gore	2007 - Peace	Male	United States of America	1948	59	United States of America	Harvard University
+Albert Fert	2007 - Physics	Male	France	1938	69	France	École Normale Supérieure
+Peter Grünberg	2007 - Physics	Male	Germany	1939	68	Germany	Technische Universität Darmstadt
+Roger Y. Tsien	2008 - Chemestry	Male	United States of America	1952	56	United States of America	Harvard University, University of Cambridge
+Martin Chalfie	2008 - Chemestry	Male	United States of America	1947	61	United States of America	Harvard University
+Osamu Shimomura	2008 - Chemestry	Male	Japan	1928	80	Japan, United States of America	Nagasaki University, Nagoya University
+Paul Krugman	2008 - Economics	Male	United States of America	1953	55	United States of America	Yale University, Massachusetts Institute of Technology
+J. M. G. Le Clézio	2008 - Literature	Male	France	1940	68	France
+Luc Montagnier	2008 - Medicine / Physiology	Male	France	1932	76	France
+Françoise Barré-Sinoussi	2008 - Medicine / Physiology	Female	France	1947	61	France
+Harald zur Hausen	2008 - Medicine / Physiology	Male	Germany	1936	72	Germany
+Martti Ahtisaari	2008 - Peace	Male	Finland	1937	71	Finland	University of Oulu
+Yoichiro Nambu	2008 - Physics	Male	Japan	1921	87	Japan, United States of America	University of Tokyo
+Makoto Kobayashi	2008 - Physics	Male	Japan	1944	64	Japan	Nagoya University
+Toshihide Maskawa	2008 - Physics	Male	Japan	1940	68	Japan	Nagoya University
+Thomas A. Steitz	2009 - Chemestry	Male	United States of America	1940	69	United States of America	Harvard University, Lawrence University
+Venkatraman Ramakrishnan	2009 - Chemestry	Male	India	1952	57	India, United States of America	University of California - San Diego, Maharaja Sayajirao University of Baroda, Ohio University
+Ada Yonath	2009 - Chemestry	Female	Israel	1939	70	Israel	Hebrew University of Jerusalem, Weizmann Institute of Science
+Oliver E. Williamson	2009 - Economics	Male	United States of America	1932	77	United States of America	Carnegie Mellon University, Massachusetts Institute of Technology, Stanford University
+Elinor Ostrom	2009 - Economics	Female	United States of America	1933	76	United States of America	University of California - Los Angeles
+Herta Müller	2009 - Literature	Female	Romania	1953	56	Germany, Romania
+Jack W. Szostak	2009 - Medicine / Physiology	Male	United Kingdom	1952	57	Canada, United States of America	McGill University, Cornell University
+Carol W. Greider	2009 - Medicine / Physiology	Female	United States of America	1961	48	United States of America	University of California - Berkeley
+Elizabeth Blackburn	2009 - Medicine / Physiology	Female	Australia	1948	61	United States of America	University of Cambridge, University of Melbourne
+Barack Obama	2009 - Peace	Male	United States of America	1961	48	United States of America	Columbia University, Occidental College, Harvard University
+George E. Smith	2009 - Physics	Male	United States of America	1930	79	United States of America	University of Chicago, University of Pennsylvania
+Charles K. Kao	2009 - Physics	Male	China	1933	76	China, Hong Kong, United States of America	University College London, University of London, University of Greenwich
+Willard S. Boyle	2009 - Physics	Male	Canada	1924	85	Canada, United States of America	McGill University
+Ei-ichi Negishi	2010 - Chemestry	Male	Japan	1935	75	Japan, United States of America	University of Pennsylvania, University of Tokyo
+Akira Suzuki	2010 - Chemestry	Male	Japan	1930	80	Japan	Purdue University, Hokkaido University
+Richard F. Heck	2010 - Chemestry	Male	United States of America	1931	79	United States of America	University of California - Los Angeles
+Dale T. Mortensen	2010 - Economics	Male	United States of America	1939	71	United States of America	Carnegie Mellon University, Willamette University
+Christopher A. Pissarides	2010 - Economics	Male	Cyprus	1948	62	Cyprus	London School of Economics, University of Essex
+Peter A. Diamond	2010 - Economics	Male	United States of America	1940	70	United States of America	Yale University, Massachusetts Institute of Technology
+Mario Vargas Llosa	2010 - Literature	Male	Peru	1936	74	Peru, Spain	Complutense University of Madrid, National University of San Marcos
+Robert G. Edwards	2010 - Medicine / Physiology	Male	United Kingdom	1925	85	United Kingdom	Bangor University, University of Edinburgh
+Liu Xiaobo	2010 - Peace	Male	China	1955	55	China	Beijing Normal University, Jilin University
+Konstantin Novoselov	2010 - Physics	Male	Russia	1974	36	Russia, United Kingdom	Radboud University Nijmegen, Moscow Institute of Physics and Technology
+Andre Geim	2010 - Physics	Male	Russia	1958	52	Netherlands, Russia	Moscow Institute of Physics and Technology
+Dan Shechtman	2011 - Chemestry	Male	Israel	1941	70	Israel	Israel Institute of Technology
+Thomas J. Sargent	2011 - Economics	Male	United States of America	1943	68	United States of America	University of California - Berkeley, Harvard University
+Christopher A. Sims	2011 - Economics	Male	United States of America	1942	69	United States of America	University of California - Berkeley, Harvard University
+Tomas Tranströmer	2011 - Literature	Male	Sweden	1931	80	Sweden
+Bruce Beutler	2011 - Medicine / Physiology	Male	United States of America	1957	54	United States of America	University of California - San Diego, University of Chicago
+Ralph M. Steinman	2011 - Medicine / Physiology	Male	Canada	1943	68	Canada, United States of America	Harvard University, McGill University
+Jules A. Hoffmann	2011 - Medicine / Physiology	Male	Luxembourg	1941	70	France, Luxembourg	University of Strasbourg
+Leymah Gbowee	2011 - Peace	Female	Liberia	1972	39	Liberia
+Ellen Johnson Sirleaf	2011 - Peace	Female	Liberia	1938	73	Liberia	Harvard University, University of Wisconsin
+Tawakel Karman	2011 - Peace	Female	Yemen	1979	32	Yemen
+Saul Perlmutter	2011 - Physics	Male	United States of America	1959	52	United States of America	University of California - Berkeley, Harvard University
+Brian Schmidt	2011 - Physics	Male	United States of America	1967	44	Australia, United States of America	University of Arizona, Harvard University
+Adam G. Riess	2011 - Physics	Male	United States of America	1969	42	United States of America	University of California - Berkeley, Massachusetts Institute of Technology, Harvard University
+Brian K. Kobilka	2012 - Chemestry	Male	United States of America	1955	57	United States of America	Yale University, University of Minnesota
+Robert J. Lefkowitz	2012 - Chemestry	Male	United States of America	1943	69	United States of America	Columbia University
+Alvin E. Roth	2012 - Economics	Male	United States of America	1951	61	United States of America	Columbia University, Stanford University
+Lloyd S. Shapley	2012 - Economics	Male	United States of America	1923	89	United States of America	Princeton University, Harvard University
+Mo Yan	2012 - Literature	Male	China	1955	57	China
+Shinya Yamanaka	2012 - Medicine / Physiology	Male	Japan	1962	50	Japan	Osaka City University, Kobe University
+John B. Gurdon	2012 - Medicine / Physiology	Male	United Kingdom	1933	79	United Kingdom	University of Oxford
+David J. Wineland	2012 - Physics	Male	United States of America	1944	68	United States of America	University of California - Berkeley, University of Washington, Harvard University
+Serge Haroche	2012 - Physics	Male	Morocco	1944	68	France	École Normale Supérieure
+Martin Karplus	2013 - Chemestry	Male	Austria	1930	83	Austria, United States of America	California Institute of Technology
+Michael Levitt	2013 - Chemestry	Male	South Africa	1947	66	Israel, South Africa, United Kingdom, United States of America	University of Cambridge
+Arieh Warshel	2013 - Chemestry	Male	Israel	1940	73	Israel, United States of America	Israel Institute of Technology, Weizmann Institute of Science
+Robert J. Shiller	2013 - Economics	Male	United States of America	1946	67	United States of America	University of Michigan, Massachusetts Institute of Technology
+Lars Peter Hansen	2013 - Economics	Male	United States of America	1952	61	United States of America	University of Minnesota, Utah State University
+Eugene F. Fama	2013 - Economics	Male	United States of America	1939	74	United States of America	University of Chicago, Tufts University
+Alice Munro	2013 - Literature	Female	Canada	1931	82	Canada	University of Western Ontario
+Thomas C. Südhof	2013 - Medicine / Physiology	Male	Germany	1955	58	Germany, United States of America	Max Planck Institute, University of Göttingen, RWTH Aachen University
+James E. Rothman	2013 - Medicine / Physiology	Male	United States of America	1950	63	United States of America	Yale University, Harvard University
+François Englert	2013 - Physics	Male	Belgium	1932	81	Belgium	Université libre de Bruxelles
+Peter W. Higgs	2013 - Physics	Male	United Kingdom	1929	84	United Kingdom	King's College
+William Moerner	2014 - Chemestry	Male	United States of America	1953	61	United States of America
+Stefan Hell	2014 - Chemestry	Male	Romania	1962	52	Germany, Romania
+Jean Tirole	2014 - Economics	Male	France	1953	61	France	Massachusetts Institute of Technology, École des ponts ParisTech, Paris Dauphine University, École Polytechnique
+May-Britt Moser	2014 - Medicine / Physiology	Female	Norway	1963	51	Norway
+Edvard Moser	2014 - Medicine / Physiology	Male	Norway	1962	52	Norway
+Kailash Satyarth	2014 - Peace	Male	India	1954	50	India
+Malala Yousafzai	2014 - Peace	Female	Pakistan	1997	17	Pakistan
+Shuji Nakamura	2014 - Physics	Male	Japan	1954	60	United States of America
