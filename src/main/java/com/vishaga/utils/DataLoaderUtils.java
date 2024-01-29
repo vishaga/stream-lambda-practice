@@ -141,4 +141,16 @@ public class DataLoaderUtils {
         }
         return currencyMap;
     }
+
+    public static List<City> loadCities(){
+        String path = Reader.class.getResource("/_city_and_rank.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(City::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
 }
