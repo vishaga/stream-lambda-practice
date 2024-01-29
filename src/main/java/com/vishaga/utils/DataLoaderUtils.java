@@ -165,4 +165,16 @@ public class DataLoaderUtils {
             return List.of();
         }
     }
+
+    public static List<College> loadColleges(){
+        String path = Reader.class.getResource("/_us_colleges.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(College::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
 }
