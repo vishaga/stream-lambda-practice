@@ -15,7 +15,7 @@ World_Rank	City	Country	City_Population	Metro_Population
 260	Amritsar	India	1132000	1183000
 52	ANKARA	Turkey	5271000	6280000
 209	Anshan	China	1529000	3645000
-25	BAGHDAD	Iraq	8765000
+25	BAGHDAD	Iraq	8765000	8765000
 147	Baku	Azerbaijan	2122000	2724000
 122	Bandung	Indonesia	2575000	8465000
 30	Bangalore	India	8444000	8729000
@@ -108,7 +108,7 @@ World_Rank	City	Country	City_Population	Metro_Population
 88	Hefei	China	3310000	5484000
 247	Hiroshima	Japan	1196000	2040000
 31	Ho Chi Minh City	Vietnam	8426000	10050000
-37	Hong Kong	China	7234800
+37	Hong Kong	China	7234800	7234800
 138	Houston	USA	2296000	6313000
 40	Hyderabad	India	6809000	7749000
 83	Hyderabad	Pakistan	3429000	3429000
@@ -148,7 +148,7 @@ World_Rank	City	Country	City_Population	Metro_Population
 219	Kyoto	Japan	1475000	1475000
 292	LA PAZ	Bolivia	790000	2630000
 35	Lagos	Nigeria	8048000	16060000
-16	Lahore	Pakistan	10355000
+16	Lahore	Pakistan	10355000	10355000
 146	Lanzhou	China	2177000	3616000
 201	Leon	Mexico	1578000	1630000
 20	LIMA	Peru	9752000	10852000
