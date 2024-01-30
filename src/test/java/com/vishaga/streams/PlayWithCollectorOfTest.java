@@ -6,8 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collector;
 
@@ -78,5 +77,34 @@ public class PlayWithCollectorOfTest {
                         )
                 );
         assertThat(sum).isEqualTo(4);
+    }
+
+    @Test
+    @DisplayName("Using Collector.of: Suppose you have a list of strings, and you want to group them by their lengths")
+    public void test_4(){
+        List<String> words = List.of("apple", "orange", "banana", "grape", "kiwi");
+
+        TreeMap<Integer, List<String>> wordsGroupedByLength = words.stream()
+                .collect(
+                        Collector.of(
+                                TreeMap::new,           //Supplier
+                                (map, word) -> {        // accumulator
+                                    map.computeIfAbsent(word.length(), (k) -> new ArrayList<>()).add(word);
+                                },
+                                (map1, map2) -> {                  // Combiner (for parallel streams)
+                                    map2.forEach((key, value) -> map1.merge(key, value, (list1, list2) -> {
+                                        list1.addAll(list2);
+                                        return list1;
+                                    }));
+                                    return map1;
+                                },
+                                Function.identity()              //finisher
+                        )
+                );
+        assertThat(wordsGroupedByLength).containsAllEntriesOf(Map.ofEntries(
+                Map.entry(4, List.of("kiwi")),
+                Map.entry(5, List.of("apple", "grape")),
+                Map.entry(6, List.of("orange", "banana"))
+        ));
     }
 }
