@@ -131,4 +131,24 @@ public class PlayWithCollectorOfTest {
                 );
         assertThat(sum).isEqualTo(8);
     }
+
+    @Test
+    @DisplayName("Using Collector.of: joining of list of string")
+    public void test_6(){
+        List<String> numbers = List.of("one", "two", "three", "four", "five");
+
+        String sum = numbers.parallelStream()
+                .collect(
+                        Collector.of(
+                                StringBuilder::new,                      //Supplier
+                                (sb, str) -> sb.append(str).append(","), // accumulator
+                                StringBuilder::append,                   // combiner (for parallel streams)
+                                sb -> {
+                                    sb.setLength(sb.length()-1);         //finisher
+                                    return sb.toString();
+                                }
+                        )
+                );
+        assertThat(sum).isEqualTo("one,two,three,four,five");
+    }
 }
