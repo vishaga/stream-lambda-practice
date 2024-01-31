@@ -1,5 +1,6 @@
 package com.vishaga.streams;
 
+import com.github.javafaker.Bool;
 import com.vishaga.model.City;
 import com.vishaga.utils.DataLoaderUtils;
 import org.junit.jupiter.api.BeforeAll;
@@ -11,6 +12,7 @@ import java.util.function.Function;
 import java.util.stream.Collector;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.entry;
 
 public class PlayWithCollectorOfTest {
 
@@ -181,5 +183,36 @@ public class PlayWithCollectorOfTest {
                 Map.entry('g', List.of("grape", "guava")),
                 Map.entry('o', List.of("orange"))
         ));
+    }
+
+    @Test
+    @DisplayName("Using Collector.of: partition in even and odd")
+    public void test_8(){
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
+
+        Map<Boolean, List<Integer>> partitionedNumbers = numbers.parallelStream()
+                .collect(
+                        Collector.of(
+                                HashMap::new,         // Supplier
+                                (map, num) -> {                // Accumulator
+                                    map.computeIfAbsent(num % 2 == 0, k -> new ArrayList<>()).add(num);
+                                },
+                                (map1, map2) -> {                // Combiner (for parallel streams)
+                                    map2.forEach((key, value) ->
+                                            map1.merge(key, value, (list1, list2) -> {
+                                                list1.addAll(list2);
+                                                return list1;
+                                            }));
+                                    return map1;
+                                },
+                                Function.identity()                //finisher
+                        )
+                );
+        assertThat(partitionedNumbers).containsAllEntriesOf(
+                Map.ofEntries(
+                        entry(true, List.of(2,4,6,8,10,12,14)),
+                        entry(false, List.of(1,3,5,7,9,11,13,15))
+                )
+        );
     }
 }
