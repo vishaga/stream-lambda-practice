@@ -107,4 +107,28 @@ public class PlayWithCollectorOfTest {
                 Map.entry(6, List.of("orange", "banana"))
         ));
     }
+
+    @Test
+    @DisplayName("Using Collector.of: avg of list of numbers")
+    public void test_5(){
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
+
+        Integer sum = numbers.parallelStream()
+                .collect(
+                        Collector.of(
+                                () -> new int[]{0,0},          // Supplier
+                                (acc, num) -> {                // Accumulator
+                                    acc[0] += num;
+                                    acc[1]++;
+                                },
+                                (left, right) -> {           // Combiner (for parallel streams)
+                                    left[0] += right[0];
+                                    left[1] += right[1];
+                                    return left;
+                                },
+                                acc -> acc[0]/acc[1]                //finisher
+                        )
+                );
+        assertThat(sum).isEqualTo(8);
+    }
 }
