@@ -151,4 +151,35 @@ public class PlayWithCollectorOfTest {
                 );
         assertThat(sum).isEqualTo("one,two,three,four,five");
     }
+
+    @Test
+    @DisplayName("Using Collector.of: group words by their first letter")
+    public void test_7(){
+        List<String> words = Arrays.asList("apple", "banana", "avocado", "orange", "grape", "guava");
+
+        Map<Character, List<String>> wordsGroupedByFirstLetter = words.stream()
+                .collect(
+                        Collector.of(
+                                HashMap::new,                   //Supplier
+                                (map, word) -> {                // accumulator
+                                    map.computeIfAbsent(word.charAt(0), (k) -> new ArrayList<>()).add(word);
+                                },
+                                (map1, map2) -> {                // Combiner (for parallel streams)
+                                    map2.forEach((key, value) ->
+                                            map1.merge(key, value, (list1, list2) -> {
+                                                list1.addAll(list2);
+                                        return list1;
+                                    }));
+                                    return map1;
+                                },
+                                Function.identity()              //finisher
+                        )
+                );
+        assertThat(wordsGroupedByFirstLetter).containsAllEntriesOf(Map.ofEntries(
+                Map.entry('a', List.of("apple", "avocado")),
+                Map.entry('b', List.of("banana")),
+                Map.entry('g', List.of("grape", "guava")),
+                Map.entry('o', List.of("orange"))
+        ));
+    }
 }
