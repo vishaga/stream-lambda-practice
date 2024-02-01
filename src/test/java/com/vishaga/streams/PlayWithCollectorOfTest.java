@@ -1,6 +1,5 @@
 package com.vishaga.streams;
 
-import com.github.javafaker.Bool;
 import com.vishaga.model.City;
 import com.vishaga.utils.DataLoaderUtils;
 import org.junit.jupiter.api.BeforeAll;
@@ -214,5 +213,38 @@ public class PlayWithCollectorOfTest {
                         entry(false, List.of(1,3,5,7,9,11,13,15))
                 )
         );
+    }
+
+    @Test
+    @DisplayName("Using Collector.of: filtering and mapping," +
+            "Implement a custom collector using Collector.of that filters a list of objects based on a certain condition and maps them to a different type." +
+            "Let's say you have a list of Person objects, and you want to filter those who are adults (age >= 18) and then map them to their names as strings.")
+    public void test_9(){
+        record Person(String name, int age){};
+
+        List<Person> people = List.of(
+                new Person("Alice", 25),
+                new Person("Bob", 17),
+                new Person("Charlie", 30),
+                new Person("Gaurav", 18),
+                new Person("Vihsal", 11),
+                new Person("David", 19)
+        );
+
+        String personGreaterThan17Years = people.parallelStream()
+                .collect(
+                        Collector.of(
+                                StringBuilder::new,                                         // Supplier
+                                (sb, person) -> {                                           // Accumulator
+                                    if(person.age >= 18) sb.append(person.name).append(",");
+                                },
+                                (sb1, sb2) -> {                                             // Combiner (for parallel streams)
+                                    sb1.append(sb2);
+                                    return sb1;
+                                },
+                                StringBuilder::toString                                     //finisher
+                        )
+                );
+        assertThat(personGreaterThan17Years).isEqualTo("Alice,Charlie,Gaurav,David,");
     }
 }
