@@ -5,8 +5,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
+import java.util.function.BiConsumer;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
+import java.util.function.Supplier;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.*;
@@ -592,4 +597,90 @@ public class StreamPracticeTest {
         assertThat(averageLengthOfWordsInSentenceContainingJavaKeyword).isEqualTo(5);
     }
 
+    @Test
+    @DisplayName("Given a list of sentences, find the average length of words for sentences that contain the word 'Java'.")
+    public void practiceTest_28(){
+
+        record Book(String name, int id){
+            @Override
+            public String toString() {
+                return "Book [" +name + "] ";
+            }
+        };
+        record Student(String name, int age, List<Book> books){
+            @Override
+            public String toString() {
+                return "Stu [" +name + ", "+ this.books+ "] ";
+            }
+        };
+
+        Book book1 = new Book("Book1", 1);
+        Book book2 = new Book("Book2", 2);
+        Book book3 = new Book("Book3", 3);
+        Book book4 = new Book("Book4", 4);
+
+        System.out.println("book4 = " + book4);
+
+        List<Book> books1 = List.of(book1, book2, book3);
+        List<Book> books2 = List.of(book2, book3, book4);
+        List<Book> books3 = List.of(book1, book4);
+
+        Student student1 = new Student("Student1", 20, books1);
+        Student student2 = new Student("Student2", 22, books2);
+        Student student3 = new Student("Student3", 21, books3);
+
+        List<Student> students = List.of(student1, student2, student3);
+
+        record Tuple(Book book, Student student){};
+
+        //System.out.println(
+            students.stream()
+                    .flatMap(student -> student.books().stream()
+                            .map(book -> new Tuple(book, student)))
+                    .collect(
+                            //Collectors.groupingBy(Tuple::book, Collectors.toSet())
+                            Collectors.groupingBy(Tuple::book, Collectors.mapping(
+                                    Tuple::student, Collectors.toSet()
+                            ))
+                    ).forEach((k, v) -> System.out.println(k + " -> " + v));
+    //);
+
+        Stream<String> stream = Stream.of("a", "b", "a", "c", "c", "a", "a", "d");
+        Map counter1 = stream.collect(Collectors.toMap(s -> s,s-> 1, Integer::sum));
+        System.out.println("counter1 = " + counter1);
+
+        //assertThat(averageLengthOfWordsInSentenceContainingJavaKeyword).isEqualTo(5);
+    }
+
+//    public void test(){
+//
+//        record Person(String name, int group, int age){};
+//
+//        // Individual collectors are defined here
+//        List<Collector> collectors = Arrays.asList(
+//                Collectors.averagingInt(Person::age),
+//                Collectors.summingInt(Person::age));
+//
+//        //@SuppressWarnings("unchecked")
+//                //Collector, List
+//                //> complexCollector =
+//        Collector.of(
+//                () -> collectors.stream().map(Collector::supplier).map(Supplier::get).collect(Collectors.toList()),
+//                (list, e) -> IntStream.range(0, collectors.size()).forEach(
+//                        i -> ((BiConsumer) collectors.get(i).accumulator()).accept(list.get(i), e)),
+//                (l1, l2) -> {
+//                    IntStream.range(0, collectors.size()).forEach(
+//                            i -> l1.set(i, ((BinaryOperator
+//                                    ) collectors.get(i).combiner()).apply(l1.get(i), l2.get(i))));
+//                    return l1;
+//                },
+//                list -> {
+//                    IntStream.range(0, collectors.size()).forEach(
+//                            i -> list.set(i, ((Function)collectors.get(i).finisher()).apply(list.get(i))));
+//                    return list;
+//                }).var;
+//
+//        Map> result = persons.stream().collect(
+//                groupingBy(Person::getGroup, complexCollector));
+//    }
 }

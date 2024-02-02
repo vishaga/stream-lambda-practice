@@ -122,7 +122,6 @@ public class PlayWithPopulationStreamTest {
                                                                 (x, y) -> Map.ofEntries(x.orElseThrow(), y.orElseThrow())
                                                         ))));
 
-        System.out.println("collect = " + mostAndLeastPopulousCountry);
         assertThat(mostAndLeastPopulousCountry).containsAllEntriesOf(
                 Map.ofEntries(
                     entry("China", 424785000),

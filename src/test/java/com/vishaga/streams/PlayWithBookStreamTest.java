@@ -42,8 +42,6 @@ public class PlayWithBookStreamTest {
                         )
                 );
 
-        System.out.println("collect = " + collect);
-
         Map<String, Long> collect1 = BOOKS.stream()
                 //.flatMap(book -> book.authors().stream())
                 .collect(
@@ -56,7 +54,6 @@ public class PlayWithBookStreamTest {
                         )
 
                 );
-        System.out.println("collect = " + collect1);
 
         Map<Object, Long> collect2 = BOOKS.stream()
                 //.mapMulti((book, downstream) -> book.authors().forEach(downstream))
@@ -67,8 +64,6 @@ public class PlayWithBookStreamTest {
                                 Collectors.counting()
                         )
                 );
-
-        System.out.println("collect = " + collect2);
 
         List<String> dataList = Arrays.asList("apple", "banana", "apple", "orange", "banana", "apple", "orange");
 
@@ -93,7 +88,7 @@ public class PlayWithBookStreamTest {
                 ));
 
         // Printing the result
-        result.forEach((key, value) -> System.out.println(key + ": " + value));
+        //result.forEach((key, value) -> System.out.println(key + ": " + value));
 
     }
 
@@ -111,8 +106,6 @@ public class PlayWithBookStreamTest {
                                         },
                                         Collectors.counting())
                         ));
-
-        System.out.println("collect = " + collect);
 
         BOOKS.stream()
                 .flatMap(book -> book.authors().stream().map( author -> Map.entry(author, book)))

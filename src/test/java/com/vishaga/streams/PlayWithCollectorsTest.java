@@ -1,2 +1,4 @@
-package com.vishaga.streams;public class PlayWithCollectorsTest {
+package com.vishaga.streams;
+
+public class PlayWithCollectorsTest {
 }

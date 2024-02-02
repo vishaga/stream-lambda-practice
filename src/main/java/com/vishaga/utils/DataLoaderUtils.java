@@ -1,7 +1,6 @@
 package com.vishaga.utils;
 
 import com.vishaga.model.*;
-import org.example.Reader;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,7 +14,7 @@ import java.util.stream.Stream;
 public class DataLoaderUtils {
 
     public static List<Movie> loadMovie(int limit){
-        String path = Reader.class.getResource("/movie.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/movie.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .limit(limit)
@@ -27,7 +26,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Movie2> loadMovie2(int limit){
-        String path = Reader.class.getResource("/movies2.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/movies2.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .limit(limit)
@@ -40,7 +39,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Employee> loadEmployee(int limit){
-        String path = Reader.class.getResource("/_employee.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_employee.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .limit(limit)
@@ -53,7 +52,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Country> loadCountries(){
-        String path = Reader.class.getResource("/countries.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/countries.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(Country::from)
@@ -65,7 +64,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Population> loadPopulation(){
-        String path = Reader.class.getResource("/_city_population.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_city_population.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(Population::from)
@@ -77,7 +76,7 @@ public class DataLoaderUtils {
     }
 
     public static List<University> loadUniversity(){
-        String path = Reader.class.getResource("/universities.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/universities.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(University::from)
@@ -89,7 +88,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Book> loadBooks(){
-        String path = Reader.class.getResource("/_books.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_books.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(Book::from)
@@ -101,7 +100,7 @@ public class DataLoaderUtils {
     }
 
     public static List<String> loadLines(){
-        String path = Reader.class.getResource("/sentence.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/sentence.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.toList();
         }catch (Exception ex){
@@ -111,7 +110,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Article> loadArticles(){
-        String path = Reader.class.getResource("/_articles.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_articles.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(Article::from)
@@ -123,7 +122,7 @@ public class DataLoaderUtils {
     }
 
     public static Map<LocalDate, Map<String, Double>> loadCurrencyConversion(){
-        String path = Reader.class.getResource("/_currency.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_currency.txt").getPath();
         Map<LocalDate, Map<String, Double>> currencyMap = new HashMap<>();
         try(Stream<String> s = Files.lines(Path.of(path))){
             currencyMap.put(
@@ -143,7 +142,7 @@ public class DataLoaderUtils {
     }
 
     public static List<City> loadCities(){
-        String path = Reader.class.getResource("/_city_and_rank.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_city_and_rank.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(City::from)
@@ -155,7 +154,7 @@ public class DataLoaderUtils {
     }
 
     public static List<NobelInfo> loadNobelWinner(){
-        String path = Reader.class.getResource("/_nobel_winner.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_nobel_winner.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(NobelInfo::from)
@@ -167,7 +166,7 @@ public class DataLoaderUtils {
     }
 
     public static List<College> loadColleges(){
-        String path = Reader.class.getResource("/_us_colleges.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_us_colleges.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(College::from)
