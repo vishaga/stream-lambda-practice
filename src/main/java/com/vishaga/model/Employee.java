@@ -7,18 +7,17 @@ import java.util.stream.Stream;
 public record Employee(
         Long id, String firstName, String lastName, List<String> emails, String contactNumber,
         int age, LocalDate dob, Integer salary, Address address, Company company, Sex sex,
-        MaritalStatus maritalStatus, String race, Position position) {
+        MaritalStatus maritalStatus, String race, Position position, LocalDate dateOfJoining, List<String> skills) {
 
     public static Employee from(String line){
-        String details[] = line.split("\t");
+        String[] details = line.split("\t");
         Long id = Long.parseLong(details[0].trim());
         String firstName = details[1].trim();
         String lastName = details[2].trim();
         List<String> emails = Stream.of(details[3].split(",")).map(String::trim).toList();
         String contactNumber = details[4].trim();
         int age = Integer.parseInt(details[5].trim());
-        List<Integer> dates = Stream.of(details[6].trim().split("/")).mapToInt(Integer::parseInt).boxed().toList();
-        LocalDate dob = LocalDate.of(dates.get(2), dates.get(1), dates.get(0));
+        LocalDate dob = LocalDate.parse(details[6]);
         Integer salary = Integer.parseInt(details[7].trim());
         Address address = Address.from(details[8].trim());
         Company company = Company.from(details[9].trim());
@@ -26,7 +25,9 @@ public record Employee(
         MaritalStatus maritalStatus = MaritalStatus.valueOf(details[11].replace(" ","_").trim().toUpperCase());
         String race = details[12].trim();
         Position position = Position.valueOf(details[13].trim().toUpperCase());
-        return new Employee(id, firstName, lastName, emails, contactNumber, age, dob, salary, address, company, sex, maritalStatus, race,position);
+        LocalDate doj = LocalDate.parse(details[14]);
+        List<String> skills = Stream.of(details[15].split(",")).map(String::trim).toList();
+        return new Employee(id, firstName, lastName, emails, contactNumber, age, dob, salary, address, company, sex, maritalStatus, race,position,doj, skills);
     }
 
     public String name(){
@@ -37,7 +38,16 @@ public record Employee(
         return new Employee(-1L, "Fake", "NA",
                 List.of(),"NA", 0, LocalDate.now(),
                 0,Address.fake(), Company.fake(), Sex.MALE,
-                MaritalStatus.NEVER_MARRIED, "American", Position.DIRECTOR);
+                MaritalStatus.NEVER_MARRIED, "American",
+                Position.DIRECTOR,LocalDate.now(), List.of());
+    }
+
+    @Override
+    public String toString() {
+        return  id + "\t" + firstName + "\t" + lastName + "\t" + String.join(",", emails) + "\t" +
+                contactNumber + "\t" + age + "\t" + dob + "\t" + salary + "\t" + address + "\t" +
+                company + "\t" + sex + "\t" + maritalStatus + "\t" + race + "\t" + position + "\t" +
+                dateOfJoining + "\t" + String.join(",", skills);
     }
 }
 
