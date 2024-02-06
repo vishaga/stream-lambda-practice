@@ -19,9 +19,7 @@ public class ConsumerTest {
             input.add("1: " + str);
             input.add("2: " + str);
         };
-
         Consumer<String> consumer2 = consumer1.andThen(str -> input.add("3: " + str));
-
         consumer2.accept("GAURAV VISHAL");
 
         assertThat(input).containsExactly("1: GAURAV VISHAL", "2: GAURAV VISHAL", "3: GAURAV VISHAL");
@@ -34,6 +32,7 @@ public class ConsumerTest {
         // Consumer<List<String>> consumer1 = list -> list.clear();
         Consumer<List<String>> consumer = List::clear;
         consumer.accept(list);
+
         assertThat(list.isEmpty()).isTrue();
     }
 
