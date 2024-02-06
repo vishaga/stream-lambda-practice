@@ -10,4 +10,9 @@ public record Company(String name, String industry, String profession, String lo
     public static Company fake(){
         return new Company("Fake", "NA", "NA", "NA");
     }
+
+    @Override
+    public String toString() {
+        return name  + "," + industry  + "," + profession  + "," + logo;
+    }
 }

@@ -16,4 +16,8 @@ public record Address(String buildingNumber, String streetName, String city, Str
         return new Address("00#", "Unknown", "BLR", "India", "123456");
     }
 
+    @Override
+    public String toString() {
+        return buildingNumber  + "," + streetName  + "," + city  + "," + country  + "," + zipCode;
+    }
 }
