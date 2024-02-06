@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -122,6 +123,20 @@ public class PlayWithCollectorsTest {
                         )
                 );
         assertThat(maxSalariedTrainee).isEqualTo("Anuj");
+    }
+
+    @Test
+    @DisplayName("Trainee(s)")
+    public void test_mappingBy(){
+        String maxSalariedTrainee = EMPLOYEES.stream()
+                .filter(employee -> employee.position() == Position.TRAINEE)
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.mapping(Employee::firstName,Collectors.joining(",")),
+                                Function.identity()
+                        )
+                );
+        assertThat(maxSalariedTrainee).isEqualTo("Gaurav,Gautam,Anuj");
     }
 
 }
