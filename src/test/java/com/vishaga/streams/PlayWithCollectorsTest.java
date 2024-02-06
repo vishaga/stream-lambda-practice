@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -63,8 +64,8 @@ public class PlayWithCollectorsTest {
 
     @Test
     @DisplayName("Average Salary of Director")
-    public void test_averagingInt(){
-        int count = EMPLOYEES.stream()
+    public void test_averaging(){
+        int averagingUsingAveragingInt = EMPLOYEES.stream()
                 .filter(employee -> employee.position() == Position.TRAINEE)
                 .collect(
                         Collectors.collectingAndThen(
@@ -72,7 +73,55 @@ public class PlayWithCollectorsTest {
                                 Double::intValue
                         )
                 );
-        assertThat(count).isEqualTo(248333);
+        assertThat(averagingUsingAveragingInt).isEqualTo(248333);
+
+        int averagingUsingAveragingLong = EMPLOYEES.stream()
+                .filter(employee -> employee.position() == Position.TRAINEE)
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.averagingLong(Employee::salary),
+                                Double::intValue
+                        )
+                );
+        assertThat(averagingUsingAveragingLong).isEqualTo(248333);
+
+        int averagingUsingAveragingDouble = EMPLOYEES.stream()
+                .filter(employee -> employee.position() == Position.TRAINEE)
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.averagingDouble(Employee::salary),
+                                Double::intValue
+                        )
+                );
+        assertThat(averagingUsingAveragingDouble).isEqualTo(248333);
+    }
+
+    @Test
+    @DisplayName("Trainee with Maximum Salary")
+    public void test_max(){
+        String maxSalariedTrainee = EMPLOYEES.stream()
+                .filter(employee -> employee.position() == Position.TRAINEE)
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.maxBy(Comparator.comparing(Employee::salary)),
+                                optionalEmp -> optionalEmp.orElse(FAKE).firstName()
+                        )
+                );
+        assertThat(maxSalariedTrainee).isEqualTo("Gaurav");
+    }
+
+    @Test
+    @DisplayName("Trainee with Minimum Salary")
+    public void test_min(){
+        String maxSalariedTrainee = EMPLOYEES.stream()
+                .filter(employee -> employee.position() == Position.TRAINEE)
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.minBy(Comparator.comparing(Employee::salary)),
+                                optionalEmp -> optionalEmp.orElse(FAKE).firstName()
+                        )
+                );
+        assertThat(maxSalariedTrainee).isEqualTo("Anuj");
     }
 
 }
