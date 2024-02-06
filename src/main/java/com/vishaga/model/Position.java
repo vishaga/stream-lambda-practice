@@ -1,8 +1,8 @@
 package com.vishaga.model;
 
 public enum Position {
-    TRAINEE,
     INTERN,
+    TRAINEE,
     SE,
     SSE,
     CONSULTANT,
