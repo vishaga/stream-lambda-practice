@@ -7,8 +7,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
+import java.util.function.BiConsumer;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.entry;
@@ -25,7 +30,7 @@ public class PlayWithCollectorOfTest {
     @Test
     @DisplayName("Using Collector.of: Suppose you want to collect a list of strings and concatenate them into a single string")
     public void test_1(){
-        List<String> strings = List.of("Java", "is", "fun", "with", "Collector.of");
+        List<String> strings = List.of("Java", "Is", "Fun", "With", "Collector.of");
 
         String concatenatedString = strings.stream()
                 .collect(
@@ -37,7 +42,7 @@ public class PlayWithCollectorOfTest {
                         )
                 );
 
-        assertThat(concatenatedString).isEqualTo("JavaisfunwithCollector.of");
+        assertThat(concatenatedString).isEqualTo("JavaIsFunWithCollector.of");
     }
 
     @Test
@@ -93,10 +98,13 @@ public class PlayWithCollectorOfTest {
                                     map.computeIfAbsent(word.length(), (k) -> new ArrayList<>()).add(word);
                                 },
                                 (map1, map2) -> {                  // Combiner (for parallel streams)
-                                    map2.forEach((key, value) -> map1.merge(key, value, (list1, list2) -> {
-                                        list1.addAll(list2);
-                                        return list1;
-                                    }));
+                                    map2.forEach(
+                                            (key, value) ->
+                                                    map1.merge(key, value, (list1, list2) -> {
+                                                        list1.addAll(list2);
+                                                        return list1;
+                                                    }
+                                    ));
                                     return map1;
                                 },
                                 Function.identity()              //finisher
@@ -246,5 +254,86 @@ public class PlayWithCollectorOfTest {
                         )
                 );
         assertThat(personGreaterThan17Years).isEqualTo("Alice,Charlie,Gaurav,David,");
+    }
+
+    @Test
+    @DisplayName("Average and Sum of the population grouping by country")
+    public void test_10(){
+
+        // Approach 1: By using groupingBy() with summarizingInt.
+        Map<String, IntSummaryStatistics> summaryByCountry = CITIES.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                City::country,
+                                Collectors.summarizingInt(City::population)));
+
+        summaryByCountry.forEach((key, value) -> {
+            if("India".equals(key)){
+                assertThat(value.getCount()).isEqualTo(29);
+                assertThat(value.getMax()).isEqualTo(12400000);
+                assertThat(value.getMin()).isEqualTo(1072000);
+                assertThat(value.getSum()).isEqualTo(96767000);
+                assertThat((int)value.getAverage()).isEqualTo(3336793);
+            }else if("Cameroon".equals(key)){
+                assertThat(value.getCount()).isEqualTo(2);
+                assertThat(value.getMax()).isEqualTo(2535000);
+                assertThat(value.getMin()).isEqualTo(2447000);
+                assertThat(value.getSum()).isEqualTo(4982000);
+                assertThat((int)value.getAverage()).isEqualTo(2491000);
+            }else if("China".equals(key)){
+                assertThat(value.getCount()).isEqualTo(45);
+                assertThat(value.getMax()).isEqualTo(24153000);
+                assertThat(value.getMin()).isEqualTo(941000);
+                assertThat(value.getSum()).isEqualTo(253364300);
+                assertThat((int)value.getAverage()).isEqualTo(5630317);
+            }
+        });
+
+        // Approach 1: By using multiple collectors along with Collector.of().
+
+        // List of collectors, wild card as the type is not common.
+        List<Collector<City, ?, ? extends Number>> collectors = List.of(Collectors.averagingInt(City::population), Collectors.summingInt(City::population));
+
+        // Collector.of returns List of double and int.
+        Collector<Object, List, List> customMultiCollector = Collector.of(
+                // Return modifiable list of supplier (once again the type is not common as Collectors.averagingInt is on long[] whereas Collectors.summingInt of int[]
+                () ->  collectors.stream().map(Collector::supplier).map(Supplier::get).collect(Collectors.toList()),
+
+                // List of data holder type and another element of type city
+                (list, city) ->
+                    IntStream.range(0, collectors.size()).forEach(i -> ((BiConsumer) collectors.get(i).accumulator()).accept(list.get(i), city)),
+
+                // used in case of parallel stream to merge/club to lists.
+                (l1, l2) -> {
+                    IntStream.range(0, collectors.size()).forEach(i -> l1.set(i, ((BinaryOperator) collectors.get(i).combiner()).apply(l1.get(i), l2.get(i))));
+                    return l1;
+                },
+
+                // finisher to again reuse the same list and modify the type as result and same is returned.
+                (list) -> {
+                    IntStream.range(0, collectors.size()).forEach(i -> list.set(i, ((Function) collectors.get(i).finisher()).apply(list.get(i))));
+                    return list;
+                }
+        );
+
+        //
+        Map<String, List> customizedSummaryByCountry = CITIES.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                City::country,
+                                customMultiCollector));
+
+        customizedSummaryByCountry.forEach((key, value) -> {
+            if("India".equals(key)){
+                assertThat(((Double) value.get(0)).intValue()).isEqualTo(3336793);
+                assertThat(value.get(1)).isEqualTo(96767000);
+            }else if("Cameroon".equals(key)){
+                assertThat(((Double) value.get(0)).intValue()).isEqualTo(2491000);
+                assertThat(value.get(1)).isEqualTo(4982000);
+            }else if("China".equals(key)){
+                assertThat(((Double) value.get(0)).intValue()).isEqualTo(5630317);
+                assertThat(value.get(1)).isEqualTo(253364300);
+            }
+        });
     }
 }
