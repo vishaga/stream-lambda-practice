@@ -15,4 +15,8 @@ public record Article(int inceptionYear, String title, String articleType, List<
         }
         return new Article(inceptionYear, title, articleType, authors);
     }
+
+    public static Article fake(){
+        return new Article(1999, "NA", "NA", List.of());
+    }
 }

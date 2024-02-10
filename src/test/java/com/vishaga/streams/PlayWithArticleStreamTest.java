@@ -14,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class PlayWithArticleStreamTest {
 
     static List<Article> ARTICLES;
+    static final Article FAKE = Article.fake();
 
     @BeforeAll
     public static void setUp(){
@@ -23,16 +24,17 @@ public class PlayWithArticleStreamTest {
     @Test
     @DisplayName("Count of Articles")
     public void practiceTest_1(){
-        assertThat(ARTICLES.stream().count()).isEqualTo(123337);
-        assertThat(ARTICLES.size()).isEqualTo(123337);
-        assertThat(ARTICLES.stream().collect(Collectors.counting())).isEqualTo(123337);
+        assertThat(ARTICLES.stream().count()).isEqualTo(123336);
+        assertThat(ARTICLES.size()).isEqualTo(123336);
+        assertThat(ARTICLES.stream().collect(Collectors.counting())).isEqualTo(123336);
     }
 
     @Test
     @DisplayName("Min Inception Year of Articles")
     public void practiceTest_2(){
+
+        // sorted intermediate operation with limit to gain the min value.
         List<Article> articleWithMinInceptionYear1 = ARTICLES.stream()
-                .filter(article -> article.inceptionYear() > 1900)
                 .sorted(Comparator.comparing(Article::inceptionYear))
                 .limit(1)
                 .toList();
@@ -40,8 +42,8 @@ public class PlayWithArticleStreamTest {
         assertThat(articleWithMinInceptionYear1.isEmpty()).isFalse();
         assertThat(articleWithMinInceptionYear1.get(0).inceptionYear()).isEqualTo(1935);
 
+        // with min() terminal operation.
         Optional<Article> articleWithMinInceptionYear2 = ARTICLES.stream()
-                .filter(article -> article.inceptionYear() > 1900)
                 .min(Comparator.comparing(Article::inceptionYear));
 
         assertThat(articleWithMinInceptionYear2.isEmpty()).isFalse();
@@ -52,12 +54,11 @@ public class PlayWithArticleStreamTest {
     @DisplayName("Min and Max Titles by Inception Year of Articles")
     public void practiceTest_3(){
         List<String> minMaxArticle = ARTICLES.stream()
-                .filter(article -> article.inceptionYear() > 1900)
                 .collect(
                         Collectors.teeing(
                                 Collectors.minBy(Comparator.comparing(Article::inceptionYear)),
                                 Collectors.maxBy(Comparator.comparing(Article::inceptionYear)),
-                                (min, max) -> List.of(min.get().title(), max.get().title())));
+                                (min, max) -> List.of(min.orElse(FAKE).title(), max.orElse(FAKE).title())));
 
         assertThat(minMaxArticle)
                 .contains("A Combinatorial Problem in Geometry","Barcodes:  The Persistent Topology of Data");
@@ -67,16 +68,16 @@ public class PlayWithArticleStreamTest {
     @DisplayName("summaryStatistics by Inception Year of Articles")
     public void practiceTest_4(){
         IntSummaryStatistics summaryStatistics = ARTICLES.stream()
-                .filter(article -> article.inceptionYear() > 1900)
                 .collect(
                         Collectors.summarizingInt(Article::inceptionYear));
 
         assertThat(summaryStatistics.getMin()).isEqualTo(1935);
         assertThat(summaryStatistics.getMax()).isEqualTo(2008);
+        assertThat(summaryStatistics.getCount()).isEqualTo(123336);
     }
 
     @Test
-    @DisplayName("All Titles of 1960 Inception Year")
+    @DisplayName("All Titles (comma separated) of 1960 Inception Year")
     public void practiceTest_5(){
         String titlesOf1960Articles = ARTICLES.stream()
                 .filter(article -> article.inceptionYear() == 1960)
@@ -92,7 +93,6 @@ public class PlayWithArticleStreamTest {
     @DisplayName("Number of Articles by Inception Year")
     public void practiceTest_6(){
         Map<Integer,Long> numberOfArticlePerYear = ARTICLES.stream()
-                .filter(article -> article.inceptionYear() > 1900)
                 .collect(
                         Collectors.groupingBy(
                                 Article::inceptionYear,
@@ -106,9 +106,10 @@ public class PlayWithArticleStreamTest {
                         Map.entry(2001, 5981L),
                         Map.entry(2002, 6399L),
                         Map.entry(2003, 7234L),
-                        Map.entry(2004, 7624L),
+                        Map.entry(2004, 7682L),
                         Map.entry(2005, 6644L),
                         Map.entry(2006, 3887L),
+                        Map.entry(2007, 3135L),
                         Map.entry(2008, 75L)
                 )
         );
