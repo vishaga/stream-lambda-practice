@@ -26,7 +26,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Movie2> loadMovie2(int limit){
-        String path = DataLoaderUtils.class.getResource("/movies2.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_movies.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .limit(limit)
