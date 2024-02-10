@@ -20,13 +20,13 @@ public class PlayWithEmployeeStreamTest {
 
     @BeforeAll
     public static void setUp(){
-        EMPLOYEES = DataLoaderUtils.loadEmployee(100000);
+        EMPLOYEES = DataLoaderUtils.loadEmployee(1004);
     }
 
     @Test
     @DisplayName("Count number of employees in collection")
     public void numberOfEmployees(){
-        assertThat((long) EMPLOYEES.size()).isEqualTo(1003);
+        assertThat((long) EMPLOYEES.size()).isEqualTo(1004);
     }
 
     @Test
@@ -54,6 +54,20 @@ public class PlayWithEmployeeStreamTest {
                 .collect(Collectors.groupingBy(
                         Employee::position,
                         Collectors.maxBy(Comparator.comparing(Employee::salary))));
+
+        positionWiseMaxSalariedEmployee1.forEach((key, value) -> {
+            assertThat("Gaurav Vishal").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.TRAINEE).orElse(FAKE).name());
+            assertThat("Tabitha Rempel").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.INTERN).orElse(FAKE).name());
+            assertThat("Ottilie Romaguera").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.SE).orElse(FAKE).name());
+            assertThat("Bill Little").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.SSE).orElse(FAKE).name());
+            assertThat("Gregg Pouros").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.CONSULTANT).orElse(FAKE).name());
+            assertThat("Osborne Rempel").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.SENIOR_CONSULTANT).orElse(FAKE).name());
+            assertThat("Meredith Sanford").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.LEAD).orElse(FAKE).name());
+            assertThat("Hattie Lindgren").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.SENIOR_LEAD).orElse(FAKE).name());
+            assertThat("Cierra Keebler").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.MANAGER).orElse(FAKE).name());
+            assertThat("Antonetta Franecki").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.SENIOR_MANAGER).orElse(FAKE).name());
+            assertThat("Leonie Willms").isEqualTo(positionWiseMaxSalariedEmployee1.get(Position.DIRECTOR).orElse(FAKE).name());
+        });
 
         Map<Position, String> positionWiseMaxSalariedEmployee2 = EMPLOYEES.stream()
                 .collect(Collectors.groupingBy(
@@ -92,7 +106,7 @@ public class PlayWithEmployeeStreamTest {
                 );
 
         positionToSalary.forEach((key, value) -> {
-            assertThat(745000).isEqualTo(positionToSalary.get(Position.TRAINEE));
+            assertThat(456000).isEqualTo(positionToSalary.get(Position.TRAINEE));
             assertThat(48888000).isEqualTo(positionToSalary.get(Position.INTERN));
             assertThat(45160500).isEqualTo(positionToSalary.get(Position.SE));
             assertThat(46231500).isEqualTo(positionToSalary.get(Position.SSE));
@@ -119,7 +133,7 @@ public class PlayWithEmployeeStreamTest {
                                         (min, max) -> List.of(min.orElse(FAKE).name(), max.orElse(FAKE).name()))));
 
         assertThat(positionMinMaxEmployeeMap).contains(
-                entry(Position.TRAINEE, List.of("Anuj Gupta", "Gaurav Vishal")),
+                entry(Position.TRAINEE, List.of("Vivek Vishal", "Gaurav Vishal")),
                 entry(Position.CONSULTANT, List.of("April Considine", "Gregg Pouros")),
                 entry(Position.SENIOR_LEAD, List.of("Claire Bode", "Hattie Lindgren")),
                 entry(Position.SSE, List.of("Maegan Runolfsson", "Bill Little")),
