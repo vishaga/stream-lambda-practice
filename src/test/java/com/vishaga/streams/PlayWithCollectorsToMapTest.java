@@ -52,8 +52,7 @@ public class PlayWithCollectorsToMapTest {
                         Collectors.toMap(
                                 City::country,
                                 City::population,
-                                //(p1, p2) -> p1 + p2
-                                Integer::sum
+                                Integer::sum //(p1, p2) -> p1 + p2
                         ));
 
         assertThat(populationByCountry).containsAllEntriesOf(
@@ -77,7 +76,7 @@ public class PlayWithCollectorsToMapTest {
                         Collectors.toMap(
                                 City::country,
                                 City::population,
-                                Integer::sum,
+                                Integer::sum, //(p1, p2) -> p1 + p2
                                 TreeMap::new
                         ));
 
@@ -104,7 +103,7 @@ public class PlayWithCollectorsToMapTest {
                         Collectors.toMap(
                                 city -> city.country().substring(0,1),
                                 city -> 1,
-                                Integer::sum,
+                                Integer::sum, //(p1, p2) -> p1 + p2
                                 TreeMap::new
                         ));
 
