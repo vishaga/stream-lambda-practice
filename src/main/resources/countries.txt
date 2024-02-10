@@ -7,7 +7,7 @@ American Samoa ~AS ~ASM ~16 ~Oceania ~Polynesia ~ ~9 ~61 ~
 Andorra ~AD ~AND ~20 ~Europe ~Southern Europe ~ ~150 ~39 ~
 Angola ~AO ~AGO ~24 ~Africa ~Sub-Saharan Africa ~Middle Africa ~2 ~202 ~17
 Anguilla ~AI ~AIA ~660 ~Americas ~Latin America and the Caribbean ~Caribbean ~19 ~419 ~29
-Antarctica ~AQ ~ATA ~10 ~NA ~ ~ ~ ~ ~
+Antarctica ~AQ ~ATA ~10 ~NA ~NA ~NA ~ ~ ~
 Antigua and Barbuda ~AG ~ATG ~28 ~Americas ~Latin America and the Caribbean ~Caribbean ~19 ~419 ~29
 Argentina ~AR ~ARG ~32 ~Americas ~Latin America and the Caribbean ~South America ~19 ~419 ~5
 Armenia ~AM ~ARM ~51 ~Asia ~Western Asia ~ ~142 ~145 ~
