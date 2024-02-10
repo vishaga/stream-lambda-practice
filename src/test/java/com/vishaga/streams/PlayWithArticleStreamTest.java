@@ -116,10 +116,9 @@ public class PlayWithArticleStreamTest {
     }
 
     @Test
-    @DisplayName("Inception Year with max Number of Articles")
+    @DisplayName("Inception Year with max Number of Articles Published")
     public void practiceTest_7(){
         List<Integer> listOfInceptionYearsByMaxArticles = ARTICLES.stream()
-                .filter(article -> article.inceptionYear() > 1900)
                 .collect(
                         Collectors.collectingAndThen(
                                 Collectors.groupingBy(
