@@ -9,9 +9,11 @@ import org.junit.jupiter.api.Test;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.entry;
 
 public class PlayWithCollectorsTest {
 
@@ -147,6 +149,39 @@ public class PlayWithCollectorsTest {
         Employee recentlyJoinedEmployee = EMPLOYEES.stream()
                 .max(Comparator.comparing(Employee::dateOfJoining)).orElse(FAKE);
         assertThat(recentlyJoinedEmployee.firstName()).isEqualTo("Vivek");
+    }
+
+    @Test
+    @DisplayName("Given a list of person, count the number of adult person by sex" +
+            "where Female is treated as Adult on or after 18" +
+            "but Male is treated as Adult on or after 21")
+    public void test_filtering(){
+        enum Sex{M,F};
+        record Person(String name, Sex sex, int age){};
+
+        List<Person> people = List.of(
+                new Person("Alice", Sex.F, 25),
+                new Person("Bob", Sex.M,18),
+                new Person("Charlie", Sex.M,30),
+                new Person("David", Sex.M,16),
+                new Person("Nancy", Sex.F,18),
+                new Person("Gaurav", Sex.M,26),
+                new Person("William", Sex.M,20),
+                new Person("Naina", Sex.F,12)
+        );
+
+        Predicate<Person> maleAdult = person -> person.sex == Sex.M && person.age >= 21;
+        Predicate<Person> femaleAdult = person -> person.sex == Sex.F && person.age >= 18;
+
+        Map<Sex, Long> numberOfAdultsBySex = people.stream()
+                .collect(Collectors.groupingBy(
+                        Person::sex,
+                        Collectors.filtering(maleAdult.or(femaleAdult), Collectors.counting())));
+
+        assertThat(numberOfAdultsBySex).containsAllEntriesOf(Map.ofEntries(
+                entry(Sex.M, 2L),
+                entry(Sex.F, 2L)
+        ));
     }
 
 }
