@@ -257,7 +257,7 @@ public class PlayWithCollectorOfTest {
     }
 
     @Test
-    @DisplayName("Average and Sum of the population grouping by country")
+    @DisplayName("Average and Sum of the population of all cities grouping by country")
     public void test_10(){
 
         // Approach 1: By using groupingBy() with summarizingInt.
