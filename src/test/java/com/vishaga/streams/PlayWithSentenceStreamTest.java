@@ -5,10 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -33,21 +30,26 @@ public class PlayWithSentenceStreamTest {
     @Test
     @DisplayName("Group by  Books")
     public void countTest0(){
+        Pattern compile = Pattern.compile("[ ,.':\\-]+");
+        TreeMap<Long, ArrayList<String>> sortedWordFrequency = SENTENCES.stream()
+                .flatMap(compile::splitAsStream)
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.groupingBy(
+                                        Function.identity(),
+                                        Collectors.counting()),
+                                map -> map.entrySet().stream()
+                                        .collect(
+                                                Collectors.toMap(
+                                                        Map.Entry::getValue,
+                                                        (entry) -> new ArrayList<>(Collections.singletonList(entry.getKey())),
+                                                        (l1, l2) -> {
+                                                            l1.addAll(l2);
+                                                            return l1;
+                                                        },
+                                                        TreeMap::new))));
 
-//        Pattern compile = Pattern.compile("[ ,.':\\-]+");
-//        assertThat((long) SENTENCES.size()).isEqualTo(93);
-//        Map<String, Long> collect = SENTENCES.stream()
-//                .flatMap(compile::splitAsStream)
-//                .collect(
-//                        Collectors.collectingAndThen(
-//                                Collectors.groupingBy(
-//                                        Function.identity(),
-//                                        Collectors.counting()),
-//                                Collectors.mapping(
-//
-//                                )
-//                        )
-//                        );
-        //System.out.println("collect = " + collect);
+        assertThat(sortedWordFrequency.lastEntry().getKey()).isEqualTo(56);
+        assertThat(sortedWordFrequency.lastEntry().getValue()).contains("of");
     }
 }
