@@ -28,7 +28,7 @@ public class PlayWithSentenceStreamTest {
     }
 
     @Test
-    @DisplayName("Group by  Books")
+    @DisplayName("sorted words based on its frequency")
     public void countTest0(){
         Pattern compile = Pattern.compile("[ ,.':\\-]+");
         TreeMap<Long, ArrayList<String>> sortedWordFrequency = SENTENCES.stream()
