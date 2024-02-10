@@ -7,9 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -22,35 +20,41 @@ public class PlayWithCollectorsTest {
 
     @BeforeAll
     public static void setUp(){
-        EMPLOYEES = DataLoaderUtils.loadEmployee(100000);
+        EMPLOYEES = DataLoaderUtils.loadEmployee(1004);
     }
 
     @Test
     @DisplayName("Count number of employees in collection")
     public void numberOfEmployees(){
-        assertThat((long) EMPLOYEES.size()).isEqualTo(1003);
+        assertThat((long) EMPLOYEES.size()).isEqualTo(1004);
     }
 
     @Test
-    @DisplayName("Count number of employees in collection who are at director post")
+    @DisplayName("Count number of employees in collection who are DIRECTOR")
     public void test_counting(){
         Long count = EMPLOYEES.stream()
                 .filter(employee -> employee.position() == Position.DIRECTOR)
                 .collect(Collectors.counting());
         assertThat(count).isEqualTo(79);
+
+        count = EMPLOYEES.stream()
+                .filter(employee -> employee.position() == Position.DIRECTOR)
+                .count();
+        assertThat(count).isEqualTo(79);
     }
 
     @Test
-    @DisplayName("Count number of Employees by Position/Category")
+    @DisplayName("Count number of Employees by Position")
     public void test_countEmployeeByCategory(){
         Map<Position, Long> numberOfEmployeesByPosition = EMPLOYEES.stream()
                 .collect(
                         Collectors.groupingBy(
                                 Employee::position,
                                 Collectors.counting()));
+
         assertThat(numberOfEmployeesByPosition).containsAllEntriesOf(Map.ofEntries(
                 Map.entry(Position.INTERN, 106L),
-                Map.entry(Position.TRAINEE, 3L),
+                Map.entry(Position.TRAINEE, 4L),
                 Map.entry(Position.SE, 96L),
                 Map.entry(Position.SSE, 103L),
                 Map.entry(Position.CONSULTANT, 99L),
@@ -64,9 +68,9 @@ public class PlayWithCollectorsTest {
     }
 
     @Test
-    @DisplayName("Average Salary of Director")
+    @DisplayName("Average Salary of TRAINEE")
     public void test_averaging(){
-        int averagingUsingAveragingInt = EMPLOYEES.stream()
+        int salaryUsingAveragingInt = EMPLOYEES.stream()
                 .filter(employee -> employee.position() == Position.TRAINEE)
                 .collect(
                         Collectors.collectingAndThen(
@@ -74,9 +78,9 @@ public class PlayWithCollectorsTest {
                                 Double::intValue
                         )
                 );
-        assertThat(averagingUsingAveragingInt).isEqualTo(248333);
+        assertThat(salaryUsingAveragingInt).isEqualTo(114000);
 
-        int averagingUsingAveragingLong = EMPLOYEES.stream()
+        int salaryUsingAveragingLong = EMPLOYEES.stream()
                 .filter(employee -> employee.position() == Position.TRAINEE)
                 .collect(
                         Collectors.collectingAndThen(
@@ -84,9 +88,9 @@ public class PlayWithCollectorsTest {
                                 Double::intValue
                         )
                 );
-        assertThat(averagingUsingAveragingLong).isEqualTo(248333);
+        assertThat(salaryUsingAveragingLong).isEqualTo(114000);
 
-        int averagingUsingAveragingDouble = EMPLOYEES.stream()
+        int salaryUsingAveragingDouble = EMPLOYEES.stream()
                 .filter(employee -> employee.position() == Position.TRAINEE)
                 .collect(
                         Collectors.collectingAndThen(
@@ -94,7 +98,7 @@ public class PlayWithCollectorsTest {
                                 Double::intValue
                         )
                 );
-        assertThat(averagingUsingAveragingDouble).isEqualTo(248333);
+        assertThat(salaryUsingAveragingDouble).isEqualTo(114000);
     }
 
     @Test
@@ -105,9 +109,8 @@ public class PlayWithCollectorsTest {
                 .collect(
                         Collectors.collectingAndThen(
                                 Collectors.maxBy(Comparator.comparing(Employee::salary)),
-                                optionalEmp -> optionalEmp.orElse(FAKE).firstName()
-                        )
-                );
+                                optionalEmp -> optionalEmp.orElse(FAKE).firstName()));
+
         assertThat(maxSalariedTrainee).isEqualTo("Gaurav");
     }
 
@@ -119,14 +122,13 @@ public class PlayWithCollectorsTest {
                 .collect(
                         Collectors.collectingAndThen(
                                 Collectors.minBy(Comparator.comparing(Employee::salary)),
-                                optionalEmp -> optionalEmp.orElse(FAKE).firstName()
-                        )
-                );
-        assertThat(maxSalariedTrainee).isEqualTo("Anuj");
+                                optionalEmp -> optionalEmp.orElse(FAKE).firstName()));
+
+        assertThat(maxSalariedTrainee).isEqualTo("Vivek");
     }
 
     @Test
-    @DisplayName("Trainee(s)")
+    @DisplayName("Comma separated names of all Trainee(s)")
     public void test_mappingBy(){
         String maxSalariedTrainee = EMPLOYEES.stream()
                 .filter(employee -> employee.position() == Position.TRAINEE)
@@ -136,7 +138,15 @@ public class PlayWithCollectorsTest {
                                 Function.identity()
                         )
                 );
-        assertThat(maxSalariedTrainee).isEqualTo("Gaurav,Gautam,Anuj");
+        assertThat(maxSalariedTrainee).isEqualTo("Gaurav,Gautam,Anuj,Vivek");
+    }
+
+    @Test
+    @DisplayName("Employee who joined/switched most recently")
+    public void test_sorted(){
+        Employee recentlyJoinedEmployee = EMPLOYEES.stream()
+                .max(Comparator.comparing(Employee::dateOfJoining)).orElse(FAKE);
+        assertThat(recentlyJoinedEmployee.firstName()).isEqualTo("Vivek");
     }
 
 }
