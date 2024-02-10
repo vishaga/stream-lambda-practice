@@ -59,13 +59,22 @@ public class PlayWithCountryStreamTest {
                                         country -> country.subRegion().contains("Asia"),
                                         Collectors.counting())));
 
-        numberOfCountriesBySubRegion.forEach((key, value) -> {
-            if(!key.contains("Asia")){
-                assertThat(value).isEqualTo(0L);
-            }else{
-                assertThat(value).isGreaterThan(4L);
-            }
-        });
+        assertThat(numberOfCountriesBySubRegion).containsAllEntriesOf(Map.ofEntries(
+                Map.entry("Northern Africa", 0L),
+                Map.entry("Northern Europe", 0L),
+                Map.entry("Eastern Europe", 0L),
+                Map.entry("Australia and New Zealand", 0L),
+                Map.entry("Southern Asia", 9L),
+                Map.entry("Central Asia", 5L),
+                Map.entry("Sub-Saharan Africa", 0L),
+                Map.entry("Western Europe", 0L),
+                Map.entry("Northern America", 0L),
+                Map.entry("NA", 0L),
+                Map.entry("Western Asia", 18L),
+                Map.entry("South-eastern Asia", 11L),
+                Map.entry("Eastern Asia", 8L),
+                Map.entry("Micronesia", 0L)
+        ));
 
         Map<String, Integer> onlyAsianSubRegionCountriesInInteger = COUNTRIES.stream()
                 .collect(
@@ -80,13 +89,22 @@ public class PlayWithCountryStreamTest {
                                 )
                         ));
 
-        onlyAsianSubRegionCountriesInInteger.forEach((key, value) -> {
-            if(!key.contains("Asia")){
-                assertThat(value).isEqualTo(0);
-            }else{
-                assertThat(value).isGreaterThan(4);
-            }
-        });
+        assertThat(onlyAsianSubRegionCountriesInInteger).containsAllEntriesOf(Map.ofEntries(
+                Map.entry("Northern Africa", 0),
+                Map.entry("Northern Europe", 0),
+                Map.entry("Eastern Europe", 0),
+                Map.entry("Australia and New Zealand", 0),
+                Map.entry("Southern Asia", 9),
+                Map.entry("Central Asia", 5),
+                Map.entry("Sub-Saharan Africa", 0),
+                Map.entry("Western Europe", 0),
+                Map.entry("Northern America", 0),
+                Map.entry("NA", 0),
+                Map.entry("Western Asia", 18),
+                Map.entry("South-eastern Asia", 11),
+                Map.entry("Eastern Asia", 8),
+                Map.entry("Micronesia", 0)
+        ));
 
     }
 }
