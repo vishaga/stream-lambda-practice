@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -129,11 +130,41 @@ public class PlayWithArticleStreamTest {
                                                     Collectors.collectingAndThen(
                                                             Collectors.groupingBy(
                                                                     Map.Entry::getValue,
-                                                                    //() -> new TreeMap<Integer,List<Integer>>(Comparator.reverseOrder()),
+                                                                    //() -> new TreeMap<>(Comparator.reverseOrder()),
                                                                     TreeMap::new,
                                                                     Collectors.mapping(Map.Entry::getKey, Collectors.toList())),
                                                             anotherMap -> anotherMap.lastEntry().getValue()))));
 
        assertThat(listOfInceptionYearsByMaxArticles).contains(2004);
+    }
+
+    @Test
+    @DisplayName("Author(s) or Co-Author(s) who published maximum number of Books")
+    public void practiceTest_8(){
+        Map.Entry<Long, List<String>> coAuthorsWithMaximumPublishedBooks =
+                ARTICLES.stream()
+                .<String>mapMulti((article, consumer) -> article.authors().forEach(consumer))
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.groupingBy(Function.identity(), Collectors.counting()),
+                                (Map<String, Long> map) -> map.entrySet().stream()
+                                        .collect(
+                                                Collectors.collectingAndThen(
+                                                        Collectors.groupingBy(
+                                                                Map.Entry::getValue,
+                                                                TreeMap::new,
+                                                                //() -> new TreeMap<>(Comparator.reverseOrder()),
+                                                                Collectors.mapping(
+                                                                        Map.Entry::getKey,
+                                                                        Collectors.toList())),
+                                                        TreeMap::lastEntry
+                                                )
+                                        )
+                        )
+                );
+
+       assertThat(coAuthorsWithMaximumPublishedBooks != null).isTrue();
+       assertThat(coAuthorsWithMaximumPublishedBooks.getKey()).isEqualTo(1392);
+       assertThat(coAuthorsWithMaximumPublishedBooks.getValue()).contains("Chen");
     }
 }
