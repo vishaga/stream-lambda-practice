@@ -24,29 +24,29 @@ public class PlayWithBasicStreamTest {
                     "zulu");
 
     @Test
-    @DisplayName("List of word of length 6")
+    @DisplayName("Words of length 6")
     public void wordsOfLength6() {
-        List<String> stringsEqualThan6 = alphabet.stream()
+        List<String> wordsOfLength6 = alphabet.stream()
                 .filter(word -> word.length() == 6)
                 .map(String::toUpperCase)
                 .toList();
 
-        assertThat(stringsEqualThan6).isEqualTo(
+        assertThat(wordsOfLength6).isEqualTo(
                 List.of("JULIET", "QUEBEC", "SIERRA", "VICTOR", "YANKEE")
         );
     }
 
     @Test
-    @DisplayName("List of word of length between 6 and 9")
+    @DisplayName("Words of length between 6 and 9 (both exclusive)")
     public void filterPredicate() {
         Predicate<String> predicate = word -> word.length() > 6;
         predicate = predicate.and(word -> word.length() < 9);
-        List<String> stringsEqualThan6 = alphabet.stream()
+        List<String> wordsOfLengthBetween6And9 = alphabet.stream()
                 .filter(predicate)
                 .map(String::toUpperCase)
                 .toList();
 
-        assertThat(stringsEqualThan6).isEqualTo(
+        assertThat(wordsOfLengthBetween6And9).isEqualTo(
                 List.of("CHARLIE", "FOXTROT", "NOVEMBER", "UNIFORM", "WHISKEY")
         );
     }
@@ -57,10 +57,10 @@ public class PlayWithBasicStreamTest {
         Map<Integer, List<String>> wordsGroupedByLength = alphabet.stream()
                 .collect(
                         Collectors.toMap(
-                                String::length,
-                                a -> new ArrayList<>(List.of(a)),
+                                String::length,                     // KeyMapper
+                                a -> new ArrayList<>(List.of(a)),   // ValueMapper
                                 (a, b) -> {
-                                    a.addAll(b);
+                                    a.addAll(b);                    // Combiner or value Merger
                                     return a;
                                 }
                         )
@@ -93,6 +93,8 @@ public class PlayWithBasicStreamTest {
     @Test
     @DisplayName("Group all words by its length using groupingBy with counting")
     public void groupingBy_3() {
+
+        // Counting returns value of Long type
         Map<Integer, Long> wordsGroupedByLength = alphabet.stream()
                 .collect(
                         Collectors.groupingBy(
@@ -111,6 +113,8 @@ public class PlayWithBasicStreamTest {
     @Test
     @DisplayName("Group all words by its length using groupingBy with counting (Int)")
     public void groupingBy_4() {
+
+        // Counting returns value of Long type which can than collected and mapped to Integer using collectingAndThan()
         Map<Integer, Integer> wordsGroupedByLength = alphabet.stream()
                 .collect(
                         Collectors.groupingBy(
