@@ -1,14 +1,11 @@
 package com.vishaga.model;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public record Book(int publishedYear, String name, List<String> authors, String language,
                    String authorRating, double rating, int ratingCount, String genre,
-                   double grossSales, double revenue, double price, int rank, String publisher,
+                   double grossSales, double publisherRevenue, double price, int rank, String publisher,
                    int unitSold) {
 
     public static Book from(String line){
@@ -22,12 +19,12 @@ public record Book(int publishedYear, String name, List<String> authors, String 
         int ratingCount = Integer.parseInt(attributes[6].trim());
         String genre = attributes[7].trim();
         double grossSales = Double.parseDouble(attributes[8].trim());
-        double revenue = Double.parseDouble(attributes[9].trim());
+        double publisherRevenue = Double.parseDouble(attributes[9].trim());
         double price = Double.parseDouble(attributes[10].trim());
         int rank = Integer.parseInt(attributes[11].trim());
         String publisher = attributes[12].trim();
         int unitSold = Integer.parseInt(attributes[13].trim());
-        return new Book(publishedYear,name,authors,language,authorRating,rating,ratingCount,genre,grossSales,revenue,price,rank,publisher,unitSold);
+        return new Book(publishedYear,name,authors,language,authorRating,rating,ratingCount,genre,grossSales,publisherRevenue,price,rank,publisher,unitSold);
     }
 
     public static Book fake(){
