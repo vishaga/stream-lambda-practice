@@ -176,4 +176,16 @@ public class DataLoaderUtils {
             return List.of();
         }
     }
+
+    public static List<USUniversity> loadUSUniversity(){
+        String path = DataLoaderUtils.class.getResource("/_US_universities.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(USUniversity::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
 }
