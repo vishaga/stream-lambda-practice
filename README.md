@@ -5,3 +5,7 @@ The power of Java Streams and Lambda Expressions, essential features introduced 
 
 #
 This repository contains comprehensive test cases that utilize lambda expressions and various stream techniques to attain the desired outcomes. The majority of the content is well-documented and can be found in the 'test' package. Each test case is enhanced with a descriptive question using the JUnit 5 @DisplayName annotation, providing clarity on the expected results.
+
+#### Example:
+1. [Collector.Of](https://github.com/vishaga/stream-lambda-practice/blob/main/src/test/java/com/vishaga/streams/PlayWithCollectorOfTest.java)
+2. [Collectors](https://github.com/vishaga/stream-lambda-practice/blob/main/src/test/java/com/vishaga/streams/PlayWithCollectorsTest.java)
