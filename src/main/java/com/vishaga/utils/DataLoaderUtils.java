@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class DataLoaderUtils {
 
     public static List<Movie> loadMovie(int limit){
-        String path = DataLoaderUtils.class.getResource("/movie.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_movie.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .limit(limit)
@@ -52,7 +52,7 @@ public class DataLoaderUtils {
     }
 
     public static List<Country> loadCountries(){
-        String path = DataLoaderUtils.class.getResource("/countries.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_countries.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(Country::from)
@@ -76,7 +76,7 @@ public class DataLoaderUtils {
     }
 
     public static List<University> loadUniversity(){
-        String path = DataLoaderUtils.class.getResource("/universities.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_universities.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(University::from)
@@ -100,7 +100,7 @@ public class DataLoaderUtils {
     }
 
     public static List<String> loadLines(){
-        String path = DataLoaderUtils.class.getResource("/sentence.txt").getPath();
+        String path = DataLoaderUtils.class.getResource("/_sentence.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.toList();
         }catch (Exception ex){
