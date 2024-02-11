@@ -1,0 +1,232 @@
+Name	Location	Rank	Tuition and fees	In-state	Undergrad Enrollment
+Princeton University	Princeton, NJ	1	45320.00	-	5402
+Harvard University	Cambridge, MA	2	47074.00	-	6699
+University of Chicago	Chicago, IL	3	52491.00	-	5844
+Yale University	New Haven, CT	3	49480.00	-	5532
+Columbia University	New York, NY	5	55056.00	-	6102
+Stanford University	Stanford, CA	5	47940.00	-	6999
+Massachusetts Institute of Technology	Cambridge, MA	7	48452.00	-	4527
+Duke University	Durham, NC	8	51265.00	-	6639
+University of Pennsylvania	Philadelphia, PA	8	51464.00	-	9726
+Johns Hopkins University	Baltimore, MD	10	50410.00	-	6524
+Dartmouth College	Hanover, NH	11	51438.00	-	4307
+California Institute of Technology	Pasadena, CA	12	47577.00	-	1001
+Northwestern University	Evanston, IL	12	50855.00	-	8314
+Brown University	Providence, RI	14	51367.00	-	6652
+Cornell University	Ithaca, NY	15	50953.00	-	14315
+Rice University	Houston, TX	15	43918.00	-	3910
+University of Notre Dame	Notre Dame, IN	15	49685.00	-	8462
+Vanderbilt University	Nashville, TN	15	45610.00	-	6883
+Washington University in St. Louis	St. Louis, MO	19	49770.00	-	7504
+Emory University	Atlanta, GA	20	47954.00	-	6867
+Georgetown University	Washington, DC	20	50547.00	-	7562
+University of California--Berkeley	Berkeley, CA	20	40191.00	13509.00	27496
+University of Southern California	Los Angeles, CA	23	52217.00	-	18810
+Carnegie Mellon University	Pittsburgh, PA	24	52040.00	-	6454
+University of California--Los Angeles	Los Angeles, CA	24	39518.00	12836.00	29585
+University of Virginia	Charlottesville, VA	24	45066.00	15722.00	16736
+Tufts University	Medford, MA	27	52430.00	-	5290
+University of Michigan--Ann Arbor	Ann Arbor, MI	27	43476.00	13856.00	28312
+Wake Forest University	Winston-Salem, NC	27	49308.00	-	4871
+University of North Carolina--Chapel Hill	Chapel Hill, NC	30	33916.00	8834.00	18415
+Boston College	Chestnut Hill, MA	31	51296.00	-	9192
+College of William & Mary	Williamsburg, VA	32	41718.00	18687.00	6301
+University of Rochester	Rochester, NY	32	50142.00	-	6304
+Brandeis University	Waltham, MA	34	51570.00	-	3621
+Georgia Institute of Technology	Atlanta, GA	34	32404.00	12212.00	15142
+New York University	New York, NY	36	49062.00	-	25722
+Case Western Reserve University	Cleveland, OH	37	46006.00	-	5121
+University of California--Santa Barbara	Santa Barbara, CA	37	40704.00	14022.00	20607
+Boston University	Boston, MA	39	50240.00	-	17932
+Northeastern University	Boston, MA	39	47655.00	-	13697
+Rensselaer Polytechnic Institute	Troy, NY	39	50797.00	-	5864
+Tulane University	New Orleans, LA	39	51010.00	-	6662
+University of California--Irvine	Irvine, CA	39	39458.00	14750.00	25256
+Lehigh University	Bethlehem, PA	44	48320.00	-	5075
+University of California--Davis	Davis, CA	44	40728.00	14046.00	28384
+University of California--San Diego	La Jolla, CA	44	41387.00	14705.00	26590
+University of Illinois--Urbana-Champaign	Champaign, IL	44	31320.00	15698.00	33368
+University of Miami	Coral Gables, FL	44	47004.00	-	11122
+University of Wisconsin--Madison	Madison, WI	44	32738.00	10488.00	31662
+Pepperdine University	Malibu, CA	50	50022.00	-	3533
+University of Florida	Gainesville, FL	50	28666.00	6389.00	35043
+Villanova University	Villanova, PA	50	49280.00	-	6994
+Pennsylvania State University--University Park	University Park, PA	50	32382.00	17900.00	40742
+Ohio State University--Columbus	Columbus, OH	54	29229.00	10037.00	45289
+University of Washington	Seattle, WA	54	34791.00	10753.00	31063
+George Washington University	Washington, DC	56	51950.00	-	11157
+Southern Methodist University	Dallas, TX	56	50358.00	-	6411
+University of Georgia	Athens, GA	56	29844.00	11634.00	27547
+University of Texas--Austin	Austin, TX	56	34676.00	9806.00	39619
+Fordham University	New York, NY	60	47317.00	-	8855
+Purdue University--West Lafayette	West Lafayette, IN	60	28804.00	10002.00	29497
+Syracuse University	Syracuse, NY	60	45022.00	-	15196
+University of Connecticut	Storrs, CT	60	35858.00	14066.00	18826
+University of Maryland--College Park	College Park, MD	60	32045.00	10181.00	27443
+Worcester Polytechnic Institute	Worcester, MA	60	46994.00	-	4299
+Clemson University	Clemson, SC	66	32796.00	14240.00	18016
+Yeshiva University	New York, NY	66	40670.00	-	2744
+Brigham Young University--Provo	Provo, UT	68	5300.00	-	30221
+University of Pittsburgh	Pittsburgh, PA	68	29758.00	18618.00	18908
+Rutgers University--New Brunswick	Piscataway, NJ	70	30023.00	14372.00	35484
+Baylor University	Waco, TX	71	42006.00	-	14189
+Stevens Institute of Technology	Hoboken, NJ	71	48838.00	-	2873
+University of Minnesota--Twin Cities	Minneapolis, MN	71	22210.00	13790.00	34071
+American University	Washington, DC	74	44853.00	-	7909
+Clark University	Worcester, MA	74	43150.00	-	2397
+Texas A&M University--College Station	College Station, TX	74	28768.00	10176.00	48960
+University of Massachusetts--Amherst	Amherst, MA	74	30123.00	13790.00	22748
+Virginia Tech	Blacksburg, VA	74	29371.00	12852.00	25384
+Miami University--Oxford	Oxford, OH	79	31592.00	14288.00	16387
+University of California--Santa Cruz	Santa Cruz, CA	79	40241.00	13559.00	16231
+University of Delaware	Newark, DE	79	31420.00	12520.00	18322
+Colorado School of Mines	Golden, CO	82	34828.00	17383.00	4608
+Michigan State University	East Lansing, MI	82	39090.00	14070.00	39143
+Texas Christian University	Fort Worth, TX	82	42670.00	-	8894
+University of Iowa	Iowa City, IA	82	28413.00	8325.00	23357
+Binghamton University--SUNY	Binghamton, NY	86	22164.00	9044.00	13491
+Indiana University--Bloomington	Bloomington, IN	86	34246.00	10388.00	38364
+Marquette University	Milwaukee, WI	86	38470.00	-	8334
+University of Denver	Denver, CO	86	46362.00	-	5758
+University of San Diego	San Diego, CA	86	46140.00	-	5647
+University of Tulsa	Tulsa, OK	86	38796.00	-	3478
+Florida State University	Tallahassee, FL	92	24673.00	9507.00	32706
+North Carolina State University--Raleigh	Raleigh, NC	92	26399.00	8880.00	24111
+University of Colorado--Boulder	Boulder, CO	92	35079.00	11531.00	27010
+University of Vermont	Burlington, VT	92	40364.00	17300.00	10973
+Drexel University	Philadelphia, PA	96	51030.00	-	14138
+Saint Louis University	St. Louis, MO	96	40726.00	-	8248
+Stony Brook University--SUNY	Stony Brook, NY	96	26266.00	9026.00	16831
+Auburn University	Auburn, AL	99	28840.00	10696.00	21786
+Loyola University Chicago	Chicago, IL	99	41384.00	-	11079
+SUNY College of Environmental Science and Forestry	Syracuse, NY	99	17620.00	7770.00	1839
+University at Buffalo--SUNY	Buffalo, NY	99	26270.00	9770.00	19951
+Illinois Institute of Technology	Chicago, IL	103	45214.00	-	2991
+University of Alabama	Tuscaloosa, AL	103	26950.00	10470.00	31958
+University of Oregon	Eugene, OR	103	33442.00	10762.00	20538
+University of Tennessee	Knoxville, TN	103	30858.00	12668.00	21863
+Rochester Institute of Technology	Rochester, NY	107	38568.00	-	12607
+University of New Hampshire	Durham, NH	107	31424.00	17624.00	13034
+University of San Francisco	San Francisco, CA	107	44494.00	-	6782
+University of South Carolina	Columbia, SC	107	31282.00	11854.00	25237
+Iowa State University	Ames, IA	111	21483.00	7969.00	30034
+University of Dayton	Dayton, OH	111	40940.00	-	8665
+University of Missouri	Columbia, MO	111	25892.00	9518.00	27812
+University of Nebraska--Lincoln	Lincoln, NE	111	23148.00	8628.00	20182
+University of Oklahoma	Norman, OK	111	21451.00	8065.00	22132
+University of the Pacific	Stockton, CA	111	44588.00	-	3735
+University of Utah	Salt Lake City, UT	111	27039.00	8518.00	23794
+Michigan Technological University	Houghton, MI	118	30968.00	14634.00	5721
+Seton Hall University	South Orange, NJ	118	39258.00	-	6090
+Temple University	Philadelphia, PA	118	25994.00	15688.00	28609
+University of California--Riverside	Riverside, CA	118	40263.00	13581.00	18608
+University of Kansas	Lawrence, KS	118	25932.00	10549.00	19245
+University of St. Thomas	St. Paul, MN	118	39594.00	-	6240
+The Catholic University of America	Washington, DC	124	42536.00	-	3480
+DePaul University	Chicago, IL	124	37626.00	-	15961
+Duquesne University	Pittsburgh, PA	124	35062.00	-	5961
+Howard University	Washington, DC	124	24908.00	-	6883
+University of Arizona	Tucson, AZ	124	30025.00	10872.00	33732
+Arizona State University--Tempe	Tempe, AZ	129	25458.00	10158.00	41828
+Clarkson University	Potsdam, NY	129	46132.00	-	3257
+Colorado State University	Fort Collins, CO	129	28374.00	11080.00	24433
+New School	New York, NY	129	45535.00	-	6792
+Hofstra University	Hempstead, NY	133	42160.00	-	6824
+University of Kentucky	Lexington, KY	133	26334.00	11484.00	22705
+Kansas State University	Manhattan, KS	135	23429.00	9350.00	19859
+Louisiana State University--Baton Rouge	Baton Rouge, LA	135	27005.00	9842.00	26156
+Mercer University	Macon, GA	135	35130.00	-	4667
+New Jersey Institute of Technology	Newark, NJ	135	30326.00	16108.00	8008
+Rutgers University--Newark	Newark, NJ	135	29480.00	13829.00	7713
+University of Arkansas	Fayetteville, AR	135	23168.00	8820.00	22159
+University of Cincinnati	Cincinnati, OH	135	26334.00	11000.00	25054
+University of Mississippi	University, MS	135	22012.00	7744.00	18785
+George Mason University	Fairfax, VA	143	32582.00	11300.00	23062
+Oregon State University	Corvallis, OR	143	28846.00	10366.00	24612
+Washington State University	Pullman, WA	143	25673.00	11041.00	24470
+Adelphi University	Garden City, NY	146	34034.00	-	4852
+Ohio University	Athens, OH	146	21208.00	11744.00	23513
+San Diego State University	San Diego, CA	146	18244.00	7084.00	29234
+St. John Fisher College	Rochester, NY	146	31880.00	-	2805
+University at Albany--SUNY	Albany, NY	146	22244.00	9124.00	12908
+University of Texas--Dallas	Richardson, TX	146	33654.00	12162.00	15575
+Illinois State University	Normal, IL	152	20886.00	13296.00	18426
+Immaculata University	Immaculata, PA	152	35210.00	-	1790
+Oklahoma State University	Stillwater, OK	152	20978.00	7778.00	21046
+University of California--Merced	Merced, CA	152	39944.00	13262.00	6237
+University of Illinois--Chicago	Chicago, IL	152	26526.00	13670.00	17575
+University of La Verne	La Verne, CA	152	39900.00	-	2864
+University of Massachusetts--Lowell	Lowell, MA	152	29125.00	13427.00	13266
+Seattle Pacific University	Seattle, WA	159	38940.00	-	3202
+University of Alabama--Birmingham	Birmingham, AL	159	17654.00	7766.00	11511
+University of Maryland--Baltimore County	Baltimore, MD	159	24492.00	11264.00	11243
+University of Rhode Island	Kingston, RI	159	28852.00	12862.00	13641
+University of South Florida	Tampa, FL	159	17325.00	6410.00	31111
+Biola University	La Mirada, CA	164	36696.00	-	4225
+Maryville University of St. Louis	St Louis, MO	164	27958.00	-	2795
+Missouri University of Science & Technology	Rolla, MO	164	26152.00	9628.00	6841
+St. John's University	Queens, NY	164	39460.00	-	16210
+Virginia Commonwealth University	Richmond, VA	164	31608.00	13076.00	24051
+Union University	Jackson, TN	169	30420.00	-	2829
+University of Hawaii--Manoa	Honolulu, HI	169	33764.00	11732.00	13689
+Edgewood College	Madison, WI	171	27530.00	-	1813
+Florida Institute of Technology	Melbourne, FL	171	40446.00	-	3586
+University of Idaho	Moscow, ID	171	22040.00	7232.00	9116
+University of Louisville	Louisville, KY	171	24626.00	10738.00	15769
+University of Wyoming	Laramie, WY	171	16215.00	5055.00	10045
+Ball State University	Muncie, IN	176	25428.00	9654.00	16602
+Lipscomb University	Nashville, TN	176	29756.00	-	3030
+Mississippi State University	Mississippi State, MS	176	20142.00	7502.00	17421
+Montclair State University	Montclair, NJ	176	20318.00	11771.00	16336
+Texas Tech University	Lubbock, TX	176	22861.00	10622.00	29237
+University of Central Florida	Orlando, FL	176	22467.00	6368.00	54513
+University of New Mexico	Albuquerque, NM	176	21302.00	7071.00	20522
+Andrews University	Berrien Springs, MI	183	27684.00	-	1733
+Azusa Pacific University	Azusa, CA	183	36120.00	-	5883
+University of Maine	Orono, ME	183	29498.00	10628.00	9297
+West Virginia University	Morgantown, WV	183	21432.00	7632.00	22498
+Widener University	Chester, PA	183	42870.00	-	3554
+Kent State University	Kent, OH	188	18376.00	10012.00	23607
+North Dakota State University	Fargo, ND	188	19790.00	9046.00	12037
+Pace University	New York, NY	188	42772.00	-	8747
+Robert Morris University	Moon Township, PA	188	28250.00	-	4497
+Suffolk University	Boston, MA	188	35578.00	-	5565
+University of Hartford	West Hartford, CT	188	37790.00	-	5246
+Bowling Green State University	Bowling Green, OH	194	18332.00	10796.00	14334
+University of Houston	Houston, TX	194	25410.00	10710.00	34716
+Western Michigan University	Kalamazoo, MI	194	25713.00	11029.00	18567
+Indiana University-Purdue University--Indianapolis	Indianapolis, IN	197	29791.00	9205.00	21985
+Lesley University	Cambridge, MA	197	25750.00	-	1520
+University of Alabama--Huntsville	Huntsville, AL	197	20622.00	9128.00	6013
+University of Colorado--Denver	Denver, CO	197	29334.00	10404.00	14036
+University of Nevada--Reno	Reno, NV	197	21052.00	7142.00	17770
+California State University--Fullerton	Fullerton, CA	202	17596.00	6436.00	33144
+Central Michigan University	Mount Pleasant, MI	202	23670.00	12150.00	20498
+Louisiana Tech University	Ruston, LA	202	25851.00	8853.00	10682
+South Dakota State University	Brookings, SD	202	11403.00	8172.00	11007
+University of Alaska--Fairbanks	Fairbanks, AK	202	22469.00	7799.00	7610
+University of North Carolina--Charlotte	Charlotte, NC	202	20193.00	6617.00	22732
+University of North Dakota	Grand Forks, ND	202	18899.00	4965.00	11577
+University of South Dakota	Vermillion, SD	202	11688.00	8457.00	7435
+East Carolina University	Greenville, NC	210	22904.00	6946.00	23039
+Montana State University	Bozeman, MT	210	23042.00	7031.00	13707
+Old Dominion University	Norfolk, VA	210	27028.00	10048.00	20101
+University of Missouri--Kansas City	Kansas City, MO	210	22714.00	9551.00	11253
+Ashland University	Ashland, OH	214	20392.00	-	3716
+Dallas Baptist University	Dallas, TX	214	26180.00	-	3315
+Northern Illinois University	DeKalb, IL	214	23799.00	14334.00	15027
+Nova Southeastern University	Ft. Lauderdale, FL	214	27660.00	-	4641
+Southern Illinois University--Carbondale	Carbondale, IL	214	27130.00	13481.00	13031
+University of Montana	Missoula, MT	214	24562.00	6446.00	8732
+Benedictine University	Lisle, IL	220	32170.00	-	3347
+California State University--Fresno	Fresno, CA	220	17209.00	6313.00	21482
+Gardner-Webb University	Boiling Springs, NC	220	29850.00	-	2615
+New Mexico State University	Las Cruces, NM	220	21234.00	6729.00	12526
+Shenandoah University	Winchester, VA	220	31322.00	-	2010
+Tennessee Technological University	Cookeville, TN	220	24800.00	16311.00	9801
+University of Massachusetts--Boston	Boston, MA	220	32023.00	13435.00	12949
+University of Massachusetts--Dartmouth	North Dartmouth, MA	220	19270.00	12588.00	7295
+University of Missouri--St. Louis	St. Louis, MO	220	26277.00	10065.00	13569
+University of North Carolina--Greensboro	Greensboro, NC	220	21595.00	6733.00	15951
+University of Southern Mississippi	Hattiesburg, MS	220	16094.00	7224.00	11840
+Utah State University	Logan, UT	220	19772.00	6866.00	25259
