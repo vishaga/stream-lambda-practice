@@ -47,7 +47,6 @@ public class PlayWithUSUniversitiesStreamTest {
                         entry("CA",22L)
                 )
         );
-        System.out.println("numberOfUniversitiesByState = " + numberOfUniversitiesByState);
     }
 
 }
