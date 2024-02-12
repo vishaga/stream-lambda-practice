@@ -633,4 +633,32 @@ public class StreamPracticeTest {
                         entry("Book4",Set.of("Student2", "Student3"))
                 ));
     }
+
+    @Test
+    @DisplayName("Find duplicate elements from given array.")
+    public void practiceTest_29(){
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 2, 5, 6, 3, 7, 8, 8, 9, 10);
+
+        // Approach 1: Using Map Count.
+        List<Integer> duplicateElements = numbers.stream()
+                .collect(
+                        Collectors.collectingAndThen(
+                                Collectors.groupingBy(
+                                        Function.identity(),
+                                        Collectors.counting()),
+                                map -> map.entrySet().stream()
+                                        .filter(entry -> entry.getValue() > 1)
+                                        .map(Map.Entry::getKey)
+                                        .toList()));
+
+        assertThat(duplicateElements).contains(2,3,8);
+
+        // Approach 2: Using Additional DataStructure Set.
+        Set<Integer> added = new HashSet<>();
+        duplicateElements = numbers.stream()
+                .filter(number -> !added.add(number))
+                .toList();
+
+        assertThat(duplicateElements).contains(2,3,8);
+    }
 }
