@@ -1,10 +1,16 @@
 package com.vishaga.utils;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vishaga.model.*;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -182,6 +188,18 @@ public class DataLoaderUtils {
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(USUniversity::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
+
+    public static List<Car> cars() {
+        String path = DataLoaderUtils.class.getResource("/_cars.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(Car::from)
                     .toList();
         }catch (Exception ex){
             System.out.println("ex = " + ex);
