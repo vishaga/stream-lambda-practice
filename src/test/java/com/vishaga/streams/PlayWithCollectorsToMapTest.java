@@ -1,7 +1,7 @@
 package com.vishaga.streams;
 
 import com.vishaga.model.*;
-import com.vishaga.utils.DataLoaderUtils;
+import com.vishaga.utils.MockData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ public class PlayWithCollectorsToMapTest {
 
     @BeforeAll
     public static void setUp(){
-        CITIES = DataLoaderUtils.loadCities();
+        CITIES = MockData.cities();
     }
 
     @Test

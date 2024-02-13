@@ -1,6 +1,6 @@
 package com.vishaga.streams;
 
-import com.vishaga.utils.DataLoaderUtils;
+import com.vishaga.utils.MockData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -18,7 +18,7 @@ public class PlayWithSentenceStreamTest {
 
     @BeforeAll
     public static void setUp(){
-        SENTENCES = DataLoaderUtils.loadLines();
+        SENTENCES = MockData.lines();
     }
 
     @Test

@@ -2,7 +2,7 @@ package com.vishaga.streams;
 
 import com.vishaga.model.Employee;
 import com.vishaga.model.Position;
-import com.vishaga.utils.DataLoaderUtils;
+import com.vishaga.utils.MockData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,7 +22,7 @@ public class PlayWithCollectorsTest {
 
     @BeforeAll
     public static void setUp(){
-        EMPLOYEES = DataLoaderUtils.loadEmployee(1004);
+        EMPLOYEES = MockData.employees(1004);
     }
 
     @Test

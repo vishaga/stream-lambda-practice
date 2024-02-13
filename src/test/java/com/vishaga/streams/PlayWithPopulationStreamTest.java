@@ -1,7 +1,7 @@
 package com.vishaga.streams;
 
 import com.vishaga.model.Population;
-import com.vishaga.utils.DataLoaderUtils;
+import com.vishaga.utils.MockData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,7 +22,7 @@ public class PlayWithPopulationStreamTest {
 
     @BeforeAll
     public static void setUp(){
-        POPULATION = DataLoaderUtils.loadPopulation();
+        POPULATION = MockData.populationStats();
     }
 
     @Test

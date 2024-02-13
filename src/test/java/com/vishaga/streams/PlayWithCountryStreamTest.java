@@ -2,7 +2,7 @@ package com.vishaga.streams;
 
 import com.vishaga.model.Country;
 import com.vishaga.model.Region;
-import com.vishaga.utils.DataLoaderUtils;
+import com.vishaga.utils.MockData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,7 +20,7 @@ public class PlayWithCountryStreamTest {
 
     @BeforeAll
     public static void setUp(){
-        COUNTRIES = DataLoaderUtils.loadCountries();
+        COUNTRIES = MockData.countries();
     }
 
     @Test

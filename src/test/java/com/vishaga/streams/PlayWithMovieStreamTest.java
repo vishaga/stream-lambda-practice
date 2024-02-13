@@ -2,7 +2,7 @@ package com.vishaga.streams;
 
 import com.vishaga.model.Movie;
 import com.vishaga.model.Movie2;
-import com.vishaga.utils.DataLoaderUtils;
+import com.vishaga.utils.MockData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,8 +22,8 @@ public class PlayWithMovieStreamTest {
 
     @BeforeAll
     public static void setUp(){
-        MOVIES = DataLoaderUtils.loadMovie(50000);
-        MOVIES2 = DataLoaderUtils.loadMovie2(50000);
+        MOVIES = MockData.movies(50000);
+        MOVIES2 = MockData.movies2(50000);
     }
 
     @Test

@@ -1,7 +1,7 @@
 package com.vishaga.streams;
 
 import com.vishaga.model.USUniversity;
-import com.vishaga.utils.DataLoaderUtils;
+import com.vishaga.utils.MockData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -19,7 +19,7 @@ public class PlayWithUSUniversitiesStreamTest {
 
     @BeforeAll
     public static void setUp(){
-        US_UNIVERSITIES = DataLoaderUtils.loadUSUniversity();
+        US_UNIVERSITIES = MockData.USUniversity();
     }
 
     @Test
