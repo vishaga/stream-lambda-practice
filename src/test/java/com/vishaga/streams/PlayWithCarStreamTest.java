@@ -8,9 +8,11 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.entry;
 
 public class PlayWithCarStreamTest {
 
@@ -40,7 +42,7 @@ public class PlayWithCarStreamTest {
 
     @Test
     @DisplayName("Find costliest Car")
-    public void mostCostliestCar1(){
+    public void reverseSortCarsByModelThenColor(){
 
         Comparator<Car> carComparator = Comparator.comparing(Car::model)
                 .reversed()
@@ -50,6 +52,33 @@ public class PlayWithCarStreamTest {
                 .sorted(carComparator).map(Car::id).toList();
 
         assertThat(carIds).containsExactly(355, 71, 779, 213, 73, 574, 422, 295, 90, 371, 710, 674);
+    }
+
+    @Test
+    @DisplayName("Find costliest Car in each Brand")
+    public void costliestCarInEachBrand(){
+
+        Map<String, Integer> costlierCarByBrand = CARS.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Car::brand,
+                                Collectors.collectingAndThen(
+                                        Collectors.maxBy(
+                                                Comparator.comparing(
+                                                        Car::price)),
+                                        optionalCar -> optionalCar.orElse(FAKE).id())
+                        )
+                );
+
+        assertThat(costlierCarByBrand).containsAllEntriesOf(
+                Map.ofEntries(
+                        entry("Jeep",73),
+                        entry("Lexus",561),
+                        entry("Subaru",771),
+                        entry("Fillmore",694),
+                        entry("Eagle",809)
+                )
+        );
     }
 
 }
