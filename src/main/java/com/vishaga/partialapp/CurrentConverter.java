@@ -1,6 +1,6 @@
 package com.vishaga.partialapp;
 
-import com.vishaga.utils.DataLoaderUtils;
+import com.vishaga.utils.MockData;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -28,7 +28,7 @@ public interface CurrentConverter {
 
     static TriFunction of(LocalDate date){
         return (amount, fromCurrency, toCurrency) -> {
-            Map<LocalDate, Map<String, Double>> currencyConversion = DataLoaderUtils.loadCurrencyConversion();
+            Map<LocalDate, Map<String, Double>> currencyConversion = MockData.loadCurrencyConversion();
             Map<String, Double> dateCurrentMap = currencyConversion.getOrDefault(date, new HashMap<>());
             return amount *
                     (dateCurrentMap.getOrDefault(toCurrency, 1d)/
