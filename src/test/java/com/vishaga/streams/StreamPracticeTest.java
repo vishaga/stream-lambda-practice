@@ -693,4 +693,19 @@ public class StreamPracticeTest {
         assertThat(numbersGreaterThanZero).isFalse();
         assertThat(counter[0]).isEqualTo(9);
     }
+
+    @Test
+    @DisplayName("anyMatch(): anyMatch() is terminal short circuit operation, once condition matched, it terminates.")
+    public void practiceTest_32(){
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 0, 6, 7, 8, 9, 10);
+        int[] counter = {0};
+        Predicate<Integer> predicate = number -> {
+            counter[0]++;
+            return number > 7;
+        };
+        boolean numbersGreaterThanZero = numbers.stream().anyMatch(predicate);
+
+        assertThat(numbersGreaterThanZero).isTrue();
+        assertThat(counter[0]).isEqualTo(9);
+    }
 }
