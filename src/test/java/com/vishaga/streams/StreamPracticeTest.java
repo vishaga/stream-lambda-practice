@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.function.IntPredicate;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -660,5 +662,35 @@ public class StreamPracticeTest {
                 .toList();
 
         assertThat(duplicateElements).contains(2,3,8);
+    }
+
+    @Test
+    @DisplayName("allMatch(): allMatch() is terminal short circuit operation, once condition mismatched, it terminates.")
+    public void practiceTest_30(){
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 0, 6, 7, 8, 9, 10);
+        int[] counter = {0};
+        Predicate<Integer> predicate = number -> {
+            counter[0]++;
+            return number > 0;
+        };
+        boolean numbersGreaterThanZero = numbers.stream().allMatch(predicate);
+
+        assertThat(numbersGreaterThanZero).isFalse();
+        assertThat(counter[0]).isEqualTo(6);
+    }
+
+    @Test
+    @DisplayName("noneMatch(): noneMatch() is terminal short circuit operation, once condition matched, it terminates.")
+    public void practiceTest_31(){
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 0, 6, 7, 8, 9, 10);
+        int[] counter = {0};
+        Predicate<Integer> predicate = number -> {
+            counter[0]++;
+            return number > 7;
+        };
+        boolean numbersGreaterThanZero = numbers.stream().noneMatch(predicate);
+
+        assertThat(numbersGreaterThanZero).isFalse();
+        assertThat(counter[0]).isEqualTo(9);
     }
 }
