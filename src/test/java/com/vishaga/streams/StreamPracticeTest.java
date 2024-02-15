@@ -735,4 +735,16 @@ public class StreamPracticeTest {
                 )
         );
     }
+
+    @Test
+    @DisplayName("dropWhile(): Given a list of number, drop all elements unless condition is met (short circuit).")
+    public void practiceTest_34(){
+        List<Integer> numbers = List.of(10,20,30,40,50,60,70,80,90,100,110,120,130,140);
+
+        List<Integer> numbersGreaterThan100 = numbers.stream().dropWhile(number -> number <= 100).toList();
+        assertThat(numbersGreaterThan100).containsExactly(110, 120, 130, 140);
+
+        List<Integer>  result = numbers.stream().dropWhile(number -> number > 100).toList();
+        assertThat(result).containsExactly(10,20,30,40,50,60,70,80,90,100,110,120,130,140);
+    }
 }
