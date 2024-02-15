@@ -708,4 +708,31 @@ public class StreamPracticeTest {
         assertThat(numbersGreaterThanZero).isTrue();
         assertThat(counter[0]).isEqualTo(9);
     }
+
+    @Test
+    @DisplayName("Given a list of people, partition them based on sex(M/F), Sum their ages.")
+    public void practiceTest_33(){
+        record  Person(String name, String sex, int age){};
+
+        List<Person> people = List.of(
+                new Person("Alice", "F",25),
+                new Person("Bob", "M",16),
+                new Person("Charlie", "M",30),
+                new Person("Diana", "F",14),
+                new Person("Eva", "F",22)
+        );
+
+        Map<Boolean, Integer> totalAgeBySex = people.stream()
+                .collect(
+                        Collectors.partitioningBy(
+                                person -> person.sex.equals("M"),
+                                Collectors.summingInt(Person::age)));
+
+        assertThat(totalAgeBySex).containsAllEntriesOf(
+                Map.ofEntries(
+                        Map.entry(true, 46),
+                        Map.entry(false, 61)
+                )
+        );
+    }
 }
