@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.*;
 import java.util.function.Function;
-import java.util.function.IntPredicate;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -746,5 +745,14 @@ public class StreamPracticeTest {
 
         List<Integer>  result = numbers.stream().dropWhile(number -> number > 100).toList();
         assertThat(result).containsExactly(10,20,30,40,50,60,70,80,90,100,110,120,130,140);
+    }
+
+    @Test
+    @DisplayName("takeWhile(): Given a list of number, take elements until the condition is mismatched (short circuit).")
+    public void practiceTest_35(){
+        List<Integer> numbers = List.of(10,20,30,40,50,60,70,80,90,100,110,120,130,140);
+
+        List<Integer> numbersLesserThan100 = numbers.stream().takeWhile(number -> number <= 100).toList();
+        assertThat(numbersLesserThan100).containsExactly(10,20,30,40,50,60,70,80,90,100);
     }
 }
