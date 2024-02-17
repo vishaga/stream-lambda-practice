@@ -755,4 +755,20 @@ public class StreamPracticeTest {
         List<Integer> numbersLesserThan100 = numbers.stream().takeWhile(number -> number <= 100).toList();
         assertThat(numbersLesserThan100).containsExactly(10,20,30,40,50,60,70,80,90,100);
     }
+
+    @Test
+    @DisplayName("flatMapToInt() uses example")
+    public void practiceTest_36(){
+        List<List<Integer>> numbers = List.of(
+                List.of(10,20,30), List.of(40,50,60), List.of(70,80,90), List.of(100)
+        );
+
+        int total = numbers.stream()
+                .flatMapToInt(subList -> subList.stream().mapToInt(e -> e))
+                .sum();
+
+        assertThat(total).isEqualTo(550);
+    }
+
+
 }
