@@ -770,5 +770,36 @@ public class StreamPracticeTest {
         assertThat(total).isEqualTo(550);
     }
 
+    @Test
+    @DisplayName("distinct(): distinct uses HashSet and works on hashcode and equals to find distinct.")
+    public void practiceTest_37(){
 
+        record  Person(String name, String sex, int age){
+            @Override
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                Person person = (Person) o;
+                return Objects.equals(name, person.name);
+            }
+
+            @Override
+            public int hashCode() {
+                return Objects.hash(name);
+            }
+        };
+
+        List<Person> people = List.of(
+                new Person("Alice", "F",25),
+                new Person("Bob", "M",16),
+                new Person("Bob", "M",76),
+                new Person("Charlie", "M",30),
+                new Person("Charlie", "M",60),
+                new Person("Diana", "F",14),
+                new Person("Eva", "F",22)
+        );
+
+       List<Person> distinctPeople = people.stream().distinct().toList();
+       assertThat(distinctPeople.size()).isEqualTo(5);
+    }
 }
