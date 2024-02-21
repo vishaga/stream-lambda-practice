@@ -1,5 +1,6 @@
 package com.vishaga.streams;
 
+import com.sun.source.util.Trees;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -801,5 +802,33 @@ public class StreamPracticeTest {
 
        List<Person> distinctPeople = people.stream().distinct().toList();
        assertThat(distinctPeople.size()).isEqualTo(5);
+    }
+
+    @Test
+    @DisplayName("groupingBy(): groupingBy with combination of filtering, mapping etc.")
+    public void practiceTest_38(){
+        List<String> strings = List.of("a", "bb", "cc", "ddd", "eee", "fff", "gggg");
+
+        Map<Integer, TreeSet<String>> output = strings.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                String::length,
+                                Collectors.mapping(
+                                        String::toUpperCase,
+                                        Collectors.filtering(
+                                                s -> s.length() > 1,
+                                                Collectors.toCollection(TreeSet::new)))));
+
+        output.forEach((key, value) -> {
+            if(key == 1){
+                assertThat(value).isEmpty();
+            }else if(key == 2){
+                assertThat(value).contains("BB", "CC");
+            }else if(key == 3){
+                assertThat(value).contains("DDD", "EEE", "FFF");
+            }else if(key == 4){
+                assertThat(value).contains("GGGG");
+            }
+        });
     }
 }
