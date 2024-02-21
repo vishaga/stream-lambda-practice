@@ -1,6 +1,5 @@
 package com.vishaga.streams;
 
-import com.sun.source.util.Trees;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -830,5 +829,42 @@ public class StreamPracticeTest {
                 assertThat(value).contains("GGGG");
             }
         });
+    }
+
+    @Test
+    @DisplayName("groupingBy(): groupingBy with combination of mapping, flatMapping, filtering, mapping, reducing etc.")
+    public void practiceTest_39(){
+        List<String> strings = List.of("a", "bb", "cc", "ddd", "eee", "fff", "gggg", "");
+
+        Map<Integer, String> output = strings.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                String::length,
+                                Collectors.mapping(
+                                        toStringList(),
+                                        Collectors.flatMapping(
+                                                s -> s.stream().distinct(),
+                                                Collectors.filtering(
+                                                        s -> !s.isEmpty(),
+                                                        Collectors.mapping(
+                                                                String::toUpperCase,
+                                                                Collectors.reducing("", String::concat)))))));
+
+        assertThat(output).containsAllEntriesOf(
+                Map.ofEntries(
+                        entry(0, ""),
+                        entry(1, "A"),
+                        entry(2, "BC"),
+                        entry(3, "DEF"),
+                        entry(4, "G")
+                )
+        );
+    }
+
+    private static Function<String, List<String>> toStringList() {
+        return s -> s.chars()
+                .mapToObj(c -> (char) c)
+                .map(Object::toString)
+                .collect(Collectors.toList());
     }
 }
