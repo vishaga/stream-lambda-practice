@@ -112,4 +112,23 @@ public class PlayWithGroupingByTest {
         assertThat(numberOfCountriesBySubRegion.get("Northern America").stream().map(Country::name).toList())
                 .containsExactly("Bermuda","Canada", "Greenland", "Saint Pierre and Miquelon", "United States of America");
     }
+
+    @Test
+    @DisplayName("Northern American Countries in sorted order, using mapping() to map Country object to name")
+    public void groupingBy_5(){
+        Map<String, TreeSet<String>> numberOfCountriesBySubRegion = COUNTRIES.stream()
+                .filter(country -> country.subRegion().equals("Northern America"))
+                .collect(
+                        Collectors.groupingBy(
+                                Country::subRegion,
+                                Collectors.mapping(
+                                        Country::name,
+                                        Collectors.toCollection(TreeSet::new)
+                                )));
+
+        assertThat(numberOfCountriesBySubRegion.size()).isEqualTo(1);
+        assertThat(numberOfCountriesBySubRegion.get("Northern America").size()).isEqualTo(5);
+        assertThat(numberOfCountriesBySubRegion.get("Northern America"))
+                .containsExactly("Bermuda","Canada", "Greenland", "Saint Pierre and Miquelon", "United States of America");
+    }
 }
