@@ -20,7 +20,7 @@ public class PlayWithGroupingByTest {
     private static List<Car> CARS;
     private static List<USUniversity> US_UNIVERSITIES;
     private static List<Country> COUNTRIES;
-    private static final Car FAKE = Car.fake();
+    private static final USUniversity FAKE = USUniversity.fake();
 
     @BeforeAll
     public static void setUp(){
@@ -202,5 +202,23 @@ public class PlayWithGroupingByTest {
                 assertThat(value.get().name()).isEqualTo("Texas Tech University");
             }
         });
+    }
+
+    @Test
+    @DisplayName("Both Costliest and Cheapest college in TX state")
+    public void groupingBy_10(){
+        Map<String, List<String>> collegeByMaxFeePerSate = US_UNIVERSITIES.stream()
+                .filter(usUniversity -> usUniversity.state().equals("TX"))
+                .collect(
+                        Collectors.groupingBy(
+                                USUniversity::state,
+                                Collectors.teeing(
+                                        Collectors.maxBy(Comparator.comparing(USUniversity::fee)),
+                                        Collectors.minBy(Comparator.comparing(USUniversity::fee)),
+                                        (max, min) -> List.of(max.orElse(FAKE).name(), min.orElse(FAKE).name())
+                                )));
+
+        assertThat(collegeByMaxFeePerSate.get("TX").get(0)).isEqualTo("Southern Methodist University");
+        assertThat(collegeByMaxFeePerSate.get("TX").get(1)).isEqualTo("Texas Tech University");
     }
 }
