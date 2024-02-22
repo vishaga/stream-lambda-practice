@@ -45,8 +45,6 @@ public class PlayWithGroupingByTest {
                         Collectors.groupingBy(
                                 Country::region));
 
-
-
         Set<Region> regions = countriesByRegion.keySet();
         assertThat(regions.size()).isEqualTo(6);
     }
@@ -69,15 +67,15 @@ public class PlayWithGroupingByTest {
     @Test
     @DisplayName("Number of Countries by region.")
     public void groupingBy_3(){
-        Map<String, Long> numberOfCountriesByRegion = COUNTRIES.stream()
+        Map<String, Long> numberOfCountriesBySubRegion = COUNTRIES.stream()
                 .collect(
                         Collectors.groupingBy(
                                 Country::subRegion,
                                 Collectors.counting()));
 
-        assertThat(numberOfCountriesByRegion.size()).isEqualTo(18);
+        assertThat(numberOfCountriesBySubRegion.size()).isEqualTo(18);
 
-        assertThat(numberOfCountriesByRegion).containsExactly(
+        assertThat(numberOfCountriesBySubRegion).containsExactly(
                 entry("Northern Africa", 7L),
                 entry("Northern Europe", 16L),
                 entry("Eastern Europe", 10L),
@@ -97,5 +95,21 @@ public class PlayWithGroupingByTest {
                 entry("Micronesia", 8L),
                 entry("Eastern Asia", 8L)
         );
+    }
+
+    @Test
+    @DisplayName("Northern American Countries in sorted order")
+    public void groupingBy_4(){
+        Map<String, TreeSet<Country>> numberOfCountriesBySubRegion = COUNTRIES.stream()
+                .filter(country -> country.subRegion().equals("Northern America"))
+                .collect(
+                        Collectors.groupingBy(
+                                Country::subRegion,
+                                Collectors.toCollection(TreeSet::new)));
+
+        assertThat(numberOfCountriesBySubRegion.size()).isEqualTo(1);
+        assertThat(numberOfCountriesBySubRegion.get("Northern America").size()).isEqualTo(5);
+        assertThat(numberOfCountriesBySubRegion.get("Northern America").stream().map(Country::name).toList())
+                .containsExactly("Bermuda","Canada", "Greenland", "Saint Pierre and Miquelon", "United States of America");
     }
 }
