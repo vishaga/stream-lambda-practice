@@ -19,4 +19,8 @@ public record USUniversity(String name, String city, String state, int rank, dou
         long enrolledStudent = Long.parseLong(attributes[5].trim());
         return new USUniversity(name,city,state,rank,fee,stateFee,enrolledStudent);
     }
+
+    public static USUniversity fake(){
+        return new USUniversity("NA", "NA", "NA", 0, 0, 0, 0);
+    }
 }
