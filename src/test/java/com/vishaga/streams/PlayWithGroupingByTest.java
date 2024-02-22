@@ -186,4 +186,21 @@ public class PlayWithGroupingByTest {
             }
         });
     }
+
+    @Test
+    @DisplayName("Cheapest college in TX state")
+    public void groupingBy_9(){
+        Map<String, Optional<USUniversity>> collegeByMaxFeePerSate = US_UNIVERSITIES.stream()
+                .filter(usUniversity -> usUniversity.state().equals("TX"))
+                .collect(
+                        Collectors.groupingBy(
+                                USUniversity::state,
+                                Collectors.minBy(Comparator.comparing(USUniversity::fee))));
+
+        collegeByMaxFeePerSate.forEach((key, value) -> {
+            if(key.equals("TX")){
+                assertThat(value.get().name()).isEqualTo("Texas Tech University");
+            }
+        });
+    }
 }
