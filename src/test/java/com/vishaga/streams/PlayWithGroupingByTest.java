@@ -61,8 +61,6 @@ public class PlayWithGroupingByTest {
                                 Collectors.toList()));
         Set<String> regions = countriesByRegion.keySet();
 
-        System.out.println("regions = " + regions);
-
         assertThat(regions.size()).isEqualTo(6);
         assertThat(regions).containsExactly("AFRICA", "AMERICAS", "ASIA", "EUROPE", "NA", "OCEANIA");
     }
