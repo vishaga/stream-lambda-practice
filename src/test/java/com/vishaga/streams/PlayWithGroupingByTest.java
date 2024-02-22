@@ -151,7 +151,7 @@ public class PlayWithGroupingByTest {
     }
 
     @Test
-    @DisplayName("Countries by region (filtering specific Region only)")
+    @DisplayName("State wise total college fees")
     public void groupingBy_7(){
         Map<String, Double> numberOfCountriesBySubRegion = US_UNIVERSITIES.stream()
                         .collect(
@@ -168,5 +168,22 @@ public class PlayWithGroupingByTest {
                         entry("WA",99404.0d)
                 )
         );
+    }
+
+    @Test
+    @DisplayName("Costliest college in TX state")
+    public void groupingBy_8(){
+        Map<String, Optional<USUniversity>> collegeByMaxFeePerSate = US_UNIVERSITIES.stream()
+                .filter(usUniversity -> usUniversity.state().equals("TX"))
+                .collect(
+                        Collectors.groupingBy(
+                                USUniversity::state,
+                                Collectors.maxBy(Comparator.comparing(USUniversity::fee))));
+
+        collegeByMaxFeePerSate.forEach((key, value) -> {
+            if(key.equals("TX")){
+                assertThat(value.get().name()).isEqualTo("Southern Methodist University");
+            }
+        });
     }
 }
