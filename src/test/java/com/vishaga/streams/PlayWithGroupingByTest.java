@@ -132,8 +132,7 @@ public class PlayWithGroupingByTest {
     @Test
     @DisplayName("Countries by region (filtering specific Region only)")
     public void groupingBy_6(){
-        Map<Region, List<Country>> numberOfCountriesBySubRegion =
-                COUNTRIES.stream()
+        Map<Region, List<Country>> numberOfCountriesBySubRegion = COUNTRIES.stream()
                 .collect(
                         Collectors.groupingBy(
                                 Country::region,
@@ -149,5 +148,25 @@ public class PlayWithGroupingByTest {
         assertThat(numberOfCountriesBySubRegion.get(Region.AFRICA)).isEmpty();
         assertThat(numberOfCountriesBySubRegion.get(Region.NA)).isNotEmpty();
         assertThat(numberOfCountriesBySubRegion.get(Region.NA).size()).isEqualTo(1);
+    }
+
+    @Test
+    @DisplayName("Countries by region (filtering specific Region only)")
+    public void groupingBy_7(){
+        Map<String, Double> numberOfCountriesBySubRegion = US_UNIVERSITIES.stream()
+                        .collect(
+                                Collectors.groupingBy(
+                                        USUniversity::state,
+                                        Collectors.summingDouble(USUniversity::fee)));
+
+        assertThat(numberOfCountriesBySubRegion).containsAllEntriesOf(
+                Map.ofEntries(
+                        entry("HI",33764.0d),
+                        entry("DE",31420.0d),
+                        entry("MA",610730.0d),
+                        entry("FL",208241.0d),
+                        entry("WA",99404.0d)
+                )
+        );
     }
 }
