@@ -41,9 +41,7 @@ public class PlayWithGroupingByTest {
     @DisplayName("Countries by region")
     public void groupingBy_1(){
         Map<Region, List<Country>> countriesByRegion = COUNTRIES.stream()
-                .collect(
-                        Collectors.groupingBy(
-                                Country::region));
+                .collect(Collectors.groupingBy(Country::region));
 
         Set<Region> regions = countriesByRegion.keySet();
         assertThat(regions.size()).isEqualTo(6);
@@ -123,12 +121,33 @@ public class PlayWithGroupingByTest {
                                 Country::subRegion,
                                 Collectors.mapping(
                                         Country::name,
-                                        Collectors.toCollection(TreeSet::new)
-                                )));
+                                        Collectors.toCollection(TreeSet::new))));
 
         assertThat(numberOfCountriesBySubRegion.size()).isEqualTo(1);
         assertThat(numberOfCountriesBySubRegion.get("Northern America").size()).isEqualTo(5);
         assertThat(numberOfCountriesBySubRegion.get("Northern America"))
                 .containsExactly("Bermuda","Canada", "Greenland", "Saint Pierre and Miquelon", "United States of America");
+    }
+
+    @Test
+    @DisplayName("Countries by region (filtering specific Region only)")
+    public void groupingBy_6(){
+        Map<Region, List<Country>> numberOfCountriesBySubRegion =
+                COUNTRIES.stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Country::region,
+                                Collectors.filtering(
+                                        country -> country.region().equals(Region.NA),
+                                        Collectors.toList())));
+
+        assertThat(numberOfCountriesBySubRegion.size()).isEqualTo(6);
+        assertThat(numberOfCountriesBySubRegion.get(Region.EUROPE)).isEmpty();
+        assertThat(numberOfCountriesBySubRegion.get(Region.OCEANIA)).isEmpty();
+        assertThat(numberOfCountriesBySubRegion.get(Region.AMERICAS)).isEmpty();
+        assertThat(numberOfCountriesBySubRegion.get(Region.ASIA)).isEmpty();
+        assertThat(numberOfCountriesBySubRegion.get(Region.AFRICA)).isEmpty();
+        assertThat(numberOfCountriesBySubRegion.get(Region.NA)).isNotEmpty();
+        assertThat(numberOfCountriesBySubRegion.get(Region.NA).size()).isEqualTo(1);
     }
 }
