@@ -3,7 +3,7 @@ package com.vishaga.model;
 public record Country(
         String name, String alphaCode1, String alphaCode2, Integer countryCode, Region region,
         String subRegion, IntermediateRegion intermediateRegion, Integer regionCode,
-        Integer subRegionCode, Integer intermediateRegionCode) {
+        Integer subRegionCode, Integer intermediateRegionCode) implements Comparable<Country>{
 
     public static Country from(String line){
         String[] attributes = line.split("~");
@@ -22,4 +22,8 @@ public record Country(
         return new Country(name,alphaCode1,alphaCode2,countryCode,region,subRegion,intermediateRegion,regionCode,subRegionCode,intermediateRegionCode);
     }
 
+    @Override
+    public int compareTo(Country other) {
+        return this.name.compareTo(other.name);
+    }
 }
