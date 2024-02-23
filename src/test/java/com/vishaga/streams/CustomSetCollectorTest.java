@@ -2,17 +2,18 @@ package com.vishaga.streams;
 
 import com.vishaga.model.Country;
 import com.vishaga.model.Region;
-import com.vishaga.stream.ListCollectors;
+import com.vishaga.stream.SetCollectors;
 import com.vishaga.utils.MockData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class CustomListCollectorTest {
+public class CustomSetCollectorTest {
 
     private static List<Country> COUNTRIES;
 
@@ -31,15 +32,14 @@ public class CustomListCollectorTest {
     @DisplayName("Counting")
     public void getRegions(){
 
-        List<String> regions = COUNTRIES.stream()
+        Set<String> regions = COUNTRIES.stream()
                 .map(Country::region)
                 .map(Region::name)
-                .distinct()
-                .collect(ListCollectors.toList());
+                .collect(SetCollectors.toSet());
 
         assertThat(regions)
                 .hasSize(6)
-                .containsExactly("ASIA", "EUROPE", "AFRICA", "OCEANIA", "AMERICAS", "NA");
+                .containsOnly("ASIA", "EUROPE", "AFRICA", "OCEANIA", "AMERICAS", "NA");
 
     }
 }

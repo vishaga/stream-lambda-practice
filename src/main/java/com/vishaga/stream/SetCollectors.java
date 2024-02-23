@@ -11,14 +11,14 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class SetCollector<T> implements Collector<T, Set<T>, Set<T>> {
+public class SetCollectors<T> implements Collector<T, Set<T>, Set<T>> {
 
-    private SetCollector(){
+    private SetCollectors(){
        //
     }
 
-    public static <T> SetCollector<T> toSet(){
-        return new SetCollector<>();
+    public static <T> SetCollectors<T> toSet(){
+        return new SetCollectors<>();
     }
     @Override
     public Supplier<Set<T>> supplier() {
