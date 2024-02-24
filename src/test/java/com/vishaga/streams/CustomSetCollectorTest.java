@@ -40,6 +40,5 @@ public class CustomSetCollectorTest {
         assertThat(regions)
                 .hasSize(6)
                 .containsOnly("ASIA", "EUROPE", "AFRICA", "OCEANIA", "AMERICAS", "NA");
-
     }
 }
