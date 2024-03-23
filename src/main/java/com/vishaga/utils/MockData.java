@@ -200,4 +200,16 @@ public class MockData {
             return List.of();
         }
     }
+
+    public static List<ElectoralBondUser> electoralBondUserSet() {
+        String path = MockData.class.getResource("/_electoral_bond_user.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(ElectoralBondUser::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
 }
