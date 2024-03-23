@@ -201,11 +201,23 @@ public class MockData {
         }
     }
 
-    public static List<ElectoralBondUser> electoralBondUserSet() {
+    public static List<ElectoralBondUser> electoralBondUserList() {
         String path = MockData.class.getResource("/_electoral_bond_user.txt").getPath();
         try(Stream<String> s = Files.lines(Path.of(path))){
             return s.skip(1)
                     .map(ElectoralBondUser::from)
+                    .toList();
+        }catch (Exception ex){
+            System.out.println("ex = " + ex);
+            return List.of();
+        }
+    }
+
+    public static List<ElectoralBondBuyer> electoralBondBuyerList() {
+        String path = MockData.class.getResource("/_electoral_bond_buyer.txt").getPath();
+        try(Stream<String> s = Files.lines(Path.of(path))){
+            return s.skip(1)
+                    .map(ElectoralBondBuyer::from)
                     .toList();
         }catch (Exception ex){
             System.out.println("ex = " + ex);
