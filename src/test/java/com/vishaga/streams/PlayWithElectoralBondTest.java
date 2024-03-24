@@ -33,7 +33,7 @@ public class PlayWithElectoralBondTest {
 
     @Test
     @DisplayName("BJP total donation")
-    public void partyWithMaximumReceiving(){
+    public void bjpTotalDonation(){
         Optional<BigDecimal> BJPTotalDonation = USERS.stream()
                 .filter(bond -> bond.politicalPartyName().equals("BHARATIYA JANATA PARTY"))
                 .map(bond -> new BigDecimal(bond.amount()))
@@ -41,6 +41,18 @@ public class PlayWithElectoralBondTest {
 
         assertThat(BJPTotalDonation).isNotEmpty();
         assertThat(BJPTotalDonation.get()).isEqualTo(new BigDecimal("60605111000"));
+    }
+
+    @Test
+    @DisplayName("INC total donation")
+    public void incTotalDonation(){
+        Optional<BigDecimal> INCTotalDonation = USERS.stream()
+                .filter(bond -> bond.politicalPartyName().equals("PRESIDENT, ALL INDIA CONGRESS COMMITTEE"))
+                .map(bond -> new BigDecimal(bond.amount()))
+                .reduce(BigDecimal::add);
+
+        assertThat(INCTotalDonation).isNotEmpty();
+        assertThat(INCTotalDonation.get()).isEqualTo(new BigDecimal("14218655000"));
     }
 
 }
